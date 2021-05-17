@@ -1,0 +1,303 @@
+.text {
+  font-size: 14px;
+  color: $color_black;
+  font-family: "tahoma", sans-serif;
+  position: relative;
+  @include devices(1000) {
+    font-size: 15px;
+  }
+  span.content-event-first {
+    float: left;
+    font-size: 40px;
+    line-height: 5px;
+    margin: 4px 2px 0px 0px;
+  }
+  h1,
+  .content-event-h1 {
+    font-size: 19px;
+    color: #6aae9e;
+    padding: 4px 0 8px 35px;
+    position: relative;
+    font-family: "tahomabold";
+    // font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    &:before {
+      content: "";
+      width: 52px;
+      height: 50px;
+      background: url(../images/icon-h1.png) no-repeat center center;
+      background-size: 100%;
+      position: absolute;
+      top: -9px;
+      left: -13px;
+    }
+  }
+  h2,
+  .content-event-h2 {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 25px;
+    color: #6aae9e;
+    font-family: "tahomabold";
+    // font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 44px;
+      height: 38px;
+      background: url(../images/icon-h2.png) no-repeat 1px 1px transparent;
+      background-size: 100%;
+      position: absolute;
+      top: -9px;
+      left: -13px;
+    }
+  }
+  blockquote {
+    padding-left: 15px;
+    border-left: 4px solid #4aac9d;
+    margin-left: 5px;
+    margin-bottom: 15px;
+  }
+  a {
+    color: #6aae9e;
+  }
+  ul {
+    margin-left: 25px;
+    li {
+      line-height: 28px;
+    }
+  }
+  p {
+    // font-family: 'tahoma';
+    font-family: "tahoma", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color_black;
+    img {
+      margin: 15px auto;
+      width: 100% !important;
+      max-width: 700px !important;
+      height: auto !important;
+      display: block;
+    }
+    @include max_devices(1024) {
+      img {
+        width: auto !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @include devices(1024) {
+      width: auto;
+    }
+    @include devices(768) {
+      width: auto !important;
+    }
+    tbody tr td img {
+      width: 60px !important;
+      max-width: none !important;
+      margin: 5px auto;
+      @include devices(768) {
+        width: 78px !important;
+        margin: 0 auto;
+      }
+      @include max_devices(390) {
+        width: 100% !important;
+        max-width: 41px !important;
+        margin: 0 auto;
+      }
+    }
+    tr {
+      td {
+        border: 1px solid #4e5051;
+        margin: 0;
+        padding: 10px 10px;
+        vertical-align: middle !important;
+        text-align: center;
+        @include max_devices(768) {
+          padding: 2px;
+        }
+        @include max_devices(390) {
+          font-size: 12px;
+          &:first-child img {
+            width: 52px !important;
+          }
+        }
+      }
+      &:first-child {
+        background: #000;
+        td {
+          font-family: "tahomabold";
+          // color: $color_text_button_downgame;
+          p {
+            font-family: "tahomabold";
+            color: $color_white;
+          }
+        }
+      }
+    }
+  }
+  fieldset {
+    border: 1px solid #4e5051;
+    margin: 20px 0;
+    padding: 10px;
+    color: #2a2a2a;
+    background: #f3f3f3;
+    legend {
+      color: white;
+      background: #6aae9e;
+      font-family: "tahomabold";
+      // font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      padding: 0 15px;
+    }
+    ul {
+      margin-left: 15px;
+    }
+  }
+  strong {
+    font-family: "tahomabold";
+    // font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  em {
+    font-style: italic;
+  }
+}
+
+table {
+  img {
+    display: block;
+  }
+}
+
+table {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: auto !important;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 100px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: "tahoma";
+  margin-top: 10px;
+  tr {
+    &:first-child td {
+      background-color: #6aae9e !important;
+      color: $color_white;
+      font-weight: bold;
+      text-align: center;
+      padding: 2px;
+      @include devices(768) {
+        padding: 10px;
+      }
+    }
+    td {
+      border: 1px solid $color_white;
+      vertical-align: middle;
+      // color: $color_white;
+      font-weight: normal;
+      text-align: center;
+      padding: 5px 0px;
+    }
+  }
+}
+// Hover link animation
+// ví dụ : <p class="hover-underline-animation">Hover this text to see the effect!</p>
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+//Phân trang
+.pagination {
+  margin: 2rem 0;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 4.3rem;
+      height: 4.3rem;
+      line-height: 4.3rem;
+      background: url(../images/bg-item-pagination.png) no-repeat;
+      background-position: left top;
+      @include devices(1155) {
+        margin: 0 0.2rem;
+      }
+      &:hover,
+      &.active {
+        background-position: right top;
+      }
+      a {
+        color: #817874;
+        font-size: 2rem;
+        position: relative;
+        cursor: pointer;
+        span {
+          visibility: hidden;
+        }
+        &.prev,
+        &.next {
+          i {
+            position: absolute;
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            display: inline-block;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-right: 0.8rem solid #817874;
+            border-top: 0.7rem solid transparent;
+            border-bottom: 0.7rem solid transparent;
+          }
+        }
+        &.next {
+          i {
+            border-right: transparent;
+            border-left: 0.8rem solid #817874;
+            border-top: 0.7rem solid transparent;
+            border-bottom: 0.7rem solid transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+//
+// Padding Helper Classes
+/// @require {Boolean} $use-helper-padding-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options
+//
+
+@if $use-helper-padding-styles == true {
+  @for $i from 0 through 20 {
+    .p-#{$i} {
+      padding: #{$i}rem;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i}rem;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i}rem;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i}rem;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i}rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    @for $i from 0 through 20 {
+      .md\:p-#{$i} {
+        padding: #{$i}rem;
+      }
+      .md\:pt-#{$i} {
+        padding-top: #{$i}rem;
+      }
+      .md\:pl-#{$i} {
+        padding-left: #{$i}rem;
+      }
+      .md\:pr-#{$i} {
+        padding-right: #{$i}rem;
+      }
+      .md\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+    }
+  }
+}

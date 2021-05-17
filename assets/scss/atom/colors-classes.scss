@@ -1,0 +1,19 @@
+//
+// Colors Helper Classes
+/// @require {Boolean} $use-color-classes - base variable in Settings
+/// @require {function} color - helper function to get color value
+//
+
+@if $use-color-classes == true {
+  $color-list: join(color(brand), color(base));
+
+  @each $name, $color in $color-list {
+    .color-#{$name} {
+      color: $color;
+    }
+
+    .background-#{$name} {
+      background-color: $color;
+    }
+  }
+}

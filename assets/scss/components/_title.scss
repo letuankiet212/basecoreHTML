@@ -1,0 +1,27 @@
+.title {
+    font-size: 3rem;
+    line-height: 2.58rem;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../images/obj-title.png);
+        @include background-img(center, contain);
+        @include box(60rem, 1.5rem);
+    }
+}
+.title-type2 {
+    font-size: 3rem;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/obj-title2.png);
+        @include background-img(center, contain);
+        @include box(60rem, 1.5rem);
+    }
+}

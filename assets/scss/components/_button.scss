@@ -1,0 +1,67 @@
+.title-type1 {
+    background: url(../images/bg-titlemodal.png);
+    @include background-img(center, 100% 100%);
+}
+.button-type3 {
+    background: url(../images/bg-button-type3.png);
+    @include background-img(center 0.3rem, 100% 100%);
+    @include box(18.8rem, 4.5rem);
+    transition: 0.2s all ease;
+    &:hover {
+        filter: brightness(1.2);
+    }
+    p {
+        font-size: 1.8rem;
+
+        @include max_devices(414) {
+            font-size: 11px;
+        }
+    }
+}
+.button-type4 {
+    background: url(../images/bg-button-type10.png);
+    @include background-img(center, 100% 100%);
+    @include box(20.2rem, 6.3rem);
+
+    &:hover {
+        background: url(../images/bg-button-type2.png);
+        @include background-img(center, 100% 100%);
+        @include box(20.2rem, 6.3rem);
+    }
+    p {
+        font-size: 1.8rem;
+
+        @include max_devices(414) {
+            font-size: 11px;
+        }
+    }
+}
+
+.button-type5 {
+    background: url(../images/bg-button-type10.png);
+    @include background-img(center, 100% 100%);
+    width: 27.2rem;
+    height: 8.3rem;
+
+    &.active,
+    &:hover {
+        background: url(../images/bg-button-type14.png);
+        @include background-img(center, 100% 100%);
+        width: 27.2rem;
+        height: 8.3rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+
+        @include max_devices(414) {
+            font-size: 11px;
+        }
+    }
+}
+
+.button-close {
+    background: url(../images/close.png);
+    @include background-img(center, contain);
+    @include box(5.1rem);
+}

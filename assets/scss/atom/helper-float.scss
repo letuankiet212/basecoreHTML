@@ -1,0 +1,42 @@
+//
+// Float Helper Classes
+/// @require {Boolean} $use-helper-float-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options - All base options
+//
+
+@if $use-helper-float-styles == true {
+  @media screen and (min-width: 769px) {
+    .float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .md\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+}
+
+//
+///  The clearfix is a way to combat the zero-height container problem for floated elements.
+/// @require {Boolean} $use-helper-clearfix-class - base variable in Settings
+//
+
+@if $use-helper-clearfix-class == true {
+  .clearfix {
+    @include clearfix;
+  }
+}

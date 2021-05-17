@@ -1,0 +1,100 @@
+//
+// Position Helper Classes
+/// @require {Boolean} $use-helper-position-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options
+//
+
+@if $use-helper-position-styles == true {
+  .p {
+    &-r {
+      position: relative;
+    }
+
+    &-a {
+      position: absolute;
+    }
+
+    &-s {
+      position: static;
+    }
+
+    &-f {
+      position: fixed;
+    }
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  @for $i from 0 through 20 {
+    .t-#{$i} {
+      top: #{$i}rem;
+    }
+    .l-#{$i} {
+      left: #{$i}rem;
+    }
+    .r-#{$i} {
+      right: #{$i}rem;
+    }
+    .b-#{$i} {
+      bottom: #{$i}rem;
+    }
+    .z-#{$i} {
+      z-index: #{$i};
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .md\:p {
+      &-r {
+        position: relative;
+      }
+
+      &-a {
+        position: absolute;
+      }
+
+      &-s {
+        position: static;
+      }
+
+      &-f {
+        position: fixed;
+      }
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+
+    @for $i from 0 through 20 {
+      .md\:t-#{$i} {
+        top: #{$i}rem;
+      }
+      .md\:l-#{$i} {
+        left: #{$i}rem;
+      }
+      .md\:r-#{$i} {
+        right: #{$i}rem;
+      }
+      .md\:b-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .md\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
+}

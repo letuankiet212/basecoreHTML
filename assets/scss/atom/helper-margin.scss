@@ -1,0 +1,55 @@
+//
+// Margin Helper Classes
+/// @require {Boolean} $use-helper-margin-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options - All base options
+//
+
+@if $use-helper-margin-styles == true {
+  .m-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @for $i from 0 through 20 {
+    .m-#{$i} {
+      margin: #{$i}rem;
+    }
+    .mt-#{$i} {
+      margin-top: #{$i}rem;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i}rem;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i}rem;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i}rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .md\:m-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    @for $i from 0 through 20 {
+      .md\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .md\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .md\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .md\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .md\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+    }
+  }
+}

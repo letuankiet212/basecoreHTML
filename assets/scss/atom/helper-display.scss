@@ -1,0 +1,75 @@
+//
+// Display Helper Classes
+/// @require {Boolean} $use-helper-display-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options - All base options
+//
+
+@if $use-helper-display-styles == true {
+    .block {
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+    }
+    .a-center {
+        align-items: center;
+    }
+
+    .j-center {
+        justify-content: center;
+    }
+    .j-space-between {
+        justify-content: space-between;
+    }
+
+    .j-space-around {
+        justify-content: space-around;
+    }
+
+    .j-start {
+        justify-content: flex-start;
+    }
+
+    .flex-column {
+        flex-flow: column;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    @media screen and(max-width:768px) {
+        .md\:block {
+            display: block;
+        }
+
+        .md\:flex {
+            display: flex;
+        }
+        .md\:a-center {
+            align-items: center;
+        }
+
+        .md\:j-center {
+            justify-content: center;
+        }
+        .md\:j-space-between {
+            justify-content: space-between;
+        }
+
+        .md\:j-space-around {
+            justify-content: space-around;
+        }
+        .md\:j-start {
+            justify-content: flex-start;
+        }
+        .md\:flex-column {
+            flex-flow: column;
+        }
+
+        .md\:grid {
+            display: grid;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+//
+// Text Helper Classes
+/// @require {Boolean} $use-helper-text-styles - base variable in Settings
+/// @see  /Settings/base-options.scss - All base options - Base Options
+//
+
+@if $use-helper-text-styles == true {
+  .t {
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
+    &-just {
+      text-align: justify;
+    }
+
+    &-capitalized {
+      text-transform: capitalize;
+    }
+
+    &-small {
+      font-variant-caps: small-caps;
+      font-feature-settings: "smcp";
+    }
+
+    &-upper {
+      text-transform: uppercase;
+    }
+
+    &-r {
+      font-weight: 400;
+    }
+
+    &-bold {
+      font-weight: 600;
+    }
+
+    &-bold {
+      font-weight: bold;
+    }
+  }
+
+  .align {
+    &-top {
+      vertical-align: top;
+    }
+
+    &-middle {
+      vertical-align: top;
+    }
+
+    &-bottom {
+      vertical-align: top;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .md\:t {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: "smcp";
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+    }
+
+    .align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: top;
+      }
+
+      &-bottom {
+        vertical-align: top;
+      }
+    }
+  }
+}

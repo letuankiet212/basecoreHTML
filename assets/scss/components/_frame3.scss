@@ -1,0 +1,159 @@
+.frame3 {
+    margin-top: 13.8rem;
+
+    @include max_devices(768) {
+        margin-top: 20.8rem;
+    }
+    &--content {
+        @include box(110.8rem, 60rem);
+
+        @include max_devices(768) {
+            width: 100%;
+        }
+
+        .note {
+            border-left: 0.5rem solid #d33858;
+            line-height: 3.5rem;
+            font-size: 1.8rem;
+
+            @include max_devices(414) {
+                font-size: 11px;
+            }
+        }
+
+        .table {
+            .col1 {
+                background: url(../images/bg-border2.png);
+                @include background-img(center, contain);
+                @include box(84.7rem, 51.5rem);
+
+                @include max_devices(768) {
+                    width: 100%;
+                    @include background-img(center, 100% 100%);
+                    order: 2;
+                }
+
+                .title {
+                    border-bottom: 0.3rem solid white;
+                    font-size: calc(11px + (15 - 11) * ((100vw - 768px) / (1920 - 769)));
+                }
+
+                .thead {
+                    display: grid;
+                    grid-template-columns: 10rem 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 4rem;
+                    height: 100%;
+                    font-size: calc(11px + (14 - 11) * ((100vw - 768px) / (1920 - 769)));
+                    align-items: center;
+
+                    @include max_devices(414) {
+                        grid-template-columns: 23rem 1fr 1fr 1fr;
+                        font-size: 11px;
+                    }
+                    p {
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            @include max_devices(414) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .tbody .row {
+                    display: grid;
+                    grid-template-columns: 10rem 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 4rem;
+                    height: 100%;
+                    font-size: calc(11px + (13 - 11) * ((100vw - 768px) / (1920 - 769)));
+                    align-items: center;
+
+                    @include max_devices(414) {
+                        grid-template-columns: 23rem 1fr 1fr 1fr;
+                        font-size: 11px;
+                    }
+
+                    p {
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            @include max_devices(414) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        background: #2d3648;
+                    }
+                }
+            }
+            .col2 {
+                width: 25rem;
+
+                @include max_devices(768) {
+                    width: 100%;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: -1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: url(../images/bg-border3.png);
+                    @include background-img(center, contain);
+                    @include box(25rem, 52.3rem);
+                    z-index: -1;
+                    pointer-events: none;
+
+                    @include max_devices(768) {
+                        display: none;
+                    }
+                }
+
+                .list-menu {
+                    @include max_devices(414) {
+                        flex-flow: wrap;
+                        justify-content: center;
+                    }
+                    .btn {
+                        border-bottom: 0.1rem solid #77879d;
+                        font-size: calc(10px + (15 - 10) * ((100vw - 768px) / (1920 - 769)));
+
+                        &:not(:first-child) {
+                            margin-bottom: 1rem;
+                            @include max_devices(768) {
+                                margin-bottom: unset;
+                            }
+                        }
+
+                        &:hover {
+                            color: #f1dbb2;
+                        }
+
+                        @include max_devices(768) {
+                            background: url(../images/bg-button-type13.png);
+                            @include background-img(center, 100% 100%);
+                            @include box(18.3rem, 4.1rem);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            font-size: 1.4rem;
+                            text-align: center;
+                            text-align-last: center;
+                            &:hover {
+                                background: url(../images/bg-button-type5.png);
+                                @include background-img(center, 100% 100%);
+                            }
+                        }
+                        @include max_devices(414) {
+                            width: 31.3rem;
+                            height: 7.1rem;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

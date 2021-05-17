@@ -1,0 +1,23 @@
+.footer {
+    margin-top: 17rem;
+    background-color: black;
+
+    @include max_devices(768) {
+        margin-top: 10rem;
+    }
+
+    .logo {
+        @include box(20.6rem, 5.3rem);
+    }
+
+    .logo2 {
+        @include box(30.8rem, 5.1rem);
+    }
+
+    a,
+    div {
+        @include max_devices(768) {
+            font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (768 - 320)));
+        }
+    }
+}

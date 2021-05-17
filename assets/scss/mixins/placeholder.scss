@@ -1,0 +1,17 @@
+/// @example placeholder { color: white}
+/// @content Dùng để thêm css cho placeholder
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

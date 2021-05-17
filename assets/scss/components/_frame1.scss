@@ -1,0 +1,84 @@
+.frame1 {
+    margin-top: 15.3rem;
+    .col {
+        width: 67.7rem;
+        @include max_devices(768) {
+            width: 100%;
+        }
+    }
+    .slogan {
+        @include box(67.9rem, 25.4rem);
+
+        @include max_devices(768) {
+            margin-top: 50.8rem;
+        }
+    }
+    .time {
+        background: url(../images/bg-time.png);
+        @include background-img(center, contain);
+        @include box(48rem, 4.4rem);
+        font-size: calc(11px + (22 - 11) * ((100vw - 768px) / (1920 - 769)));
+
+        @include max_devices(768) {
+            font-size: 2.2rem;
+        }
+    }
+    .video {
+        @include box(10.4rem, 9.3rem);
+        right: 1.8rem;
+        top: -3rem;
+    }
+
+    .group-btn {
+        @include box(42.9rem, 13.8rem);
+
+        @include max_devices(768) {
+            width: 46.8rem;
+            height: 11.5rem;
+        }
+        .col-1 {
+            transition: 0.2s all ease;
+            @include box(17.5rem, 13.8rem);
+            position: relative;
+
+            @include max_devices(768) {
+                @include box(22.9rem, 11.5rem);
+            }
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+
+            &.taigame {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: url(../images/md-btn-taigame.png);
+                    @include background-img(center, contain);
+                    @include box(23.6rem, 14.3rem);
+                }
+            }
+        }
+
+        .col-2 {
+            .btn {
+                background: url(../images/bg-button-type1.png);
+                @include background-img(center, contain);
+                @include box(24.6rem, 4.3rem);
+                font-size: calc(11px + (14 - 11) * ((100vw - 768px) / (1920 - 769)));
+                transition: 0.3s all ease;
+
+                &:not(:last-child) {
+                    margin-bottom: 0.3rem;
+                }
+
+                &:hover {
+                    filter: brightness(1.2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import "app.scss";
+
+@import "generic/reset", "generic/sanitize";
+
+@import "base/fonts", "base/typo";
+
+html {
+  font-size: 0.521vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 100%;
+
+  @media only screen and (min-width: 1441px) and (max-width: 1600px) {
+    font-size: 0.560833vw;
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 1.3020833333vw;
+  }
+  @media only screen and (min-width: 481px) and (max-width: 568px) {
+  }
+  @media only screen and (min-width: 414px) and (max-width: 480px) {
+  }
+  @media only screen and (min-width: 375px) and (max-width: 413px) {
+  }
+  @media only screen and (min-width: 361px) and (max-width: 374px) {
+  }
+  @media only screen and (min-width: 320px) and (max-width: 360px) {
+  }
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  text-rendering: optimizeLegibility;
+  background-color: $color-base-background;
+  color: $color-base-text;
+  max-width: 1920px;
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-scroll;
+    border-radius: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-bg-scrol;
+    border-radius: 12px;
+  }
+
+  @include max_devices(768) {
+    font-size: $md-base-font-size;
+    color: black;
+  }
+
+  @include max_devices(414) {
+    font-size: $sm-base-font-size;
+  }
+}
+
+.container {
+  position: relative;
+  width: 123rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include max_devices(768) {
+    width: 100%;
+  }
+}
+
+#wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@import "atom/colors-classes", "atom/debugger", "atom/helper-float", "atom/helper-margin", "atom/helper-padding",
+  "atom/helper-position", "atom/helper-text", "atom/helper-validator", "atom/helper-display", "atom/helper-box",
+  "atom/helper-visibility";
+
+@import "components/button";
+@import "components/title";
+/* PLOP_COMPONENTS_IMPORT */

@@ -1,0 +1,37 @@
+.popup {
+    .modal-form {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100vh;
+    }
+
+    .bg-modal {
+        min-height: 100vh;
+        background-color: #0000002e;
+    }
+    .modal-main {
+        width: 73.2rem;
+        min-height: 41.4rem;
+        height: auto;
+        background-color: #e8e2d9;
+
+        &:before {
+            content: "";
+            pointer-events: none;
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../images/bg-modal.png);
+            @include background-img(center, contain);
+            @include box(100%, 6.5rem);
+        }
+    }
+    .modal-close {
+        right: -6rem;
+    }
+    .popup-title {
+        @include box(31rem, 5.6rem);
+        margin-top: 0.5rem;
+        font-size: 2.4rem;
+    }
+}
