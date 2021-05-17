@@ -1,0 +1,139 @@
+.modal-form {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100vh; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	z-index: 999;
+}
+.modal-show {
+	display: block;
+}
+/* Modal Content */
+.modal-main {
+	margin: auto;
+	position: relative;
+	top: 13rem;
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+/* The Close Button */
+.modal-close {
+	cursor: pointer;
+	display: block;
+    @include box(42px);
+	@include box(4.2rem);
+	position: absolute;
+	right: -4.4rem;
+	top: 1.3rem;
+	z-index: 20;
+	@include between_devices(319px, 1000px) {
+        @include box(620px,60px);
+		width: 6.2rem;
+		height: 6rem;
+		right: -6.4rem;
+		top: 1.5rem;
+	}
+	@include max-devices(480) {
+		width: 5rem;
+		height: 5.8rem;
+		position: absolute;
+		right: -3.2rem;
+		top: 3.3rem;
+	}
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+#popup-noti {
+	.modal-main {
+        @include box(797px,472px);
+		@include box(79.7rem, 47.2rem);
+		position: relative;
+        background-color:red;
+
+		@include between_devices(319px, 1000px) {
+			width: 112.6rem;
+			height: 66.6rem;
+		}
+		@include max-devices(480) {
+			width: 153.7rem;
+			height: 93.2rem;
+			margin: 81rem auto;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: url(../images/bg.png);
+			@include background-img(top left, contain);
+			@include box(79.7rem, 47.2rem);
+
+			@include between_devices(319px, 1000px) {
+				width: 112.6rem;
+				height: 66.6rem;
+			}
+			@include max-devices(480) {
+				width: 153.7rem;
+				height: 93.2rem;
+			}
+		}
+	}
+	.popup-container {
+		width: 79.7rem;
+		height: 47.2rem;
+		position: relative;
+		z-index: 2;
+
+		@include between_devices(319px, 1000px) {
+			width: 112.6rem;
+			height: 66.6rem;
+			z-index: 2;
+		}
+		@include max-devices(480) {
+			width: 153.7rem;
+			height: 93.2rem;
+		}
+	}
+	.popup-title {
+		padding: 5.5rem 0 3.2rem;
+		font-size: 3.6rem;
+
+		@include between_devices(319px, 1000px) {
+			padding: 8.5rem 0 6.2rem;
+			font-size: 4.6rem;
+		}
+
+		@include max-devices(480) {
+			padding: 9.5rem 0 6.2rem;
+			font-size: 7.6rem;
+		}
+	}
+	.popup-text {
+		font-size: 1.8rem;
+		padding: 1.6rem 0 2rem;
+
+		@include between_devices(319px, 1000px) {
+			font-size: 3.2rem;
+			padding: 3.6rem 0 3rem;
+		}
+
+		@include max-devices(480) {
+			font-size: 6.2rem;
+			padding: 5.6rem 0 7rem;
+		}
+	}
+}
