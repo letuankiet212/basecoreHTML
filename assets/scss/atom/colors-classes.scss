@@ -12,13 +12,18 @@
       color: $color;
     }
 
-    .background-#{$name} {
+    .bg-#{$name} {
       background-color: $color;
     }
 
     .placeholder-#{$name} {
       --tw-placeholder-opacity: 1;
       color: $color;
+    }
+
+    .border-#{$name} {
+      border-color: $color;
+      border-style: solid;
     }
   }
 }
