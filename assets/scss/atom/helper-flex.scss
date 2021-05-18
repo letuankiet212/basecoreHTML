@@ -1,0 +1,177 @@
+@if $use-helper-flex-styles == true {
+  .flex {
+    display: flex;
+  }
+
+  .f-1 {
+    flex: 1 1 0%;
+  }
+
+  .f-col {
+    flex-flow: column;
+  }
+
+  .f-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .f-row {
+    flex-flow: row;
+  }
+
+  .f-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+
+  .f-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .f-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .j-start {
+    justify-content: flex-start;
+  }
+
+  .j-end {
+    justify-content: flex-end;
+  }
+
+  .j-center {
+    justify-content: center;
+  }
+
+  .j-bettween {
+    justify-content: space-between;
+  }
+
+  .j-around {
+    justify-content: space-around;
+  }
+
+  .j-evenly {
+    justify-content: space-evenly;
+  }
+
+  .a-center {
+    align-items: center;
+  }
+
+  .a-start {
+    align-items: flex-start;
+  }
+
+  .a-end {
+    align-items: flex-end;
+  }
+  .a-between {
+    align-items: space-between;
+  }
+  .a-around {
+    align-items: space-around;
+  }
+  .a-evenly {
+    align-items: space-evenly;
+  }
+
+  @for $i from 0 through 12 {
+    .order-#{$i} {
+      order: #{$i};
+    }
+  }
+
+  @include max_devices(768) {
+    .md\:flex {
+      display: flex;
+    }
+
+    .md\:f-1 {
+      flex: 1 1 0%;
+    }
+
+    .md\:f-col {
+      flex-flow: column;
+    }
+
+    .md\:f-col-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .md\:f-row {
+      flex-flow: row;
+    }
+
+    .md\:f-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .md\:f-wrap {
+      flex-wrap: wrap;
+    }
+
+    .md\:f-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    .md\:f-nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .md\:j-start {
+      justify-content: flex-start;
+    }
+
+    .md\:j-end {
+      justify-content: flex-end;
+    }
+
+    .md\:j-center {
+      justify-content: center;
+    }
+
+    .md\:j-bettween {
+      justify-content: space-between;
+    }
+
+    .md\:j-around {
+      justify-content: space-around;
+    }
+
+    .md\:j-evenly {
+      justify-content: space-evenly;
+    }
+
+    .md\:a-center {
+      align-items: center;
+    }
+
+    .md\:a-start {
+      align-items: flex-start;
+    }
+
+    .md\:a-end {
+      align-items: flex-end;
+    }
+    .md\:a-between {
+      align-items: space-between;
+    }
+    .md\:a-around {
+      align-items: space-around;
+    }
+    .md\:a-evenly {
+      align-items: space-evenly;
+    }
+
+    @for $i from 0 through 12 {
+      .md\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+}

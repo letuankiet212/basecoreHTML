@@ -15,5 +15,10 @@
     .background-#{$name} {
       background-color: $color;
     }
+
+    .placeholder-#{$name} {
+      --tw-placeholder-opacity: 1;
+      color: $color;
+    }
   }
 }

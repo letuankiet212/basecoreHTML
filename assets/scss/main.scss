@@ -64,7 +64,7 @@ body {
 
 .container {
   position: relative;
-  width: 123rem;
+  width: 102.4rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 
@@ -81,10 +81,13 @@ body {
   width: 100%;
 }
 
-@import "atom/colors-classes", "atom/debugger", "atom/helper-float", "atom/helper-margin", "atom/helper-padding",
-  "atom/helper-position", "atom/helper-text", "atom/helper-validator", "atom/helper-display", "atom/helper-box",
-  "atom/helper-visibility";
+@import "atom/colors-classes", "atom/debugger", "atom/helper-float",
+  "atom/helper-margin", "atom/helper-padding", "atom/helper-position",
+  "atom/helper-text", "atom/helper-validator", "atom/helper-display",
+  "atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
+  "atom/helper-border-radius.scss";
 
 @import "components/button";
 @import "components/title";
+@import "components/popup";
 /* PLOP_COMPONENTS_IMPORT */

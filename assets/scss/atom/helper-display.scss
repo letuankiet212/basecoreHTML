@@ -5,71 +5,64 @@
 //
 
 @if $use-helper-display-styles == true {
-    .block {
-        display: block;
+  .block {
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .a-center {
+    align-items: center;
+  }
+
+  .j-center {
+    justify-content: center;
+  }
+  .j-space-between {
+    justify-content: space-between;
+  }
+
+  .j-space-around {
+    justify-content: space-around;
+  }
+
+  .j-start {
+    justify-content: flex-start;
+  }
+
+  @media screen and(max-width:768px) {
+    .md\:block {
+      display: block;
     }
 
-    .flex {
-        display: flex;
+    .md\:flex {
+      display: flex;
     }
-    .a-center {
-        align-items: center;
-    }
-
-    .j-center {
-        justify-content: center;
-    }
-    .j-space-between {
-        justify-content: space-between;
+    .md\:a-center {
+      align-items: center;
     }
 
-    .j-space-around {
-        justify-content: space-around;
+    .md\:j-center {
+      justify-content: center;
+    }
+    .md\:j-space-between {
+      justify-content: space-between;
     }
 
-    .j-start {
-        justify-content: flex-start;
+    .md\:j-space-around {
+      justify-content: space-around;
+    }
+    .md\:j-start {
+      justify-content: flex-start;
+    }
+    .md\:flex-column {
+      flex-flow: column;
     }
 
-    .flex-column {
-        flex-flow: column;
+    .md\:grid {
+      display: grid;
     }
-
-    .grid {
-        display: grid;
-    }
-
-    @media screen and(max-width:768px) {
-        .md\:block {
-            display: block;
-        }
-
-        .md\:flex {
-            display: flex;
-        }
-        .md\:a-center {
-            align-items: center;
-        }
-
-        .md\:j-center {
-            justify-content: center;
-        }
-        .md\:j-space-between {
-            justify-content: space-between;
-        }
-
-        .md\:j-space-around {
-            justify-content: space-around;
-        }
-        .md\:j-start {
-            justify-content: flex-start;
-        }
-        .md\:flex-column {
-            flex-flow: column;
-        }
-
-        .md\:grid {
-            display: grid;
-        }
-    }
+  }
 }

@@ -30,11 +30,15 @@ $use-helper-visibility-styles: true;
 // Turn on the HTML Validator
 $use-html-validator: false;
 
+$use-helper-border-styles: true;
+
 $use-helper-clearfix-class: true;
 
 $use-helper-position-styles: true;
 
 $use-helper-display-styles: true;
+//Flex
+$use-helper-flex-styles: false;
 
 $use-helper-box-styles: true;
 //Typo

@@ -40,11 +40,23 @@
     }
 
     &-bold {
-      font-weight: 600;
+      font-weight: bold;
     }
 
-    &-bold {
-      font-weight: bold;
+    &-italic {
+      font-style: italic;
+    }
+
+    &-underline {
+      text-decoration: underline;
+    }
+
+    &-line-through {
+      text-decoration: line-through;
+    }
+
+    &-no-underline {
+      text-decoration: none;
     }
   }
 
@@ -102,6 +114,22 @@
 
       &-bold {
         font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
       }
     }
 
