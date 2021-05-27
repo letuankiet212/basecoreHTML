@@ -3,35 +3,35 @@
     display: flex;
   }
 
-  .f-1 {
+  .flex-1 {
     flex: 1 1 0%;
   }
 
-  .f-col {
+  .flex-col {
     flex-flow: column;
   }
 
-  .f-col-reverse {
+  .flex-col-reverse {
     flex-direction: column-reverse;
   }
 
-  .f-row {
+  .flex-row {
     flex-flow: row;
   }
 
-  .f-row-reverse {
+  .flex-row-reverse {
     flex-direction: row-reverse;
   }
 
-  .f-wrap {
+  .flex-wrap {
     flex-wrap: wrap;
   }
 
-  .f-wrap-reverse {
+  .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 
-  .f-nowrap {
+  .flex-nowrap {
     flex-wrap: nowrap;
   }
 
@@ -47,15 +47,15 @@
     justify-content: center;
   }
 
-  .j-bettween {
+  .j-space-between {
     justify-content: space-between;
   }
 
-  .j-around {
+  .j-space-around {
     justify-content: space-around;
   }
 
-  .j-evenly {
+  .j-space-evenly {
     justify-content: space-evenly;
   }
 
@@ -91,35 +91,35 @@
       display: flex;
     }
 
-    .md\:f-1 {
+    .md\:flex-1 {
       flex: 1 1 0%;
     }
 
-    .md\:f-col {
+    .md\:flex-col {
       flex-flow: column;
     }
 
-    .md\:f-col-reverse {
+    .md\:flex-col-reverse {
       flex-direction: column-reverse;
     }
 
-    .md\:f-row {
+    .md\:flex-row {
       flex-flow: row;
     }
 
-    .md\:f-row-reverse {
+    .md\:flex-row-reverse {
       flex-direction: row-reverse;
     }
 
-    .md\:f-wrap {
+    .md\:flex-wrap {
       flex-wrap: wrap;
     }
 
-    .md\:f-wrap-reverse {
+    .md\:flex-wrap-reverse {
       flex-wrap: wrap-reverse;
     }
 
-    .md\:f-nowrap {
+    .md\:flex-nowrap {
       flex-wrap: nowrap;
     }
 
@@ -135,15 +135,15 @@
       justify-content: center;
     }
 
-    .md\:j-bettween {
+    .md\:j-space-between {
       justify-content: space-between;
     }
 
-    .md\:j-around {
+    .md\:j-space-around {
       justify-content: space-around;
     }
 
-    .md\:j-evenly {
+    .md\:j-space-evenly {
       justify-content: space-evenly;
     }
 

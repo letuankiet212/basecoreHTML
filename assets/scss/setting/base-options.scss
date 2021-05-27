@@ -38,8 +38,10 @@ $use-helper-position-styles: true;
 
 $use-helper-display-styles: true;
 //Flex
-$use-helper-flex-styles: false;
+$use-helper-flex-styles: true;
 
 $use-helper-box-styles: true;
 //Typo
-$use-helper-typo: false;
+$use-helper-typo: true;
+
+$use-helper-wh-styles: true;

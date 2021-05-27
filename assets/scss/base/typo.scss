@@ -1,8 +1,8 @@
 @if $use-helper-typo == true {
   .text {
     font-size: 14px;
-    color: $color_black;
-    font-family: "tahoma", sans-serif;
+    color: $color-base-text;
+    font-family: $base-font-typo;
     position: relative;
     span.content-event-first {
       float: left;
@@ -16,7 +16,7 @@
       color: #6aae9e;
       padding: 4px 0 8px 35px;
       position: relative;
-      font-family: "tahomabold";
+      font-family: $base-font-typo;
       // font-family: "Roboto", sans-serif;
       font-weight: 700;
       &:before {
@@ -37,7 +37,7 @@
       font-weight: bold;
       padding-left: 25px;
       color: #6aae9e;
-      font-family: "tahomabold";
+      font-family: $base-font-typo;
       // font-family: "Roboto", sans-serif;
       font-weight: 700;
       margin-bottom: 10px;
@@ -71,10 +71,10 @@
     }
     p {
       // font-family: 'tahoma';
-      font-family: "tahoma", sans-serif;
+      font-family: $base-font-typo;
       font-weight: 400;
       line-height: 28px;
-      color: $color_black;
+      color: $color-base-text;
       img {
         margin: 15px auto;
         width: 100% !important;
@@ -137,11 +137,11 @@
         &:first-child {
           background: #000;
           td {
-            font-family: "tahomabold";
+            font-family: $base-font-typo;
             // color: $color_text_button_downgame;
             p {
-              font-family: "tahomabold";
-              color: $color_white;
+              font-family: $base-font-typo;
+              color: $color-base-text;
             }
           }
         }
@@ -156,7 +156,7 @@
       legend {
         color: white;
         background: #6aae9e;
-        font-family: "tahomabold";
+        font-family: $base-font-typo;
         // font-family: "Roboto", sans-serif;
         font-weight: 700;
         padding: 0 15px;
@@ -166,7 +166,7 @@
       }
     }
     strong {
-      font-family: "tahomabold";
+      font-family: $base-font-typo;
       // font-family: "Roboto", sans-serif;
       font-weight: 500;
     }
@@ -200,7 +200,7 @@
     tr {
       &:first-child td {
         background-color: #6aae9e !important;
-        color: $color_white;
+        color: $color-base-text;
         font-weight: bold;
         text-align: center;
         padding: 2px;
@@ -209,9 +209,9 @@
         }
       }
       td {
-        border: 1px solid $color_white;
+        border: 1px solid $color-base-text;
         vertical-align: middle;
-        // color: $color_white;
+        // color: $color-base-text;
         font-weight: normal;
         text-align: center;
         padding: 5px 0px;

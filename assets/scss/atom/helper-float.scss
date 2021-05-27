@@ -5,15 +5,13 @@
 //
 
 @if $use-helper-float-styles == true {
-  @media screen and (min-width: 769px) {
-    .float {
-      &-left {
-        float: left;
-      }
+  .float {
+    &-left {
+      float: left;
+    }
 
-      &-right {
-        float: right;
-      }
+    &-right {
+      float: right;
     }
   }
 

@@ -5,27 +5,33 @@
 //
 
 @if $use-helper-box-styles == true {
-        .w100 {
-            width: 100%;
-        }
-        .btn {
-            cursor: pointer;
-        }
-        .h100 {
-            height: 100%;
-        }
-        .active {
-            filter: brightness(1.1);
-        }
+    .w100 {
+        width: 100%;
+    }
+    .btn {
+        cursor: pointer;
+    }
+    .h100 {
+        height: 100%;
+    }
+    .active {
+        filter: brightness(1.1);
+    }
 
-        .received {
-            filter: grayscale(1);
-        }
+    .received {
+        filter: grayscale(1);
+    }
 
-        .pe-none{
-            pointer-events: none;
-        }
+    .pe-none {
+        pointer-events: none;
+    }
 
+    .w-3\.5 {
+        width: 3.5rem;
+    }
+    .h-3\.5 {
+        height: 3.5rem;
+    }
     @media screen and (max-width: 768px) {
         .md\:w100 {
             width: 100%;

@@ -7,12 +7,17 @@
     &-10 {
       border-radius: 1rem;
     }
+    &-full {
+      border-radius: 45rem;
+    }
   }
 
-  $unit: 2;
   @for $i from 1 through 10 {
     .border-#{$i} {
       border-width: #{$i}px;
+    }
+    .border-b-#{$i} {
+      border-bottom-width: #{$i}px;
     }
   }
   @include max_devices(768) {
