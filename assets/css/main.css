@@ -8,8 +8,7 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
-*:after,
-*:before {
+*:after, *:before {
   box-sizing: border-box;
 }
 
@@ -21,13 +20,13 @@ button {
   border-radius: 0;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type=submit],
+input[type=reset],
+input[type=button],
 button {
   -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -59,8 +58,7 @@ a,
 abbr {
   text-decoration: none;
 }
-a:hover,
-a:focus,
+a:hover, a:focus,
 abbr:hover,
 abbr:focus {
   text-decoration: none;
@@ -81,8 +79,8 @@ h6 {
 
 img {
   -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: transparent;
 }
 
@@ -106,22 +104,22 @@ textarea {
   width: 100%;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   width: auto;
   height: auto;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   -webkit-appearance: checkbox;
   -moz-appearance: checkbox;
   appearance: checkbox;
 }
 
-input[type="radio"] {
+input[type=radio] {
   -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
+     -moz-appearance: radio;
+          appearance: radio;
 }
 
 textarea,
@@ -143,14 +141,14 @@ textarea {
   resize: vertical;
 }
 
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-decoration {
   display: none;
 }
 
 button {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: none;
   border: none;
   border-radius: 0;
@@ -161,14 +159,11 @@ button {
   box-shadow: none;
   cursor: not-allowed;
   -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active,
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
@@ -218,16 +213,14 @@ select:-webkit-autofill:active {
  * 6. Breaks words to prevent overflow in all browsers (opinionated).
  */
 html {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 1 */
   line-height: 1.15;
   /* 2 */
   cursor: default;
   /* 3 */
   -moz-tab-size: 4;
-  tab-size: 4;
+       tab-size: 4;
   /* 4 */
   -ms-text-size-adjust: 100%;
   /* 5 */
@@ -289,8 +282,7 @@ nav ul {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono,
-    Liberation Mono, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -312,7 +304,7 @@ a {
 abbr[title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -331,8 +323,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono,
-    Liberation Mono, monospace;
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -457,9 +448,9 @@ button {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -527,8 +518,8 @@ textarea {
 /**
  * Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   padding: 0;
 }
 
@@ -544,7 +535,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -667,7 +658,7 @@ textarea,
 /**
  * Change the cursor on busy elements in all browsers (opinionated).
  */
-[aria-busy="true"] {
+[aria-busy=true] {
   cursor: progress;
 }
 
@@ -691,7 +682,7 @@ textarea,
  * Change the display on visually hidden accessible elements
  * in all browsers (opinionated).
  */
-[aria-hidden="false"][hidden]:not(:focus) {
+[aria-hidden=false][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   display: inherit;
   position: absolute;
@@ -700,9 +691,7 @@ textarea,
 @font-face {
   font-family: "tahoma";
   src: url("../fonts/tahoma.eot");
-  src: url("../fonts/tahoma.eot?#iefix") format("eot"),
-    url("../fonts/tahoma.ttf") format("truetype"),
-    url("../fonts/tahoma.svg") format("svg");
+  src: url("../fonts/tahoma.eot?#iefix") format("eot"), url("../fonts/tahoma.ttf") format("truetype"), url("../fonts/tahoma.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -725,8 +714,7 @@ textarea,
   background: url(../images/bg-item-pagination.png) no-repeat;
   background-position: left top;
 }
-.pagination ul li:hover,
-.pagination ul li.active {
+.pagination ul li:hover, .pagination ul li.active {
   background-position: right top;
 }
 .pagination ul li a {
@@ -738,8 +726,7 @@ textarea,
 .pagination ul li a span {
   visibility: hidden;
 }
-.pagination ul li a.prev i,
-.pagination ul li a.next i {
+.pagination ul li a.prev i, .pagination ul li a.next i {
   position: absolute;
   content: "";
   width: 0.8rem;
@@ -845,9 +832,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-gray-50 {
-  text-shadow: 1px 0 0 #f9fafb, -1px 0 0 #f9fafb, 0 1px 0 #f9fafb,
-    0 -1px 0 #f9fafb, 1px 1px #f9fafb, -1px -1px 0 #f9fafb, 1px -1px 0 #f9fafb,
-    -1px 1px 0 #f9fafb;
+  text-shadow: 1px 0 0 #f9fafb, -1px 0 0 #f9fafb, 0 1px 0 #f9fafb, 0 -1px 0 #f9fafb, 1px 1px #f9fafb, -1px -1px 0 #f9fafb, 1px -1px 0 #f9fafb, -1px 1px 0 #f9fafb;
 }
 
 .hover\:bg-gray-50:hover {
@@ -877,9 +862,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-gray-100 {
-  text-shadow: 1px 0 0 #f3f4f6, -1px 0 0 #f3f4f6, 0 1px 0 #f3f4f6,
-    0 -1px 0 #f3f4f6, 1px 1px #f3f4f6, -1px -1px 0 #f3f4f6, 1px -1px 0 #f3f4f6,
-    -1px 1px 0 #f3f4f6;
+  text-shadow: 1px 0 0 #f3f4f6, -1px 0 0 #f3f4f6, 0 1px 0 #f3f4f6, 0 -1px 0 #f3f4f6, 1px 1px #f3f4f6, -1px -1px 0 #f3f4f6, 1px -1px 0 #f3f4f6, -1px 1px 0 #f3f4f6;
 }
 
 .hover\:bg-gray-100:hover {
@@ -909,9 +892,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-gray-400 {
-  text-shadow: 1px 0 0 #6a6f71, -1px 0 0 #6a6f71, 0 1px 0 #6a6f71,
-    0 -1px 0 #6a6f71, 1px 1px #6a6f71, -1px -1px 0 #6a6f71, 1px -1px 0 #6a6f71,
-    -1px 1px 0 #6a6f71;
+  text-shadow: 1px 0 0 #6a6f71, -1px 0 0 #6a6f71, 0 1px 0 #6a6f71, 0 -1px 0 #6a6f71, 1px 1px #6a6f71, -1px -1px 0 #6a6f71, 1px -1px 0 #6a6f71, -1px 1px 0 #6a6f71;
 }
 
 .hover\:bg-gray-400:hover {
@@ -941,9 +922,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-gray-900 {
-  text-shadow: 1px 0 0 #25303e, -1px 0 0 #25303e, 0 1px 0 #25303e,
-    0 -1px 0 #25303e, 1px 1px #25303e, -1px -1px 0 #25303e, 1px -1px 0 #25303e,
-    -1px 1px 0 #25303e;
+  text-shadow: 1px 0 0 #25303e, -1px 0 0 #25303e, 0 1px 0 #25303e, 0 -1px 0 #25303e, 1px 1px #25303e, -1px -1px 0 #25303e, 1px -1px 0 #25303e, -1px 1px 0 #25303e;
 }
 
 .hover\:bg-gray-900:hover {
@@ -973,8 +952,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-black {
-  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black,
-    1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 .hover\:bg-black:hover {
@@ -1004,9 +982,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-red-400 {
-  text-shadow: 1px 0 0 #bf2c0b, -1px 0 0 #bf2c0b, 0 1px 0 #bf2c0b,
-    0 -1px 0 #bf2c0b, 1px 1px #bf2c0b, -1px -1px 0 #bf2c0b, 1px -1px 0 #bf2c0b,
-    -1px 1px 0 #bf2c0b;
+  text-shadow: 1px 0 0 #bf2c0b, -1px 0 0 #bf2c0b, 0 1px 0 #bf2c0b, 0 -1px 0 #bf2c0b, 1px 1px #bf2c0b, -1px -1px 0 #bf2c0b, 1px -1px 0 #bf2c0b, -1px 1px 0 #bf2c0b;
 }
 
 .hover\:bg-red-400:hover {
@@ -1036,9 +1012,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-red-900 {
-  text-shadow: 1px 0 0 #9e0b0f, -1px 0 0 #9e0b0f, 0 1px 0 #9e0b0f,
-    0 -1px 0 #9e0b0f, 1px 1px #9e0b0f, -1px -1px 0 #9e0b0f, 1px -1px 0 #9e0b0f,
-    -1px 1px 0 #9e0b0f;
+  text-shadow: 1px 0 0 #9e0b0f, -1px 0 0 #9e0b0f, 0 1px 0 #9e0b0f, 0 -1px 0 #9e0b0f, 1px 1px #9e0b0f, -1px -1px 0 #9e0b0f, 1px -1px 0 #9e0b0f, -1px 1px 0 #9e0b0f;
 }
 
 .hover\:bg-red-900:hover {
@@ -1068,9 +1042,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-50 {
-  text-shadow: 1px 0 0 #f6f6f4, -1px 0 0 #f6f6f4, 0 1px 0 #f6f6f4,
-    0 -1px 0 #f6f6f4, 1px 1px #f6f6f4, -1px -1px 0 #f6f6f4, 1px -1px 0 #f6f6f4,
-    -1px 1px 0 #f6f6f4;
+  text-shadow: 1px 0 0 #f6f6f4, -1px 0 0 #f6f6f4, 0 1px 0 #f6f6f4, 0 -1px 0 #f6f6f4, 1px 1px #f6f6f4, -1px -1px 0 #f6f6f4, 1px -1px 0 #f6f6f4, -1px 1px 0 #f6f6f4;
 }
 
 .hover\:bg-yellow-50:hover {
@@ -1100,9 +1072,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-100 {
-  text-shadow: 1px 0 0 #fff4de, -1px 0 0 #fff4de, 0 1px 0 #fff4de,
-    0 -1px 0 #fff4de, 1px 1px #fff4de, -1px -1px 0 #fff4de, 1px -1px 0 #fff4de,
-    -1px 1px 0 #fff4de;
+  text-shadow: 1px 0 0 #fff4de, -1px 0 0 #fff4de, 0 1px 0 #fff4de, 0 -1px 0 #fff4de, 1px 1px #fff4de, -1px -1px 0 #fff4de, 1px -1px 0 #fff4de, -1px 1px 0 #fff4de;
 }
 
 .hover\:bg-yellow-100:hover {
@@ -1132,9 +1102,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-400 {
-  text-shadow: 1px 0 0 #fef205, -1px 0 0 #fef205, 0 1px 0 #fef205,
-    0 -1px 0 #fef205, 1px 1px #fef205, -1px -1px 0 #fef205, 1px -1px 0 #fef205,
-    -1px 1px 0 #fef205;
+  text-shadow: 1px 0 0 #fef205, -1px 0 0 #fef205, 0 1px 0 #fef205, 0 -1px 0 #fef205, 1px 1px #fef205, -1px -1px 0 #fef205, 1px -1px 0 #fef205, -1px 1px 0 #fef205;
 }
 
 .hover\:bg-yellow-400:hover {
@@ -1164,9 +1132,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-500 {
-  text-shadow: 1px 0 0 #f7921b, -1px 0 0 #f7921b, 0 1px 0 #f7921b,
-    0 -1px 0 #f7921b, 1px 1px #f7921b, -1px -1px 0 #f7921b, 1px -1px 0 #f7921b,
-    -1px 1px 0 #f7921b;
+  text-shadow: 1px 0 0 #f7921b, -1px 0 0 #f7921b, 0 1px 0 #f7921b, 0 -1px 0 #f7921b, 1px 1px #f7921b, -1px -1px 0 #f7921b, 1px -1px 0 #f7921b, -1px 1px 0 #f7921b;
 }
 
 .hover\:bg-yellow-500:hover {
@@ -1196,9 +1162,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-600 {
-  text-shadow: 1px 0 0 #da9e01, -1px 0 0 #da9e01, 0 1px 0 #da9e01,
-    0 -1px 0 #da9e01, 1px 1px #da9e01, -1px -1px 0 #da9e01, 1px -1px 0 #da9e01,
-    -1px 1px 0 #da9e01;
+  text-shadow: 1px 0 0 #da9e01, -1px 0 0 #da9e01, 0 1px 0 #da9e01, 0 -1px 0 #da9e01, 1px 1px #da9e01, -1px -1px 0 #da9e01, 1px -1px 0 #da9e01, -1px 1px 0 #da9e01;
 }
 
 .hover\:bg-yellow-600:hover {
@@ -1228,9 +1192,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-yellow-700 {
-  text-shadow: 1px 0 0 #734f2f, -1px 0 0 #734f2f, 0 1px 0 #734f2f,
-    0 -1px 0 #734f2f, 1px 1px #734f2f, -1px -1px 0 #734f2f, 1px -1px 0 #734f2f,
-    -1px 1px 0 #734f2f;
+  text-shadow: 1px 0 0 #734f2f, -1px 0 0 #734f2f, 0 1px 0 #734f2f, 0 -1px 0 #734f2f, 1px 1px #734f2f, -1px -1px 0 #734f2f, 1px -1px 0 #734f2f, -1px 1px 0 #734f2f;
 }
 
 .hover\:bg-yellow-700:hover {
@@ -1260,9 +1222,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-green-600 {
-  text-shadow: 1px 0 0 #007e70, -1px 0 0 #007e70, 0 1px 0 #007e70,
-    0 -1px 0 #007e70, 1px 1px #007e70, -1px -1px 0 #007e70, 1px -1px 0 #007e70,
-    -1px 1px 0 #007e70;
+  text-shadow: 1px 0 0 #007e70, -1px 0 0 #007e70, 0 1px 0 #007e70, 0 -1px 0 #007e70, 1px 1px #007e70, -1px -1px 0 #007e70, 1px -1px 0 #007e70, -1px 1px 0 #007e70;
 }
 
 .hover\:bg-green-600:hover {
@@ -1292,9 +1252,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-blue-300 {
-  text-shadow: 1px 0 0 #02ffce, -1px 0 0 #02ffce, 0 1px 0 #02ffce,
-    0 -1px 0 #02ffce, 1px 1px #02ffce, -1px -1px 0 #02ffce, 1px -1px 0 #02ffce,
-    -1px 1px 0 #02ffce;
+  text-shadow: 1px 0 0 #02ffce, -1px 0 0 #02ffce, 0 1px 0 #02ffce, 0 -1px 0 #02ffce, 1px 1px #02ffce, -1px -1px 0 #02ffce, 1px -1px 0 #02ffce, -1px 1px 0 #02ffce;
 }
 
 .hover\:bg-blue-300:hover {
@@ -1324,8 +1282,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-white {
-  text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white,
-    1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+  text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
 }
 
 .hover\:bg-white:hover {
@@ -1355,9 +1312,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text-shadow-transparent {
-  text-shadow: 1px 0 0 transparent, -1px 0 0 transparent, 0 1px 0 transparent,
-    0 -1px 0 transparent, 1px 1px transparent, -1px -1px 0 transparent,
-    1px -1px 0 transparent, -1px 1px 0 transparent;
+  text-shadow: 1px 0 0 transparent, -1px 0 0 transparent, 0 1px 0 transparent, 0 -1px 0 transparent, 1px 1px transparent, -1px -1px 0 transparent, 1px -1px 0 transparent, -1px 1px 0 transparent;
 }
 
 .hover\:bg-transparent:hover {
@@ -1383,8 +1338,7 @@ body::-webkit-scrollbar-thumb {
     float: right;
   }
 }
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }

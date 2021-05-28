@@ -65,8 +65,10 @@
     }
     ul {
       margin-left: 25px;
+      list-style: inherit;
       li {
         line-height: 28px;
+        list-style-type: inherit;
       }
     }
     p {
