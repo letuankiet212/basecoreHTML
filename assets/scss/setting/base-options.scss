@@ -10,7 +10,7 @@ $use-color-classes: true;
 $use-sass-debugger: false;
 
 // Use Images postions classes
-$use-image-position-classes: true;
+$use-image-position-classes: false;
 
 // Include float Styles
 $use-helper-float-styles: true;
@@ -25,7 +25,7 @@ $use-helper-padding-styles: true;
 $use-helper-text-styles: true;
 
 // Include Visibility Styles
-$use-helper-visibility-styles: true;
+$use-helper-visibility-styles: false;
 
 // Turn on the HTML Validator
 $use-html-validator: false;
@@ -42,6 +42,8 @@ $use-helper-flex-styles: true;
 
 $use-helper-box-styles: true;
 //Typo
-$use-helper-typo: true;
+$use-helper-typo: false;
 
 $use-helper-wh-styles: true;
+
+$use-helper-font-size-styles: true;

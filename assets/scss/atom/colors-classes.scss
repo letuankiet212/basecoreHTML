@@ -32,16 +32,12 @@
         -1px 1px 0 $color;
     }
 
-    .hover\:bg-#{$name} {
-      &:hover {
-        background-color: $color;
-      }
+    .hover\:bg-#{$name}:hover {
+      background-color: $color;
     }
 
-    .hover\:text-#{$name} {
-      &:hover {
-        color: $color;
-      }
+    .hover\:text-#{$name}:hover {
+      color: $color;
     }
   }
 }

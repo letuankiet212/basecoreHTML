@@ -13,15 +13,9 @@
     display: grid;
   }
 
-
-
   @media screen and(max-width:768px) {
     .md\:block {
       display: block;
-    }
-
-    .md\:flex {
-      display: flex;
     }
 
     .md\:grid {

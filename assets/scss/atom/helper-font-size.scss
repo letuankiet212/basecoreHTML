@@ -1,0 +1,212 @@
+$text-9xl: 12.8rem;
+$text-8xl: 9.6rem;
+$text-7xl: 7.2rem;
+$text-6xl: 6rem;
+$text-5xl: 4.8rem;
+$text-4xl: 3.6rem;
+$text-3xl: 3rem;
+$text-2xl: 2.4rem;
+$text-xl: 2rem;
+$text-lg: 1.8rem;
+$text-base: 1.6rem;
+$text-sm: 1.4rem;
+$text-xs: 1.2rem;
+@if $use-helper-font-size-styles == true {
+  .text {
+    &-9xl {
+      font-size: $text-9xl;
+    }
+    &-8xl {
+      font-size: $text-8xl;
+    }
+    &-7xl {
+      font-size: $text-7xl;
+    }
+
+    &-6xl {
+      font-size: $text-6xl;
+    }
+
+    &-5xl {
+      font-size: $text-5xl;
+    }
+
+    &-4xl {
+      font-size: $text-4xl;
+    }
+
+    &-3xl {
+      font-size: $text-3xl;
+    }
+
+    &-2xl {
+      font-size: $text-2xl;
+    }
+
+    &-xs {
+      font-size: $text-xs;
+    }
+    &-sm {
+      font-size: $text-sm;
+    }
+    &-base {
+      font-size: $text-base;
+    }
+    &-lg {
+      font-size: $text-lg;
+    }
+    &-xl {
+      font-size: $text-xl;
+    }
+  }
+
+  @include max_devices(1024) {
+    .lg\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
+
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+
+  @include max_devices(768) {
+    .md\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
+
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+
+  @include max_devices(568) {
+    .sm\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
+
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+}
