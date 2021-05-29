@@ -1,16 +1,4 @@
-$text-9xl: 12.8rem;
-$text-8xl: 9.6rem;
-$text-7xl: 7.2rem;
-$text-6xl: 6rem;
-$text-5xl: 4.8rem;
-$text-4xl: 3.6rem;
-$text-3xl: 3rem;
-$text-2xl: 2.4rem;
-$text-xl: 2rem;
-$text-lg: 1.8rem;
-$text-base: 1.6rem;
-$text-sm: 1.4rem;
-$text-xs: 1.2rem;
+
 @if $use-helper-font-size-styles == true {
   .text {
     &-9xl {

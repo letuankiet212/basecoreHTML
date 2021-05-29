@@ -6,10 +6,12 @@
 
 @import "optional/fonts/fonts.scss";
 html {
-  font-size: 0.521vw;
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
+  @include max_devices(1920) {
+    font-size: 0.521vw;
+  }
 
   @media only screen and (min-width: 1441px) and (max-width: 1600px) {
     font-size: 0.560833vw;
@@ -46,19 +48,16 @@ body {
   }
   &::-webkit-scrollbar-track {
     background: $color-scroll;
-    border-radius: 12px;
   }
   &::-webkit-scrollbar-thumb {
     background: $color-bg-scrol;
-    border-radius: 12px;
   }
 
   @include max_devices(768) {
     font-size: $md-base-font-size;
-    color: black;
   }
 
-  @include max_devices(414) {
+  @include max_devices(568) {
     font-size: $sm-base-font-size;
   }
 }
@@ -87,7 +86,7 @@ body {
   "atom/helper-text", "atom/helper-validator", "atom/helper-display",
   "atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
   "atom/helper-border-radius.scss", "atom/helper-wh.scss",
-  "atom/helper-font-size.scss";
+  "atom/helper-font-size.scss", "atom/helper-object-fit.scss";
 
 @import "components/button";
 @import "components/title";

@@ -1,14 +1,136 @@
 //
 // Margin Helper Classes
 /// @require {Boolean} $use-helper-margin-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options - All base options
+/// @see  /Settings/base-omtions.scss - All base omtions - All base omtions
 //
 
 @if $use-helper-margin-styles == true {
-  .m-auto {
-    margin-left: auto;
-    margin-right: auto;
+  .m {
+    &-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-px {
+      margin: 1px;
+    }
+    &-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &-2\.5 {
+      margin: 2.5rem;
+    }
+    &-3\.5 {
+      margin: 3.5rem;
+    }
+    &t-px {
+      margin: 1px;
+    }
+    &t-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &t-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &t-2\.5 {
+      margin: 2.5rem;
+    }
+    &t-3\.5 {
+      margin: 3.5rem;
+    }
+    &l-px {
+      margin: 1px;
+    }
+    &l-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &l-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &l-2\.5 {
+      margin: 2.5rem;
+    }
+    &l-3\.5 {
+      margin: 3.5rem;
+    }
+    &r-px {
+      margin: 1px;
+    }
+    &r-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &r-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &r-2\.5 {
+      margin: 2.5rem;
+    }
+    &r-3\.5 {
+      margin: 3.5rem;
+    }
+    &b-px {
+      margin: 1px;
+    }
+    &b-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &b-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &b-2\.5 {
+      margin: 2.5rem;
+    }
+    &b-3\.5 {
+      margin: 3.5rem;
+    }
+    &y-px {
+      margin: 1px;
+    }
+    &y-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &y-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &y-2\.5 {
+      margin: 2.5rem;
+    }
+    &y-3\.5 {
+      margin: 3.5rem;
+    }
+    &x-px {
+      margin: 1px;
+    }
+    &x-0\.5 {
+      margin: 0.5rem;
+    }
+
+    &x-1\.5 {
+      margin: 1.5rem;
+    }
+
+    &x-2\.5 {
+      margin: 2.5rem;
+    }
+    &x-3\.5 {
+      margin: 3.5rem;
+    }
   }
+
   @for $i from 0 through 20 {
     .m-#{$i} {
       margin: #{$i}rem;
@@ -25,15 +147,296 @@
     .mb-#{$i} {
       margin-bottom: #{$i}rem;
     }
+    .py-#{$i} {
+      margin-top: #{$i}rem;
+      margin-bottom: #{$i}rem;
+    }
+    .px-#{$i} {
+      margin-left: #{$i}rem;
+      margin-right: #{$i}rem;
+    }
   }
-  @media only screen and (max-width: 768px) {
-    .md\:m-auto {
-      margin-left: auto;
-      margin-right: auto;
+
+  @include max_devices(1024) {
+    .lg\:m {
+      &-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-px {
+        margin: 1px;
+      }
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+      &t-px {
+        margin: 1px;
+      }
+      &t-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin: 2.5rem;
+      }
+      &t-3\.5 {
+        margin: 3.5rem;
+      }
+      &l-px {
+        margin: 1px;
+      }
+      &l-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin: 2.5rem;
+      }
+      &l-3\.5 {
+        margin: 3.5rem;
+      }
+      &r-px {
+        margin: 1px;
+      }
+      &r-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin: 2.5rem;
+      }
+      &r-3\.5 {
+        margin: 3.5rem;
+      }
+      &b-px {
+        margin: 1px;
+      }
+      &b-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin: 2.5rem;
+      }
+      &b-3\.5 {
+        margin: 3.5rem;
+      }
+      &y-px {
+        margin: 1px;
+      }
+      &y-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin: 2.5rem;
+      }
+      &y-3\.5 {
+        margin: 3.5rem;
+      }
+      &x-px {
+        margin: 1px;
+      }
+      &x-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin: 2.5rem;
+      }
+      &x-3\.5 {
+        margin: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through 20 {
+      .lg\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .lg\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .lg\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .lg\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .lg\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+      .lg\:my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+      }
+      .lg\:mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+      }
     }
   }
 
   @media only screen and (max-width: 768px) {
+    .md\:m {
+      &-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-px {
+        margin: 1px;
+      }
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+      &t-px {
+        margin: 1px;
+      }
+      &t-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin: 2.5rem;
+      }
+      &t-3\.5 {
+        margin: 3.5rem;
+      }
+      &l-px {
+        margin: 1px;
+      }
+      &l-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin: 2.5rem;
+      }
+      &l-3\.5 {
+        margin: 3.5rem;
+      }
+      &r-px {
+        margin: 1px;
+      }
+      &r-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin: 2.5rem;
+      }
+      &r-3\.5 {
+        margin: 3.5rem;
+      }
+      &b-px {
+        margin: 1px;
+      }
+      &b-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin: 2.5rem;
+      }
+      &b-3\.5 {
+        margin: 3.5rem;
+      }
+      &y-px {
+        margin: 1px;
+      }
+      &y-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin: 2.5rem;
+      }
+      &y-3\.5 {
+        margin: 3.5rem;
+      }
+      &x-px {
+        margin: 1px;
+      }
+      &x-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin: 2.5rem;
+      }
+      &x-3\.5 {
+        margin: 3.5rem;
+      }
+    }
     @for $i from 0 through 20 {
       .md\:m-#{$i} {
         margin: #{$i}rem;
@@ -49,6 +452,160 @@
       }
       .md\:mb-#{$i} {
         margin-bottom: #{$i}rem;
+      }
+    }
+  }
+
+  @include max_devices(568) {
+    .sm\:m {
+      &-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-px {
+        margin: 1px;
+      }
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+      &t-px {
+        margin: 1px;
+      }
+      &t-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin: 2.5rem;
+      }
+      &t-3\.5 {
+        margin: 3.5rem;
+      }
+      &l-px {
+        margin: 1px;
+      }
+      &l-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin: 2.5rem;
+      }
+      &l-3\.5 {
+        margin: 3.5rem;
+      }
+      &r-px {
+        margin: 1px;
+      }
+      &r-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin: 2.5rem;
+      }
+      &r-3\.5 {
+        margin: 3.5rem;
+      }
+      &b-px {
+        margin: 1px;
+      }
+      &b-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin: 2.5rem;
+      }
+      &b-3\.5 {
+        margin: 3.5rem;
+      }
+      &y-px {
+        margin: 1px;
+      }
+      &y-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin: 2.5rem;
+      }
+      &y-3\.5 {
+        margin: 3.5rem;
+      }
+      &x-px {
+        margin: 1px;
+      }
+      &x-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin: 2.5rem;
+      }
+      &x-3\.5 {
+        margin: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through 20 {
+      .sm\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .sm\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .sm\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .sm\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .sm\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+      .sm\:my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+      }
+      .sm\:mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
       }
     }
   }

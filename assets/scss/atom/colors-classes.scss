@@ -27,9 +27,9 @@
     }
 
     .text-shadow-#{$name} {
-      text-shadow: 1px 0 0 $color, -1px 0 0 $color, 0 1px 0 $color,
-        0 -1px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color,
-        -1px 1px 0 $color;
+      text-shadow: 0.1rem 0 0 $color, -0.1rem 0 0 $color, 0 0.1rem 0 $color,
+        0 -0.1rem 0 $color, 0.1rem 0.1rem $color, -0.1rem -0.1rem 0 $color,
+        0.1rem -0.1rem 0 $color, -0.1rem 0.1rem 0 $color;
     }
 
     .hover\:bg-#{$name}:hover {
