@@ -13,7 +13,7 @@
     display: grid;
   }
 
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:$md) {
     .md\:block {
       display: block;
     }

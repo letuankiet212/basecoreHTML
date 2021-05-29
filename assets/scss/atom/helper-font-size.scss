@@ -48,7 +48,7 @@
     }
   }
 
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:text {
       &-9xl {
         font-size: $text-9xl;
@@ -98,7 +98,7 @@
     }
   }
 
-  @include max_devices(768) {
+  @include max_devices($md) {
     .md\:text {
       &-9xl {
         font-size: $text-9xl;
@@ -148,7 +148,7 @@
     }
   }
 
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:text {
       &-9xl {
         font-size: $text-9xl;

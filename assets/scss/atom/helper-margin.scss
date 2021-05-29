@@ -157,7 +157,7 @@
     }
   }
 
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:m {
       &-auto {
         margin-left: auto;
@@ -311,7 +311,7 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: $md) {
     .md\:m {
       &-auto {
         margin-left: auto;
@@ -456,7 +456,7 @@
     }
   }
 
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:m {
       &-auto {
         margin-left: auto;

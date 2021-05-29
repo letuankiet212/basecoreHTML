@@ -17,7 +17,7 @@
     }
   }
 
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:object {
       &-contain {
         object-fit: contain;
@@ -36,7 +36,7 @@
       }
     }
   }
-  @include max_devices(768) {
+  @include max_devices($md) {
     .md\:object {
       &-contain {
         object-fit: contain;
@@ -55,7 +55,7 @@
       }
     }
   }
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:object {
       &-contain {
         object-fit: contain;

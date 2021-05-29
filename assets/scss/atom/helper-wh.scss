@@ -202,7 +202,7 @@
     }
   }
   // lg  max-devices 1024
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:w {
       &-0 {
         width: 0px;
@@ -405,7 +405,7 @@
     }
   }
   // md  max-devices 768
-  @include max_devices(768) {
+  @include max_devices($md) {
     .md\:w {
       &-0 {
         width: 0px;
@@ -608,7 +608,7 @@
     }
   }
   // sm  max-devices 568
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:w {
       &-0 {
         width: 0px;
@@ -1012,7 +1012,7 @@
     }
   }
   // lg  max-devices 1024
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:h {
       &-0 {
         height: 0px;
@@ -1215,7 +1215,7 @@
     }
   }
   // md  max-devices 768
-  @include max_devices(768) {
+  @include max_devices($md) {
     .md\:h {
       &-0 {
         height: 0px;
@@ -1418,7 +1418,7 @@
     }
   }
   // sm  max-devices 568
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:h {
       &-0 {
         height: 0px;

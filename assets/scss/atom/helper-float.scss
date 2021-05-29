@@ -15,7 +15,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $md) {
     .md\:float {
       &-left {
         float: left;

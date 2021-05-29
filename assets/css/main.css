@@ -1331,7 +1331,7 @@ body::-webkit-scrollbar-thumb {
   float: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
   .md\:float-left {
     float: left;
   }
@@ -2828,7 +2828,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: 20rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768) {
   .md\:m-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5573,7 +5573,7 @@ body::-webkit-scrollbar-thumb {
     padding-right: 20rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768) {
   .md\:p-px {
     padding: 1px;
   }
@@ -7281,7 +7281,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 20;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
   .md\:p-r {
     position: relative;
   }
@@ -7726,44 +7726,44 @@ body::-webkit-scrollbar-thumb {
     z-index: 20;
   }
 }
-.t-left {
+.text-left {
   text-align: left;
 }
-.t-center {
+.text-center {
   text-align: center;
 }
-.t-right {
+.text-right {
   text-align: right;
 }
-.t-just {
+.text-just {
   text-align: justify;
 }
-.t-capitalized {
+.text-capitalized {
   text-transform: capitalize;
 }
-.t-small {
+.text-small {
   font-variant-caps: small-caps;
   font-feature-settings: "smcp";
 }
-.t-upper {
+.text-upper {
   text-transform: uppercase;
 }
-.t-r {
+.text-r {
   font-weight: 400;
 }
-.t-bold {
+.text-bold {
   font-weight: bold;
 }
-.t-italic {
+.text-italic {
   font-style: italic;
 }
-.t-underline {
+.text-underline {
   text-decoration: underline;
 }
-.t-line-through {
+.text-line-through {
   text-decoration: line-through;
 }
-.t-no-underline {
+.text-no-underline {
   text-decoration: none;
 }
 
@@ -7777,48 +7777,48 @@ body::-webkit-scrollbar-thumb {
   vertical-align: top;
 }
 
-@media screen and (max-width: 768px) {
-  .md\:t-left {
+@media screen and (max-width: 768) {
+  .md\:text-left {
     text-align: left;
   }
-  .md\:t-center {
+  .md\:text-center {
     text-align: center;
   }
-  .md\:t-right {
+  .md\:text-right {
     text-align: right;
   }
-  .md\:t-just {
+  .md\:text-just {
     text-align: justify;
   }
-  .md\:t-capitalized {
+  .md\:text-capitalized {
     text-transform: capitalize;
   }
-  .md\:t-small {
+  .md\:text-small {
     font-variant-caps: small-caps;
     font-feature-settings: "smcp";
   }
-  .md\:t-upper {
+  .md\:text-upper {
     text-transform: uppercase;
   }
-  .md\:t-r {
+  .md\:text-r {
     font-weight: 400;
   }
-  .md\:t-bold {
+  .md\:text-bold {
     font-weight: 600;
   }
-  .md\:t-bold {
+  .md\:text-bold {
     font-weight: bold;
   }
-  .md\:t-italic {
+  .md\:text-italic {
     font-style: italic;
   }
-  .md\:t-underline {
+  .md\:text-underline {
     text-decoration: underline;
   }
-  .md\:t-line-through {
+  .md\:text-line-through {
     text-decoration: line-through;
   }
-  .md\:t-no-underline {
+  .md\:text-no-underline {
     text-decoration: none;
   }
 
@@ -7840,7 +7840,7 @@ body::-webkit-scrollbar-thumb {
   display: grid;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
   .md\:block {
     display: block;
   }
@@ -7873,7 +7873,7 @@ body::-webkit-scrollbar-thumb {
   pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .md\:w100 {
     width: 100%;
   }

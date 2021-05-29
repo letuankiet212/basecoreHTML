@@ -5,7 +5,7 @@
 //
 
 @if $use-helper-text-styles == true {
-  .t {
+  .text {
     &-left {
       text-align: left;
     }
@@ -73,8 +73,8 @@
       vertical-align: top;
     }
   }
-  @media screen and (max-width: 768px) {
-    .md\:t {
+  @media screen and (max-width: $md) {
+    .md\:text {
       &-left {
         text-align: left;
       }

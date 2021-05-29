@@ -153,7 +153,7 @@
     }
   }
 
-  @include max_devices(1024) {
+  @include max_devices($lg) {
     .lg\:p {
       &-px {
         padding: 1px;
@@ -303,7 +303,7 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: $md) {
     .md\:p {
       &-px {
         padding: 1px;
@@ -444,7 +444,7 @@
     }
   }
 
-  @include max_devices(568) {
+  @include max_devices($sm) {
     .sm\:p {
       &-px {
         padding: 1px;

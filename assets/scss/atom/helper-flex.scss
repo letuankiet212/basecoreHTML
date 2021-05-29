@@ -86,7 +86,7 @@
     }
   }
 
-  @include max_devices(768) {
+  @include max_devices($md) {
     .md\:flex {
       display: flex;
     }
