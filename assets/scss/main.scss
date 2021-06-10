@@ -4,21 +4,22 @@
 
 @import "base/fonts", "base/typo";
 
-@import "optional/fonts/fonts.scss";
 html {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
+  font-size: 10px;
   @include max_devices(1920) {
     font-size: 0.521vw;
   }
-
   @media only screen and (min-width: 1441px) and (max-width: 1600px) {
-    font-size: 0.560833vw;
+    font-size: 0.6vw;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 0.7vw;
   }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 0.85vw;
   }
   @media only screen and (max-width: 768px) {
     font-size: 1.3020833333vw;
@@ -46,11 +47,14 @@ body {
   &::-webkit-scrollbar {
     width: 0.8rem;
   }
+
   &::-webkit-scrollbar-track {
     background: $color-scroll;
   }
+
   &::-webkit-scrollbar-thumb {
     background: $color-bg-scrol;
+    border-radius: 45rem;
   }
 
   @include max_devices(768) {
@@ -64,12 +68,13 @@ body {
 
 .container {
   position: relative;
-  width: 102.4rem;
+  width: 116.5rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 
   @include max_devices(768) {
     width: 100%;
+    padding: 0 1.7rem;
   }
 }
 
@@ -81,15 +86,42 @@ body {
   width: 100%;
 }
 
-@import "atom/colors-classes", "atom/debugger", "atom/helper-float",
-  "atom/helper-margin", "atom/helper-padding", "atom/helper-position",
-  "atom/helper-text", "atom/helper-validator", "atom/helper-display",
-  "atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
-  "atom/helper-border-radius.scss", "atom/helper-wh.scss",
-  "atom/helper-font-size.scss", "atom/helper-object-fit.scss";
+.slick-prev, .slick-next {
+  background: url(../images/arrow.png);
+  @include background-img(center, 100% 100%);
+  @include box(5.1rem, 9.4rem);
+  left: -4.5rem;
+  z-index: 3;
+  @include max_devices(768) {
+    left: 0;
+  }
 
-@import "components/button";
-@import "components/title";
-@import "components/popup";
-@import "components/bgFrame";
+  &:hover, &:focus {
+    background: url(../images/arrow.png);
+    @include background-img(center, 100% 100%);
+    filter: brightness(1.2);
+  }
+}
+
+.slick-next {
+  left: unset;
+  right: -4.5rem;
+  transform: scaleX(-1) translate(0, -50%);
+
+  @include max_devices(768) {
+    right: 0;
+  }
+}
+
 /* PLOP_COMPONENTS_IMPORT */
+
+@import "atom/colors-classes", "atom/debugger", "atom/helper-float",
+"atom/helper-margin", "atom/helper-padding", "atom/helper-position",
+"atom/helper-text", "atom/helper-validator", "atom/helper-display",
+"atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
+"atom/helper-border-radius.scss", "atom/helper-wh.scss",
+"atom/helper-font-size.scss", "atom/helper-object-fit.scss", 
+"atom/helper-limit-text", 'atom/helper-transition','atom/helper-overflow',
+'atom/helper-line-height','atom/helper-grid.scss';
+
+

@@ -1,9 +1,3 @@
-//
-// Text Helper Classes
-/// @require {Boolean} $use-helper-text-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options - Base Options
-//
-
 @if $use-helper-text-styles == true {
   .text {
     &-left {

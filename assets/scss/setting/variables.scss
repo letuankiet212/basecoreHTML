@@ -1,20 +1,22 @@
-$color-base-background: #1e2426;
-$color-base-text: black;
+$color-base-background: #32231B;
+$color-base-text: white;
 
-$base-font-size: calc(13px + (17 - 13) * ((100vw - 769px) / (1920 - 769)));
+$base-font-size: calc(13px + (16 - 13) * ((100vw - 769px) / (1920 - 769)));
 $md-base-font-size: 2.112rem;
 $sm-base-font-size: 11px;
-$base-font-family: "cafeta";
-$base-font-typo: "tahoma";
+$base-font-family: "gss_pokemon_ui";
+$base-font-typo: "roboto";
+$base-color-typo: "black";
+$secondary-color-typo: #B5B5B5;
 
-$color-scroll: #232a2d;
-$color-bg-scrol: #ffcb00;
+$color-scroll: #B5B5B5;
+$color-bg-scrol: #505050;
 
 $text-9xl: 12.8rem;
 $text-8xl: 9.6rem;
 $text-7xl: 7.2rem;
 $text-6xl: 6rem;
-$text-5xl: 4.8rem;
+$text-5xl: 4.175rem;
 $text-4xl: 3.6rem;
 $text-3xl: 3rem;
 $text-2xl: 2.4rem;
@@ -24,7 +26,6 @@ $text-base: 1.6rem;
 $text-sm: 1.4rem;
 $text-xs: 1.2rem;
 
-// Responsive
 $lg : 1024;
 $md : 768;
 $sm : 568;

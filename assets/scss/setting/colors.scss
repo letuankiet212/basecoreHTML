@@ -1,34 +1,27 @@
-//
-// Colors variables map
-/// @group infinite-map
-/// @access public
-/// @see {Function} color - helper function to get color value
-/// @example background-color: color(brand,dark) @return {Color} // #652d90
-/// @example color: color(default) @return {Color} // #fff
-//
-
 $colors-map: (
-  default: #fff,
-  brand: (),
-  base: (
-    gray-50: #f9fafb,
-    gray-100: #f3f4f6,
-    gray-400: #6a6f71,
-    gray-900: #25303e,
-    black: black,
-    red-400: #bf2c0b,
-    red-900: #9e0b0f,
-    yellow-50: #f6f6f4,
-    yellow-100: #fff4de,
-    yellow-400: #fef205,
-    yellow-500: #f7921b,
-    yellow-600: #da9e01,
-    yellow-700: #734f2f,
-    green-600: #007e70,
-    blue-300: #02ffce,
-    white: white,
-    transparent: transparent,
-  ),
+        default: #fff,
+        brand: (),
+        base: (
+                gray-50: #f9fafb,
+                gray-100: #f3f4f6,
+                gray-400: #6a6f71,
+                gray-900: #25303e,
+                black: black,
+                red-400: #bf2c0b,
+                red-900: #9e0b0f,
+                yellow-50: #fff4de,
+                yellow-100: #E2D09F,
+                yellow-200: #DDC172,
+                yellow-400: #DDC172,
+                yellow-500: #FDB301,
+                yellow-700: #734f2f,
+                yellow-800:#31251F,
+                blue-300: #02ffce,
+                blue-400:#00BDA5,
+                blue: #007e70,
+                purple-400:#8444CD,
+                white: white,
+                transparent: transparent,
+                modal:#0000005c,
+        ),
 );
-
-// Colors variables list

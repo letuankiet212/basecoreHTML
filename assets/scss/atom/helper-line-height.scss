@@ -1,0 +1,221 @@
+@if $use-helper-line-height == true {
+  .leading {
+    &-0\.75 {
+      line-height: 0.075rem;
+    }
+
+    &-1 {
+      line-height: 0.1rem;
+    }
+
+    &-1\.5 {
+      line-height: 0.15rem;
+    }
+
+    &-1\.75 {
+      line-height: 0.175rem;
+    }
+
+    &-2 {
+      line-height: 0.2rem;
+    }
+
+    &-2\.25 {
+      line-height: 0.225rem;
+    }
+
+    &-2\.5 {
+      line-height: 0.25rem;
+    }
+
+    &-none {
+      line-height: 1;
+    }
+
+    &-tight {
+      line-height: 1.25;
+    }
+
+    &-snug {
+      line-height: 1.5;
+    }
+
+    &-normal {
+      line-height: 1.625;
+    }
+
+    &-relaxed {
+      line-height: 1.25;
+    }
+
+    &-loose {
+      line-height: 2;
+    }
+  }
+
+  @include max_devices($lg) {
+    .lg\:leading {
+      &-0\.75 {
+        line-height: 0.075rem;
+      }
+
+      &-1 {
+        line-height: 0.1rem;
+      }
+
+      &-1\.5 {
+        line-height: 0.15rem;
+      }
+
+      &-1\.75 {
+        line-height: 0.175rem;
+      }
+
+      &-2 {
+        line-height: 0.2rem;
+      }
+
+      &-2\.25 {
+        line-height: 0.225rem;
+      }
+
+      &-2\.5 {
+        line-height: 0.25rem;
+      }
+
+      &-none {
+        line-height: 1;
+      }
+
+      &-tight {
+        line-height: 1.25;
+      }
+
+      &-snug {
+        line-height: 1.5;
+      }
+
+      &-normal {
+        line-height: 1.625;
+      }
+
+      &-relaxed {
+        line-height: 1.25;
+      }
+
+      &-loose {
+        line-height: 2;
+      }
+    }
+  }
+  @include max_devices($md) {
+    .md\:leading {
+      &-0\.75 {
+        line-height: 0.075rem;
+      }
+
+      &-1 {
+        line-height: 0.1rem;
+      }
+
+      &-1\.5 {
+        line-height: 0.15rem;
+      }
+
+      &-1\.75 {
+        line-height: 0.175rem;
+      }
+
+      &-2 {
+        line-height: 0.2rem;
+      }
+
+      &-2\.25 {
+        line-height: 0.225rem;
+      }
+
+      &-2\.5 {
+        line-height: 0.25rem;
+      }
+
+      &-none {
+        line-height: 1;
+      }
+
+      &-tight {
+        line-height: 1.25;
+      }
+
+      &-snug {
+        line-height: 1.5;
+      }
+
+      &-normal {
+        line-height: 1.625;
+      }
+
+      &-relaxed {
+        line-height: 1.25;
+      }
+
+      &-loose {
+        line-height: 2;
+      }
+    }
+  }
+  @include max_devices($sm) {
+    .sm\:leading {
+      &-0\.75 {
+        line-height: 0.075rem;
+      }
+
+      &-1 {
+        line-height: 0.1rem;
+      }
+
+      &-1\.5 {
+        line-height: 0.15rem;
+      }
+
+      &-1\.75 {
+        line-height: 0.175rem;
+      }
+
+      &-2 {
+        line-height: 0.2rem;
+      }
+
+      &-2\.25 {
+        line-height: 0.225rem;
+      }
+
+      &-2\.5 {
+        line-height: 0.25rem;
+      }
+
+      &-none {
+        line-height: 1;
+      }
+
+      &-tight {
+        line-height: 1.25;
+      }
+
+      &-snug {
+        line-height: 1.5;
+      }
+
+      &-normal {
+        line-height: 1.625;
+      }
+
+      &-relaxed {
+        line-height: 1.25;
+      }
+
+      &-loose {
+        line-height: 2;
+      }
+    }
+  }
+}

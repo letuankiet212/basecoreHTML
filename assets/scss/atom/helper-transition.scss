@@ -1,0 +1,95 @@
+@if $use-helper-transition == true {
+  .transition {
+    &-none {
+      display: none;
+    }
+
+    &-all {
+      ransition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    &-colors {
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    &-opacity {
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    &-shadow {
+      transition-property: box-shadow;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    &-transform {
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+  }
+
+  .transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .duration{
+    &-75{
+      transition-duration: 75ms;
+    }
+    &-100{
+      transition-duration: 100ms;
+    }
+    &-150{
+      transition-duration: 150ms;
+    }
+    &-200{
+      transition-duration: 200ms;
+    }
+    &-300{
+      transition-duration: 300ms;
+    }
+    &-500{
+      transition-duration: 500ms;
+    }
+    &-700{
+      transition-duration: 700ms;
+    }
+    &-1000{
+      transition-duration: 1000ms;
+    }
+  }
+  .delay{
+    &-75{
+      animation-delay: 75ms;
+    }
+    &-100{
+      animation-delay: 100ms;
+    }
+    &-150{
+      animation-delay: 150ms;
+    }
+    &-200{
+      animation-delay: 200ms;
+    }
+    &-300{
+      animation-delay: 300ms;
+    }
+    &-500{
+      animation-delay: 500ms;
+    }
+    &-700{
+      animation-delay: 700ms;
+    }
+    &-1000{
+      animation-delay: 1000ms;
+    }
+  }
+}

@@ -1,9 +1,3 @@
-//
-// Display Helper Classes
-/// @require {Boolean} $use-helper-box-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options - All base options
-//
-
 @if $use-helper-box-styles == true {
   .w100 {
     width: 100%;

@@ -1,9 +1,3 @@
-//
-// Display Helper Classes
-/// @require {Boolean} $use-helper-display-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options - All base options
-//
-
 @if $use-helper-display-styles == true {
   .block {
     display: block;
@@ -13,7 +7,9 @@
     display: grid;
   }
 
-  @media screen and(max-width:$md) {
+
+
+  @include  max_devices($md){
     .md\:block {
       display: block;
     }
