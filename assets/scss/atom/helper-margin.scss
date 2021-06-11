@@ -1,12 +1,20 @@
 @if $use-helper-margin-styles == true {
+  .mr-auto {
+    margin-right: auto;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
   .m {
     &-auto {
       margin-left: auto;
       margin-right: auto;
     }
+
     &-px {
       margin: 1px;
     }
+
     &-0\.5 {
       margin: 0.5rem;
     }
@@ -18,12 +26,15 @@
     &-2\.5 {
       margin: 2.5rem;
     }
+
     &-3\.5 {
       margin: 3.5rem;
     }
+
     &t-px {
       margin-top: 1px;
     }
+
     &t-0\.5 {
       margin-top: 0.5rem;
     }
@@ -35,12 +46,15 @@
     &t-2\.5 {
       margin-top: 2.5rem;
     }
+
     &t-3\.5 {
       margin-top: 3.5rem;
     }
+
     &l-px {
       margin-left: 1px;
     }
+
     &l-0\.5 {
       margin-left: 0.5rem;
     }
@@ -52,12 +66,15 @@
     &l-2\.5 {
       margin-left: 2.5rem;
     }
+
     &l-3\.5 {
       margin-left: 3.5rem;
     }
+
     &r-px {
       margin-right: 1px;
     }
+
     &r-0\.5 {
       margin-right: 0.5rem;
     }
@@ -69,12 +86,15 @@
     &r-2\.5 {
       margin-right: 2.5rem;
     }
+
     &r-3\.5 {
       margin-right: 3.5rem;
     }
+
     &b-px {
       margin-bottom: 1px;
     }
+
     &b-0\.5 {
       margin-bottom: 0.5rem;
     }
@@ -86,13 +106,16 @@
     &b-2\.5 {
       margin-bottom: 2.5rem;
     }
+
     &b-3\.5 {
       margin-bottom: 3.5rem;
     }
+
     &y-px {
       margin-top: 1px;
       margin-bottom: 1px;
     }
+
     &y-0\.5 {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -107,14 +130,17 @@
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
     }
+
     &y-3\.5 {
       margin-top: 3.5rem;
       margin-bottom: 3.5rem;
     }
+
     &x-px {
       margin-left: 1px;
       margin-right: 1px;
     }
+
     &x-0\.5 {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
@@ -129,6 +155,7 @@
       margin-left: 2.5rem;
       margin-right: 2.5rem;
     }
+
     &x-3\.5 {
       margin-left: 3.5rem;
       margin-right: 3.5rem;
@@ -139,9 +166,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     &-px {
       margin: -1px;
     }
+
     &-0\.5 {
       margin: -0.5rem;
     }
@@ -153,12 +182,15 @@
     &-2\.5 {
       margin: -2.5rem;
     }
+
     &-3\.5 {
       margin: -3.5rem;
     }
+
     &t-px {
       margin-top: -1px;
     }
+
     &t-0\.5 {
       margin-top: -0.5rem;
     }
@@ -170,12 +202,15 @@
     &t-2\.5 {
       margin-top: -2.5rem;
     }
+
     &t-3\.5 {
       margin-top: -3.5rem;
     }
+
     &l-px {
       margin-left: -1px;
     }
+
     &l-0\.5 {
       margin-left: -0.5rem;
     }
@@ -187,12 +222,15 @@
     &l-2\.5 {
       margin-left: -2.5rem;
     }
+
     &l-3\.5 {
       margin-left: -3.5rem;
     }
+
     &r-px {
       margin-right: -1px;
     }
+
     &r-0\.5 {
       margin-right: -0.5rem;
     }
@@ -204,12 +242,15 @@
     &r-2\.5 {
       margin-right: -2.5rem;
     }
+
     &r-3\.5 {
       margin-right: -3.5rem;
     }
+
     &b-px {
       margin-bottom: -1px;
     }
+
     &b-0\.5 {
       margin-bottom: -0.5rem;
     }
@@ -221,13 +262,16 @@
     &b-2\.5 {
       margin-bottom: 2.5rem;
     }
+
     &b-3\.5 {
       margin-bottom: 3.5rem;
     }
+
     &y-px {
       margin-top: 1px;
       margin-bottom: 1px;
     }
+
     &y-0\.5 {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -242,14 +286,17 @@
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
     }
+
     &y-3\.5 {
       margin-top: 3.5rem;
       margin-bottom: 3.5rem;
     }
+
     &x-px {
       margin-left: 1px;
       margin-right: 1px;
     }
+
     &x-0\.5 {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
@@ -264,6 +311,7 @@
       margin-left: 2.5rem;
       margin-right: 2.5rem;
     }
+
     &x-3\.5 {
       margin-left: 3.5rem;
       margin-right: 3.5rem;
@@ -321,14 +369,23 @@
   }
 
   @include max_devices($lg) {
+
+    .lg\:mr-auto {
+      margin-right: auto;
+    }
+    .lg\:ml-auto {
+      margin-left: auto;
+    }
     .lg\:m {
       &-auto {
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: 1px;
       }
+
       &-0\.5 {
         margin: 0.5rem;
       }
@@ -340,12 +397,15 @@
       &-2\.5 {
         margin: 2.5rem;
       }
+
       &-3\.5 {
         margin: 3.5rem;
       }
+
       &t-px {
         margin-top: 1px;
       }
+
       &t-0\.5 {
         margin-top: 0.5rem;
       }
@@ -357,12 +417,15 @@
       &t-2\.5 {
         margin-top: 2.5rem;
       }
+
       &t-3\.5 {
         margin-top: 3.5rem;
       }
+
       &l-px {
         margin-left: 1px;
       }
+
       &l-0\.5 {
         margin-left: 0.5rem;
       }
@@ -374,12 +437,15 @@
       &l-2\.5 {
         margin-left: 2.5rem;
       }
+
       &l-3\.5 {
         margin-left: 3.5rem;
       }
+
       &r-px {
         margin-right: 1px;
       }
+
       &r-0\.5 {
         margin-right: 0.5rem;
       }
@@ -391,12 +457,15 @@
       &r-2\.5 {
         margin-right: 2.5rem;
       }
+
       &r-3\.5 {
         margin-right: 3.5rem;
       }
+
       &b-px {
         margin-bottom: 1px;
       }
+
       &b-0\.5 {
         margin-bottom: 0.5rem;
       }
@@ -408,13 +477,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -429,14 +501,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -451,6 +526,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -461,9 +537,11 @@
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: -1px;
       }
+
       &-0\.5 {
         margin: -0.5rem;
       }
@@ -475,12 +553,15 @@
       &-2\.5 {
         margin: -2.5rem;
       }
+
       &-3\.5 {
         margin: -3.5rem;
       }
+
       &t-px {
         margin-top: -1px;
       }
+
       &t-0\.5 {
         margin-top: -0.5rem;
       }
@@ -492,12 +573,15 @@
       &t-2\.5 {
         margin-top: -2.5rem;
       }
+
       &t-3\.5 {
         margin-top: -3.5rem;
       }
+
       &l-px {
         margin-left: -1px;
       }
+
       &l-0\.5 {
         margin-left: -0.5rem;
       }
@@ -509,12 +593,15 @@
       &l-2\.5 {
         margin-left: -2.5rem;
       }
+
       &l-3\.5 {
         margin-left: -3.5rem;
       }
+
       &r-px {
         margin-right: -1px;
       }
+
       &r-0\.5 {
         margin-right: -0.5rem;
       }
@@ -526,12 +613,15 @@
       &r-2\.5 {
         margin-right: -2.5rem;
       }
+
       &r-3\.5 {
         margin-right: -3.5rem;
       }
+
       &b-px {
         margin-bottom: -1px;
       }
+
       &b-0\.5 {
         margin-bottom: -0.5rem;
       }
@@ -543,13 +633,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -564,14 +657,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -586,6 +682,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -643,15 +740,23 @@
     }
   }
 
-@include max_devices(768) {
+  @include max_devices($md) {
+    .md\:mr-auto {
+      margin-right: auto;
+    }
+    .md\:ml-auto {
+      margin-left: auto;
+    }
     .md\:m {
       &-auto {
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: 1px;
       }
+
       &-0\.5 {
         margin: 0.5rem;
       }
@@ -663,12 +768,15 @@
       &-2\.5 {
         margin: 2.5rem;
       }
+
       &-3\.5 {
         margin: 3.5rem;
       }
+
       &t-px {
         margin-top: 1px;
       }
+
       &t-0\.5 {
         margin-top: 0.5rem;
       }
@@ -680,12 +788,15 @@
       &t-2\.5 {
         margin-top: 2.5rem;
       }
+
       &t-3\.5 {
         margin-top: 3.5rem;
       }
+
       &l-px {
         margin-left: 1px;
       }
+
       &l-0\.5 {
         margin-left: 0.5rem;
       }
@@ -697,12 +808,15 @@
       &l-2\.5 {
         margin-left: 2.5rem;
       }
+
       &l-3\.5 {
         margin-left: 3.5rem;
       }
+
       &r-px {
         margin-right: 1px;
       }
+
       &r-0\.5 {
         margin-right: 0.5rem;
       }
@@ -714,12 +828,15 @@
       &r-2\.5 {
         margin-right: 2.5rem;
       }
+
       &r-3\.5 {
         margin-right: 3.5rem;
       }
+
       &b-px {
         margin-bottom: 1px;
       }
+
       &b-0\.5 {
         margin-bottom: 0.5rem;
       }
@@ -731,13 +848,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -752,14 +872,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -774,6 +897,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -784,9 +908,11 @@
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: -1px;
       }
+
       &-0\.5 {
         margin: -0.5rem;
       }
@@ -798,12 +924,15 @@
       &-2\.5 {
         margin: -2.5rem;
       }
+
       &-3\.5 {
         margin: -3.5rem;
       }
+
       &t-px {
         margin-top: -1px;
       }
+
       &t-0\.5 {
         margin-top: -0.5rem;
       }
@@ -815,12 +944,15 @@
       &t-2\.5 {
         margin-top: -2.5rem;
       }
+
       &t-3\.5 {
         margin-top: -3.5rem;
       }
+
       &l-px {
         margin-left: -1px;
       }
+
       &l-0\.5 {
         margin-left: -0.5rem;
       }
@@ -832,12 +964,15 @@
       &l-2\.5 {
         margin-left: -2.5rem;
       }
+
       &l-3\.5 {
         margin-left: -3.5rem;
       }
+
       &r-px {
         margin-right: -1px;
       }
+
       &r-0\.5 {
         margin-right: -0.5rem;
       }
@@ -849,12 +984,15 @@
       &r-2\.5 {
         margin-right: -2.5rem;
       }
+
       &r-3\.5 {
         margin-right: -3.5rem;
       }
+
       &b-px {
         margin-bottom: -1px;
       }
+
       &b-0\.5 {
         margin-bottom: -0.5rem;
       }
@@ -866,13 +1004,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -887,14 +1028,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -909,6 +1053,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -957,14 +1102,22 @@
   }
 
   @include max_devices($sm) {
+    .sm\:mr-auto{
+      margin-right: auto;
+    }
+    .sm\:ml-auto{
+      margin-left: auto;
+    }
     .sm\:m {
       &-auto {
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: 1px;
       }
+
       &-0\.5 {
         margin: 0.5rem;
       }
@@ -976,12 +1129,15 @@
       &-2\.5 {
         margin: 2.5rem;
       }
+
       &-3\.5 {
         margin: 3.5rem;
       }
+
       &t-px {
         margin-top: 1px;
       }
+
       &t-0\.5 {
         margin-top: 0.5rem;
       }
@@ -993,12 +1149,15 @@
       &t-2\.5 {
         margin-top: 2.5rem;
       }
+
       &t-3\.5 {
         margin-top: 3.5rem;
       }
+
       &l-px {
         margin-left: 1px;
       }
+
       &l-0\.5 {
         margin-left: 0.5rem;
       }
@@ -1010,12 +1169,15 @@
       &l-2\.5 {
         margin-left: 2.5rem;
       }
+
       &l-3\.5 {
         margin-left: 3.5rem;
       }
+
       &r-px {
         margin-right: 1px;
       }
+
       &r-0\.5 {
         margin-right: 0.5rem;
       }
@@ -1027,12 +1189,15 @@
       &r-2\.5 {
         margin-right: 2.5rem;
       }
+
       &r-3\.5 {
         margin-right: 3.5rem;
       }
+
       &b-px {
         margin-bottom: 1px;
       }
+
       &b-0\.5 {
         margin-bottom: 0.5rem;
       }
@@ -1044,13 +1209,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -1065,14 +1233,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -1087,6 +1258,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -1097,9 +1269,11 @@
         margin-left: auto;
         margin-right: auto;
       }
+
       &-px {
         margin: -1px;
       }
+
       &-0\.5 {
         margin: -0.5rem;
       }
@@ -1111,12 +1285,15 @@
       &-2\.5 {
         margin: -2.5rem;
       }
+
       &-3\.5 {
         margin: -3.5rem;
       }
+
       &t-px {
         margin-top: -1px;
       }
+
       &t-0\.5 {
         margin-top: -0.5rem;
       }
@@ -1128,12 +1305,15 @@
       &t-2\.5 {
         margin-top: -2.5rem;
       }
+
       &t-3\.5 {
         margin-top: -3.5rem;
       }
+
       &l-px {
         margin-left: -1px;
       }
+
       &l-0\.5 {
         margin-left: -0.5rem;
       }
@@ -1145,12 +1325,15 @@
       &l-2\.5 {
         margin-left: -2.5rem;
       }
+
       &l-3\.5 {
         margin-left: -3.5rem;
       }
+
       &r-px {
         margin-right: -1px;
       }
+
       &r-0\.5 {
         margin-right: -0.5rem;
       }
@@ -1162,12 +1345,15 @@
       &r-2\.5 {
         margin-right: -2.5rem;
       }
+
       &r-3\.5 {
         margin-right: -3.5rem;
       }
+
       &b-px {
         margin-bottom: -1px;
       }
+
       &b-0\.5 {
         margin-bottom: -0.5rem;
       }
@@ -1179,13 +1365,16 @@
       &b-2\.5 {
         margin-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         margin-bottom: 3.5rem;
       }
+
       &y-px {
         margin-top: 1px;
         margin-bottom: 1px;
       }
+
       &y-0\.5 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -1200,14 +1389,17 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
       }
+
       &x-px {
         margin-left: 1px;
         margin-right: 1px;
       }
+
       &x-0\.5 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -1222,6 +1414,7 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
       }
+
       &x-3\.5 {
         margin-left: 3.5rem;
         margin-right: 3.5rem;

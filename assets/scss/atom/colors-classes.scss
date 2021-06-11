@@ -30,8 +30,33 @@
       background-color: $color;
     }
 
-    .hover\:text-#{$name}:hover {
+    .hover\:color-#{$name}:hover {
       color: $color;
+    }
+
+    @include max_devices($lg){
+      .lg\:bg-#{$name} {
+        background-color: $color;
+      }
+      .lg\:color-#{$name} {
+        color: $color;
+      }
+    }
+    @include max_devices($md){
+      .md\:bg-#{$name} {
+        background-color: $color;
+      }
+      .md\:color-#{$name} {
+        color: $color;
+      }
+    }
+    @include max_devices($sm){
+      .sm\:bg-#{$name} {
+        background-color: $color;
+      }
+      .sm\:color-#{$name} {
+        color: $color;
+      }
     }
   }
 }

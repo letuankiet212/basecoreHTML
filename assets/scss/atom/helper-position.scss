@@ -30,7 +30,7 @@
   .b-0\.5{
     bottom: 0.5rem;
   }
-  @for $i from 0 through 20 {
+  @for $i from 0 through 30 {
     .t-#{$i} {
       top: #{$i}rem;
     }
@@ -76,6 +76,73 @@
   r-none {
     right: unset;
   }
+  @include max_devices($lg) {
+    .lg\:p {
+      &-r {
+        position: relative;
+      }
+
+      &-a {
+        position: absolute;
+      }
+
+      &-s {
+        position: static;
+      }
+
+      &-f {
+        position: fixed;
+      }
+    }
+    .lg\:centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    .lg\:t-none {
+      top: unset;
+      transform: unset;
+    }
+    .lg\:b-none {
+      bottom: unset;
+    }
+    .lg\:l-none {
+      left: unset;
+      transform: unset;
+    }
+    .lg\:r-none {
+      right: unset;
+    }
+
+    @for $i from 0 through 30 {
+      .lg\:t-#{$i} {
+        top: #{$i}rem;
+      }
+      .lg\:l-#{$i} {
+        left: #{$i}rem;
+      }
+      .lg\:-l-#{$i} {
+        left: -#{$i}rem;
+      }
+      .lg\:r-#{$i} {
+        right: #{$i}rem;
+      }
+      .lg\:b-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .lg\:-b-#{$i} {
+        bottom: -#{$i}rem;
+      }
+      .lg\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
   @include max_devices($md) {
     .md\:p {
       &-r {
@@ -119,7 +186,7 @@
       right: unset;
     }
 
-    @for $i from 0 through 20 {
+    @for $i from 0 through 30 {
       .md\:t-#{$i} {
         top: #{$i}rem;
       }

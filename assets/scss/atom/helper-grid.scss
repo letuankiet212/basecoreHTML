@@ -24,27 +24,27 @@
   }
   @include max_devices($md) {
     @for $i from 1 through 12 {
-      .lg\:grid-cols {
+      .md\:grid-cols {
         &-#{$i} {
           grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
         }
       }
     }
 
-    .lg\:grid-cols-none {
+    .md\:grid-cols-none {
       grid-template-columns: none;
     }
   }
   @include max_devices($sm) {
     @for $i from 1 through 12 {
-      .lg\:grid-cols {
+      .sm\:grid-cols {
         &-#{$i} {
           grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
         }
       }
     }
 
-    .lg\:grid-cols-none {
+    .sm\:grid-cols-none {
       grid-template-columns: none;
     }
   }

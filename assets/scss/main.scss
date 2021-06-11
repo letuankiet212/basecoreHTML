@@ -4,6 +4,8 @@
 
 @import "base/fonts", "base/typo";
 
+@import "optional/fonts/fonts";
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -16,10 +18,10 @@ html {
     font-size: 0.6vw;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    font-size: 0.7vw;
+    font-size: 0.69vw;
   }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    font-size: 0.85vw;
+    font-size: 0.69vw;
   }
   @media only screen and (max-width: 768px) {
     font-size: 1.3020833333vw;
@@ -68,7 +70,7 @@ body {
 
 .container {
   position: relative;
-  width: 116.5rem;
+  width: 144rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 
@@ -120,8 +122,8 @@ body {
 "atom/helper-text", "atom/helper-validator", "atom/helper-display",
 "atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
 "atom/helper-border-radius.scss", "atom/helper-wh.scss",
-"atom/helper-font-size.scss", "atom/helper-object-fit.scss", 
-"atom/helper-limit-text", 'atom/helper-transition','atom/helper-overflow',
-'atom/helper-line-height','atom/helper-grid.scss';
+"atom/helper-font-size.scss", "atom/helper-object-fit.scss",
+"atom/helper-limit-text", 'atom/helper-transition', 'atom/helper-overflow',
+'atom/helper-line-height', 'atom/helper-grid.scss';
 
 
