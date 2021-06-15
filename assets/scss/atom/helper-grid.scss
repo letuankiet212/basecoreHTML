@@ -1,0 +1,55 @@
+@if $use-helper-grid == true {
+    @for $i from 0 through 12 {
+        .grid-cols {
+            &-#{$i} {
+                grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+            }
+        }
+    }
+
+    .grid-cols-none {
+        grid-template-columns: none;
+    }
+
+    @include max_devices($lg){
+        @for $i from 0 through 12 {
+            .lg\:grid-cols {
+                &-#{$i} {
+                    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+                }
+            }
+        }
+    
+        .lg\:grid-cols-none {
+            grid-template-columns: none;
+        }
+    }
+
+    @include max_devices($md){
+        @for $i from 0 through 12 {
+            .lg\:grid-cols {
+                &-#{$i} {
+                    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+                }
+            }
+        }
+    
+        .lg\:grid-cols-none {
+            grid-template-columns: none;
+        }
+    }
+
+    @include max_devices($sm){
+        @for $i from 0 through 12 {
+            .lg\:grid-cols {
+                &-#{$i} {
+                    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+                }
+            }
+        }
+    
+        .lg\:grid-cols-none {
+            grid-template-columns: none;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+@if $use-helper-limit-text == true {
+  @for $i from 0 through 6 {
+    .text-limit-#{$i} {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  @include max_devices($lg) {
+    @for $i from 0 through 6 {
+      .lg\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  @include max_devices($md) {
+    @for $i from 0 through 6 {
+      .md\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  @include max_devices($sm) {
+    @for $i from 0 through 6 {
+      .sm\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

@@ -1,33 +1,20 @@
-//
-// Base Options
-// All base options are boolean type - true or false
-//
 
-// Generate Colour Classes
 $use-color-classes: true;
 
-// Turn on Sass Debugger
 $use-sass-debugger: false;
 
-// Use Images postions classes
 $use-image-position-classes: false;
 
-// Include float Styles
 $use-helper-float-styles: true;
 
-// Include Margin Styles
 $use-helper-margin-styles: true;
 
-// Include Padding Styles
 $use-helper-padding-styles: true;
 
-// Include Text Styles
 $use-helper-text-styles: true;
 
-// Include Visibility Styles
-$use-helper-visibility-styles: false;
+$use-helper-visibility-styles: true;
 
-// Turn on the HTML Validator
 $use-html-validator: false;
 
 $use-helper-border-styles: true;
@@ -37,15 +24,25 @@ $use-helper-clearfix-class: true;
 $use-helper-position-styles: true;
 
 $use-helper-display-styles: true;
-//Flex
+
 $use-helper-flex-styles: true;
 
 $use-helper-box-styles: true;
-//Typo
-$use-helper-typo: false;
+
+$use-helper-typo: true;
 
 $use-helper-wh-styles: true;
 
 $use-helper-font-size-styles: true;
 
 $use-helper-object-fit-styles: true;
+
+$use-helper-limit-text: true;
+
+$use-helper-transition: true;
+
+$use-helper-overflow:true;
+
+$use-helper-line-height : true;
+
+$use-helper-grid : true;

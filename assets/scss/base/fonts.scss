@@ -3,7 +3,7 @@
 /// @require {function} font-url - Font asset helper
 //
 
-$fonts: "tahoma";
+$fonts: 'roboto';
 // $fonts: "AdriannaExtendedLt",
 // 				"AdriannaExtendedRg",
 // 				"AdriannaExtendedXb",
@@ -26,6 +26,24 @@ $fonts: "tahoma";
 
     .font-#{$font} {
       font-family: "#{$font}";
+    }
+
+    @include max_devices($lg){
+      .lg\:font-#{$font} {
+        font-family: "#{$font}";
+      }
+    }
+
+    @include max_devices($md){
+      .md\:font-#{$font} {
+        font-family: "#{$font}";
+      }
+    }
+
+    @include max_devices($sm){
+      .sm\:font-#{$font} {
+        font-family: "#{$font}";
+      }
     }
   }
 }

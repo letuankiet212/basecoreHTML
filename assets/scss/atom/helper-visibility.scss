@@ -1,26 +1,30 @@
-//
-// Visibility Helper Classes
-/// @require {Boolean} $use-helper-visibility-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options - Base Options
-//
-
 @if $use-helper-visibility-styles == true {
-@media screen and (max-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
+  @media screen and (max-width: 768px) {
+    .md\:hidden {
+      display: none !important;
+    }
 
-  .md\:visible {
-    display: block;
+    .md\:visible {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .hidden {
+      display: none !important;
+    }
+
+    .visible {
+      display: block;
+    }
   }
 }
-@media screen and (min-width: 769px) {
-.hidden {
-    display: none;
+
+@include max_devices($sm) {
+  .sm\:hidden {
+    display: none !important;
   }
 
-  .visible {
+  .sm\:visible {
     display: block;
   }
-}
 }

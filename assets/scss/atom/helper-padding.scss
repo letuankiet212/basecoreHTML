@@ -1,9 +1,3 @@
-//
-// Padding Helper Classes
-/// @require {Boolean} $use-helper-padding-styles - base variable in Settings
-/// @see  /Settings/base-options.scss - All base options
-//
-
 @if $use-helper-padding-styles == true {
   .p {
     &-px {
@@ -24,106 +18,116 @@
       padding: 3.5rem;
     }
     &t-px {
-      padding: 1px;
+      padding-top: 1px;
     }
     &t-0\.5 {
-      padding: 0.5rem;
+      padding-top: 0.5rem;
     }
 
     &t-1\.5 {
-      padding: 1.5rem;
+      padding-top: 1.5rem;
     }
 
     &t-2\.5 {
-      padding: 2.5rem;
+      padding-top: 2.5rem;
     }
     &t-3\.5 {
-      padding: 3.5rem;
+      padding-top: 3.5rem;
     }
     &l-px {
-      padding: 1px;
+      padding-left: 1px;
     }
     &l-0\.5 {
-      padding: 0.5rem;
+      padding-left: 0.5rem;
     }
 
     &l-1\.5 {
-      padding: 1.5rem;
+      padding-left: 1.5rem;
     }
 
     &l-2\.5 {
-      padding: 2.5rem;
+      padding-left: 2.5rem;
     }
     &l-3\.5 {
-      padding: 3.5rem;
+      padding-left: 3.5rem;
     }
     &r-px {
-      padding: 1px;
+      padding-right: 1px;
     }
     &r-0\.5 {
-      padding: 0.5rem;
+      padding-right: 0.5rem;
     }
 
     &r-1\.5 {
-      padding: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     &r-2\.5 {
-      padding: 2.5rem;
+      padding-right: 2.5rem;
     }
     &r-3\.5 {
-      padding: 3.5rem;
+      padding-right: 3.5rem;
     }
     &b-px {
-      padding: 1px;
+      padding-bottom: 1px;
     }
     &b-0\.5 {
-      padding: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 
     &b-1\.5 {
-      padding: 1.5rem;
+      padding-bottom: 1.5rem;
     }
 
     &b-2\.5 {
-      padding: 2.5rem;
+      padding-bottom: 2.5rem;
     }
     &b-3\.5 {
-      padding: 3.5rem;
+      padding-bottom: 3.5rem;
     }
     &y-px {
-      padding: 1px;
+      padding-top: 1px;
+      padding-bottom: 1px;
     }
     &y-0\.5 {
-      padding: 0.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 
     &y-1\.5 {
-      padding: 1.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
     }
 
     &y-2\.5 {
-      padding: 2.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
     &y-3\.5 {
-      padding: 3.5rem;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
     }
     &x-px {
-      padding: 1px;
+      padding-left: 1px;
+      padding-right: 1px;
     }
     &x-0\.5 {
-      padding: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
 
     &x-1\.5 {
-      padding: 1.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     &x-2\.5 {
-      padding: 2.5rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
     &x-3\.5 {
-      padding: 3.5rem;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
     }
   }
 
@@ -173,106 +177,116 @@
         padding: 3.5rem;
       }
       &t-px {
-        padding: 1px;
+        padding-top: 1px;
       }
       &t-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
       }
 
       &t-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
       }
 
       &t-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
       }
       &t-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
       }
       &l-px {
-        padding: 1px;
+        padding-left: 1px;
       }
       &l-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
       }
 
       &l-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
       }
 
       &l-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
       }
       &l-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
       }
       &r-px {
-        padding: 1px;
+        padding-right: 1px;
       }
       &r-0\.5 {
-        padding: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &r-1\.5 {
-        padding: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &r-2\.5 {
-        padding: 2.5rem;
+        padding-right: 2.5rem;
       }
       &r-3\.5 {
-        padding: 3.5rem;
+        padding-right: 3.5rem;
       }
       &b-px {
-        padding: 1px;
+        padding-bottom: 1px;
       }
       &b-0\.5 {
-        padding: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &b-1\.5 {
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &b-2\.5 {
-        padding: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &b-3\.5 {
-        padding: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &y-px {
-        padding: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
       }
       &y-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &y-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &y-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &y-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &x-px {
-        padding: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
       }
       &x-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &x-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &x-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
       }
       &x-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
       }
     }
 
@@ -303,7 +317,7 @@
     }
   }
 
-  @media only screen and (max-width: $md) {
+  @include max_devices($md){
     .md\:p {
       &-px {
         padding: 1px;
@@ -323,106 +337,116 @@
         padding: 3.5rem;
       }
       &t-px {
-        padding: 1px;
+        padding-top: 1px;
       }
       &t-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
       }
 
       &t-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
       }
 
       &t-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
       }
       &t-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
       }
       &l-px {
-        padding: 1px;
+        padding-left: 1px;
       }
       &l-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
       }
 
       &l-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
       }
 
       &l-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
       }
       &l-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
       }
       &r-px {
-        padding: 1px;
+        padding-right: 1px;
       }
       &r-0\.5 {
-        padding: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &r-1\.5 {
-        padding: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &r-2\.5 {
-        padding: 2.5rem;
+        padding-right: 2.5rem;
       }
       &r-3\.5 {
-        padding: 3.5rem;
+        padding-right: 3.5rem;
       }
       &b-px {
-        padding: 1px;
+        padding-bottom: 1px;
       }
       &b-0\.5 {
-        padding: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &b-1\.5 {
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &b-2\.5 {
-        padding: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &b-3\.5 {
-        padding: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &y-px {
-        padding: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
       }
       &y-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &y-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &y-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &y-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &x-px {
-        padding: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
       }
       &x-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &x-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &x-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
       }
       &x-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
       }
     }
     @for $i from 0 through 20 {
@@ -439,6 +463,14 @@
         padding-right: #{$i}rem;
       }
       .md\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+      .md\:px-#{$i}{
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+      }
+      .md\:py-#{$i}{
+        padding-top: #{$i}rem;
         padding-bottom: #{$i}rem;
       }
     }
@@ -464,106 +496,116 @@
         padding: 3.5rem;
       }
       &t-px {
-        padding: 1px;
+        padding-top: 1px;
       }
       &t-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
       }
 
       &t-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
       }
 
       &t-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
       }
       &t-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
       }
       &l-px {
-        padding: 1px;
+        padding-left: 1px;
       }
       &l-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
       }
 
       &l-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
       }
 
       &l-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
       }
       &l-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
       }
       &r-px {
-        padding: 1px;
+        padding-right: 1px;
       }
       &r-0\.5 {
-        padding: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &r-1\.5 {
-        padding: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &r-2\.5 {
-        padding: 2.5rem;
+        padding-right: 2.5rem;
       }
       &r-3\.5 {
-        padding: 3.5rem;
+        padding-right: 3.5rem;
       }
       &b-px {
-        padding: 1px;
+        padding-bottom: 1px;
       }
       &b-0\.5 {
-        padding: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &b-1\.5 {
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &b-2\.5 {
-        padding: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &b-3\.5 {
-        padding: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &y-px {
-        padding: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
       }
       &y-0\.5 {
-        padding: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       &y-1\.5 {
-        padding: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &y-2\.5 {
-        padding: 2.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
       }
       &y-3\.5 {
-        padding: 3.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
       }
       &x-px {
-        padding: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
       }
       &x-0\.5 {
-        padding: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &x-1\.5 {
-        padding: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       &x-2\.5 {
-        padding: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
       }
       &x-3\.5 {
-        padding: 3.5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
       }
     }
 
