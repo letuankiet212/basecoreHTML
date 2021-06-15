@@ -1,30 +1,21 @@
 $color-base-background: #32231B;
-$color-base-text: white;
+$color-base-text:  #fff;
 
 $base-font-size: calc(13px + (16 - 13) * ((100vw - 769px) / (1920 - 769)));
 $md-base-font-size: 2.112rem;
 $sm-base-font-size: 11px;
-$base-font-family: "gss_pokemon_ui";
-$base-font-typo: "roboto";
-$base-color-typo: "black";
+
+$base-font-family: "Quicksand";
+
+$base-font-typo: "Quicksand";
+$base-color-typo: "Quicksand";
 $secondary-color-typo: #B5B5B5;
 
 $color-scroll: #B5B5B5;
 $color-bg-scrol: #505050;
 
-$text-9xl: 12.8rem;
-$text-8xl: 9.6rem;
-$text-7xl: 7.2rem;
-$text-6xl: 6rem;
-$text-5xl: 4.175rem;
-$text-4xl: 3.6rem;
-$text-3xl: 3rem;
-$text-2xl: 2.4rem;
-$text-xl: 2rem;
-$text-lg: 1.8rem;
-$text-base: 1.6rem;
-$text-sm: 1.4rem;
-$text-xs: 1.2rem;
+
+$width-container:102.4rem;
 
 $lg : 1024;
 $md : 768;

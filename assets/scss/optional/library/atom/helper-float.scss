@@ -1,0 +1,27 @@
+@if $use-helper-float-styles == true {
+  .float {
+    &-left {
+      float: left;
+    }
+
+    &-right {
+      float: right;
+    }
+  }
+  @media screen and (max-width: $md) {
+    .md\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+}
+@if $use-helper-clearfix-class == true {
+  .clearfix {
+    @include clearfix;
+  }
+}

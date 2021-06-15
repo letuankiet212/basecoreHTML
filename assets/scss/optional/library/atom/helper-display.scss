@@ -1,0 +1,18 @@
+@if $use-helper-display-styles == true {
+  .block {
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+  }
+  @include  max_devices($md){
+    .md\:block {
+      display: block;
+    }
+
+    .md\:grid {
+      display: grid;
+    }
+  }
+}

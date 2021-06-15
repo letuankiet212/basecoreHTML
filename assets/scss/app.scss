@@ -1,5 +1,2 @@
-@import "setting/base-options.scss", "setting/colors", "setting/variables";
-
-@import "functions/map-functions", "functions/color.scss";
-
-@import "mixins/clearfix", "mixins/debugger", "mixins/placeholder", "mixins/responsive";
+@import  "setting/variables";
+@import  "mixins/placeholder", "mixins/responsive";

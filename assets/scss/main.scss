@@ -1,8 +1,8 @@
 @import "app.scss";
 
-@import "generic/reset", "generic/sanitize";
+@import "./optional/library/main";
 
-@import "base/fonts", "base/typo";
+@import "base/fonts";
 
 html {
   overflow-y: scroll;
@@ -16,10 +16,11 @@ html {
     font-size: 0.6vw;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    font-size: 0.7vw;
+
+    font-size: 0.69vw;
   }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    font-size: 0.85vw;
+    font-size: 0.69vw;
   }
   @media only screen and (max-width: 768px) {
     font-size: 1.3020833333vw;
@@ -49,26 +50,26 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: $color-scroll;
+    background: $color-bg-scrol;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $color-bg-scrol;
+    background: $color-scroll;
     border-radius: 45rem;
   }
 
-  @include max_devices(768) {
+  @include max_devices($md) {
     font-size: $md-base-font-size;
   }
 
-  @include max_devices(568) {
+  @include max_devices($sm) {
     font-size: $sm-base-font-size;
   }
 }
 
 .container {
   position: relative;
-  width: 116.5rem;
+  width: $width-container;
   margin: 0 auto;
   padding: 0 1.5rem;
 
@@ -85,43 +86,5 @@ body {
   position: relative;
   width: 100%;
 }
-
-.slick-prev, .slick-next {
-  background: url(../images/arrow.png);
-  @include background-img(center, 100% 100%);
-  @include box(5.1rem, 9.4rem);
-  left: -4.5rem;
-  z-index: 3;
-  @include max_devices(768) {
-    left: 0;
-  }
-
-  &:hover, &:focus {
-    background: url(../images/arrow.png);
-    @include background-img(center, 100% 100%);
-    filter: brightness(1.2);
-  }
-}
-
-.slick-next {
-  left: unset;
-  right: -4.5rem;
-  transform: scaleX(-1) translate(0, -50%);
-
-  @include max_devices(768) {
-    right: 0;
-  }
-}
-
-/* PLOP_COMPONENTS_IMPORT */
-
-@import "atom/colors-classes", "atom/debugger", "atom/helper-float",
-"atom/helper-margin", "atom/helper-padding", "atom/helper-position",
-"atom/helper-text", "atom/helper-validator", "atom/helper-display",
-"atom/helper-box", "atom/helper-visibility", "atom/helper-flex",
-"atom/helper-border-radius.scss", "atom/helper-wh.scss",
-"atom/helper-font-size.scss", "atom/helper-object-fit.scss", 
-"atom/helper-limit-text", 'atom/helper-transition','atom/helper-overflow',
-'atom/helper-line-height','atom/helper-grid.scss';
 
 

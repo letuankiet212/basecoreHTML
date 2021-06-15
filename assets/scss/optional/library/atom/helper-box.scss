@@ -1,0 +1,26 @@
+@if $use-helper-box-styles == true {
+  .btn {
+    cursor: pointer;
+  }
+  .active {
+    filter: brightness(1.1);
+  }
+  .received {
+    filter: grayscale(1);
+  }
+  .pe-none {
+    pointer-events: none;
+  }
+
+  @include max_devices($md) {
+    .md\:btn {
+      cursor: pointer;
+    }
+    .md\:active {
+      filter: brightness(1.1);
+    }
+    .md\:received {
+      filter: grayscale(1);
+    }
+  }
+}

@@ -1,0 +1,369 @@
+@if $use-helper-flex-styles == true {
+  .flex {
+    display: flex;
+  }
+  .flex {
+    &-none{
+      flex: none;
+    }
+    &-1 {
+      flex: 1 1 0%;
+    }
+
+    &-col {
+      flex-flow: column;
+    }
+
+    &-col-reverse {
+      flex-direction: column-reverse;
+    }
+
+    &-row {
+      flex-flow: row;
+    }
+
+    &-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    &-wrap {
+      flex-wrap: wrap;
+    }
+
+    &-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    &-nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+  .j {
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+
+    &-space-evenly {
+      justify-content: space-evenly;
+    }
+  }
+  .a {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-between {
+      align-items: space-between;
+    }
+    &-around {
+      align-items: space-around;
+    }
+    &-evenly {
+      align-items: space-evenly;
+    }
+  }
+
+  @for $i from 0 through 12 {
+    .order-#{$i} {
+      order: #{$i};
+    }
+  }
+
+  @include max_devices($lg) {
+
+    .lg\:flex {
+      display: flex;
+    }
+    .lg\:flex {
+      &-none{
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .lg\:j {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .lg\:a {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+      &-between {
+        align-items: space-between;
+      }
+      &-around {
+        align-items: space-around;
+      }
+      &-evenly {
+        align-items: space-evenly;
+      }
+    }
+
+    @for $i from 0 through 12 {
+      .lg\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+
+  @include max_devices($md) {
+    .md\:flex {
+      display: flex;
+    }
+    .md\:flex {
+      &-none{
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .md\:j {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .md\:a {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+      &-between {
+        align-items: space-between;
+      }
+      &-around {
+        align-items: space-around;
+      }
+      &-evenly {
+        align-items: space-evenly;
+      }
+    }
+    @for $i from 0 through 12 {
+      .md\:order-#{$i} {
+        order: #{$i};
+      } 
+    }
+  }
+  @include max_devices($sm) {
+    .sm\:flex {
+      display: flex;
+    }
+    .sm\:flex {
+      &-none{
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .sm\:j {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .sm\:a {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+      &-between {
+        align-items: space-between;
+      }
+      &-around {
+        align-items: space-around;
+      }
+      &-evenly {
+        align-items: space-evenly;
+      }
+    }
+    @for $i from 0 through 12 {
+      .sm\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+}
