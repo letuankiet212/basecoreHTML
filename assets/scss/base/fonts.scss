@@ -10,9 +10,7 @@ $fonts: 'roboto';
   @if ($font != "") {
     @font-face {
       font-family: $font;
-      src: url("../fonts/#{$font}.eot");
-      src: url("../fonts/#{$font}.eot?#iefix") format("eot"), url("../fonts/#{$font}.ttf") format("truetype"),
-        url("../fonts/#{$font}.svg") format("svg");
+      src: url("../fonts/#{$font}.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
       font-display: swap;

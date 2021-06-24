@@ -1,0 +1,89 @@
+@if $use-helper-tracking-styles == true {
+    .tracking {
+        &-tighter {
+            letter-spacing: -0.05em;
+        }
+        &-tight {
+            letter-spacing: -0.025em;
+        }
+        &-normal {
+            letter-spacing: 0em;
+        }
+        &-wide {
+            letter-spacing: 0.025em;
+        }
+        &-wider {
+            letter-spacing: 0.05em;
+        }
+        &-widest {
+            letter-spacing: 0.1em;
+        }
+    }
+
+    @include max_devices($lg){
+        .lg\:tracking {
+            &-tighter {
+                letter-spacing: -0.05em;
+            }
+            &-tight {
+                letter-spacing: -0.025em;
+            }
+            &-normal {
+                letter-spacing: 0em;
+            }
+            &-wide {
+                letter-spacing: 0.025em;
+            }
+            &-wider {
+                letter-spacing: 0.05em;
+            }
+            &-widest {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+    @include max_devices($md){
+        .md\:tracking {
+            &-tighter {
+                letter-spacing: -0.05em;
+            }
+            &-tight {
+                letter-spacing: -0.025em;
+            }
+            &-normal {
+                letter-spacing: 0em;
+            }
+            &-wide {
+                letter-spacing: 0.025em;
+            }
+            &-wider {
+                letter-spacing: 0.05em;
+            }
+            &-widest {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+    @include max_devices($sm){
+        .sm\:tracking {
+            &-tighter {
+                letter-spacing: -0.05em;
+            }
+            &-tight {
+                letter-spacing: -0.025em;
+            }
+            &-normal {
+                letter-spacing: 0em;
+            }
+            &-wide {
+                letter-spacing: 0.025em;
+            }
+            &-wider {
+                letter-spacing: 0.05em;
+            }
+            &-widest {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}

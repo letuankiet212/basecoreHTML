@@ -1,7 +1,7 @@
-$outline: true;
-$tags: (none);
+$outline: false;
+$tags: (a,div);
 $attrs: (style);
-$classes: (none);
+$classes: (btn);
 
 @mixin debugger(){
       @each $tag in $tags {

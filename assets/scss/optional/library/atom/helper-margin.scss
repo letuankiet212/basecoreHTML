@@ -5,6 +5,10 @@
   .ml-auto {
     margin-left: auto;
   }
+  .mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .m {
     &-auto {
       margin-left: auto;
@@ -374,6 +378,10 @@
     }
     .lg\:ml-auto {
       margin-left: auto;
+    }
+    .lg\:mx-auto{
+      margin-left: auto;
+      margin-right: auto;
     }
     .lg\:m {
       &-auto {
@@ -746,6 +754,10 @@
     .md\:ml-auto {
       margin-left: auto;
     }
+    .md\:mx-auto{
+      margin-left: auto;
+      margin-right: auto;
+    }
     .md\:m {
       &-auto {
         margin-left: auto;
@@ -1114,6 +1126,10 @@
     }
     .sm\:ml-auto{
       margin-left: auto;
+    }
+    .sm\:mx-auto{
+        margin-left: auto;
+        margin-right: auto;
     }
     .sm\:m {
       &-auto {
