@@ -93,3 +93,16 @@ $max_breakpoints: (
   width: $width;
   height: $height;
 }
+
+@mixin breakpoints(
+  $cssProp: "padding",
+  $cssPropUnit: "px",
+  $values: (),
+  $mediaQueryType: "max-width"
+) {
+  @each $screen, $breakpoint in $values {
+    @media only screen and (max-width: #{$screen}px) {
+      #{$cssProp}: #{$breakpoint + $cssPropUnit};
+    }
+  }
+}
