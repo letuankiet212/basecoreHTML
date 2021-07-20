@@ -2,14 +2,34 @@ $base-font-size: calc(13px + (16 - 13) * ((100vw - 769px) / (1920 - 769)));
 $md-base-font-size: 2.112rem;
 $sm-base-font-size: 11px;
 
+$color-base-text: white;
+$color-scroll: #b5b5b5;
+$color-bg-scroll: #505050;
+$color-base-background: black;
+
+$base-font-family: "roboto";
 $base-font-typo: "Quicksand";
 $base-color-typo: "Quicksand";
-$secondary-color-typo: #B5B5B5;
+$secondary-color-typo: #b5b5b5;
 
-$color-scroll: #B5B5B5;
-$color-bg-scroll: #505050;
+$width-container: 1024px;
 
-$lg : 1024;
-$md : 768;
-$sm : 568;
+$text-9xl: 12.8rem;
+$text-8xl: 9.6rem;
+$text-7xl: 7.2rem;
+$text-6xl: 6rem;
+$text-5xl: 4.175rem;
+$text-4xl: 3.6rem;
+$text-3xl: 3rem;
+$text-2xl: 2.4rem;
+$text-xl: 2rem;
+$text-lg: 1.8rem;
+$text-base: 1.6rem;
+$text-sm: 1.4rem;
+$text-xs: 1.2rem;
 
+$lg: 1024;
+$md: 768;
+$sm: 568;
+
+$limit-unit: 30;

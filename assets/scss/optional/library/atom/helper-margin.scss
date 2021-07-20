@@ -5,7 +5,7 @@
   .ml-auto {
     margin-left: auto;
   }
-  .mx-auto{
+  .mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
@@ -322,7 +322,7 @@
     }
   }
 
-  @for $i from 0 through 20 {
+  @for $i from 0 through $limit-unit {
     .m-#{$i} {
       margin: #{$i}rem;
     }
@@ -379,7 +379,7 @@
     .lg\:ml-auto {
       margin-left: auto;
     }
-    .lg\:mx-auto{
+    .lg\:mx-auto {
       margin-left: auto;
       margin-right: auto;
     }
@@ -696,7 +696,7 @@
       }
     }
 
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .lg\:m-#{$i} {
         margin: #{$i}rem;
       }
@@ -754,7 +754,7 @@
     .md\:ml-auto {
       margin-left: auto;
     }
-    .md\:mx-auto{
+    .md\:mx-auto {
       margin-left: auto;
       margin-right: auto;
     }
@@ -1070,7 +1070,7 @@
         margin-right: 3.5rem;
       }
     }
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .md\:m-#{$i} {
         margin: #{$i}rem;
       }
@@ -1121,15 +1121,15 @@
   }
 
   @include max_devices($sm) {
-    .sm\:mr-auto{
+    .sm\:mr-auto {
       margin-right: auto;
     }
-    .sm\:ml-auto{
+    .sm\:ml-auto {
       margin-left: auto;
     }
-    .sm\:mx-auto{
-        margin-left: auto;
-        margin-right: auto;
+    .sm\:mx-auto {
+      margin-left: auto;
+      margin-right: auto;
     }
     .sm\:m {
       &-auto {
@@ -1444,7 +1444,7 @@
       }
     }
 
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .sm\:m-#{$i} {
         margin: #{$i}rem;
       }

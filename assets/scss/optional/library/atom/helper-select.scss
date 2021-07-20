@@ -1,0 +1,65 @@
+@if $use-helper-select-styles == true {
+  .select {
+    &-none {
+      user-select: none;
+    }
+    &-text {
+      user-select: text;
+    }
+    &-all {
+      user-select: all;
+    }
+    &-auto {
+      user-select: auto;
+    }
+  }
+
+  @include max_devices($lg) {
+    .lg\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include max_devices($md) {
+    .md\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include max_devices($sm) {
+    .sm\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+}

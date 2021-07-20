@@ -131,7 +131,7 @@
     }
   }
 
-  @for $i from 0 through 20 {
+  @for $i from 0 through $limit-unit {
     .p-#{$i} {
       padding: #{$i}rem;
     }
@@ -290,7 +290,7 @@
       }
     }
 
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .lg\:p-#{$i} {
         padding: #{$i}rem;
       }
@@ -317,7 +317,7 @@
     }
   }
 
-  @include max_devices($md){
+  @include max_devices($md) {
     .md\:p {
       &-px {
         padding: 1px;
@@ -449,7 +449,7 @@
         padding-right: 3.5rem;
       }
     }
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .md\:p-#{$i} {
         padding: #{$i}rem;
       }
@@ -465,11 +465,11 @@
       .md\:pb-#{$i} {
         padding-bottom: #{$i}rem;
       }
-      .md\:px-#{$i}{
+      .md\:px-#{$i} {
         padding-left: #{$i}rem;
         padding-right: #{$i}rem;
       }
-      .md\:py-#{$i}{
+      .md\:py-#{$i} {
         padding-top: #{$i}rem;
         padding-bottom: #{$i}rem;
       }
@@ -609,7 +609,7 @@
       }
     }
 
-    @for $i from 0 through 20 {
+    @for $i from 0 through $limit-unit {
       .sm\:p-#{$i} {
         padding: #{$i}rem;
       }

@@ -1,7 +1,5 @@
 @import "app.scss";
-
 @import "./optional/library/main";
-
 @import "base/fonts";
 
 html {
@@ -13,7 +11,7 @@ html {
     "font-size",
     "vw",
     (
-      1920: 0.521vw,
+      1920: 0.521,
       768: 1.302,
     )
   );
@@ -39,15 +37,6 @@ body {
     background: $color-scroll;
     border-radius: 45rem;
   }
-
-  @include breakpoints(
-    "font-size",
-    "vw",
-    (
-      $md: $md-base-font-size,
-      $sm: $sm-base-font-size,
-    )
-  );
 }
 
 .container {
