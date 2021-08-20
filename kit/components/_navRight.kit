@@ -1,0 +1,67 @@
+<div class="nav-right md:hidden open p-f t-50% z-2  ">
+    <div class=" p-1 rounded-l-xl  p-r z-1">
+        <a class="bg-qr-code block" target="_blank" href="">
+            <img src="./assets/images/navright/img-qr-code.png" alt="" class="qr-code m-auto w-full h-auto"
+                style="max-width: 17.3rem;">
+        </a>
+        <a target="_blank" href="" class="nav__btn-type2 block mt-1 p-r hover:bg-blue-800">
+            <div class="centered text-center w-full text-2xl color-white text-upper flex j-start a-center">
+                <img src="./assets/images/navright/f.png" alt="" class="w-2.5 h-auto mr-1 ml-2.5">
+                <div class="text-left">
+                    <p class="text-sm">Tải game</p>
+                    <p class="text-base">App Store</p>
+                </div>
+            </div>
+        </a>
+        <a target="_blank" href="" class="nav__btn-type2 block mt-0.5 p-r">
+            <div class="centered text-center w-full text-2xl color-white text-upper flex j-start a-center">
+                <img src="./assets/images/navright/g.png" alt="" class="w-2.5 h-auto mr-1 ml-2.5">
+                <div class="text-left">
+                    <p class="text-sm">Tải game</p>
+                    <p class="text-base">App Store</p>
+                </div>
+            </div>
+        </a>
+        <a target="_blank" href="" class="nav__btn-type2 block mt-0.5 p-r">
+            <div class="centered text-center w-full text-2xl color-white text-upper flex j-start a-center">
+                <img src="./assets/images/navright/ytb.png" alt="" class="w-2.5 h-auto mr-1 ml-2.5">
+                <div class="text-left">
+                    <p class="text-sm">Tải game</p>
+                    <p class="text-base">App Store</p>
+                </div>
+            </div>
+        </a>
+        <a target="_blank" href="https://pay.gosu.vn/" class=" mt-1 nav__btn-type1 text-center text-upper block p-r">
+            <p class="centered w-full text-center text-lg pt-0.5 color-white hover:brightness">
+                Nạp thẻ
+            </p>
+        </a>
+    </div>
+    <img src="./assets/images/navright/bg-navright.png" style="width: 19.9rem;height:60rem" class="p-a r-0 -b-1 z-0"
+        alt="">
+    <span class="nav__i-control text-center i-control-open">
+        <span class="i-txt"></span>
+    </span>
+</div>
+
+
+
+<script>
+    $('.nav__i-control .i-txt').click(function () {
+        $('.nav-right').toggleClass('open')
+    })
+
+    $('.nav__go-top').click(function () {
+        $("html,body").animate({ scrollTop: 0 }, 1e3)
+    })
+</script>
+
+<script>
+    $(".nav-left").click(function () {
+        $("html, body").animate({
+            scrollTop: $(".frame2").offset().top,
+        },
+            1000,
+        );
+    });
+</script>

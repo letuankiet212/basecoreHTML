@@ -1,0 +1,714 @@
+.btn-type {
+  &1 {
+    background: url(./assets/images/etc/btn-type1.png);
+    @include background-img(center, 100% 100%);
+    @include box(20.1rem, 5.8rem);
+  }
+
+  &2 {
+    background: url(./assets/images/etc/btn-type2.png);
+    @include background-img(center, 100% 100%);
+    @include box(36.2rem, 8.2rem);
+
+    @include max_devices($md) {
+      @include box(27.2rem, 6.2rem);
+    }
+  }
+
+  &3 {
+    background: url(./assets/images/etc/btn-type3.png);
+    @include background-img(center, 100% 100%);
+    @include box(15rem, 3.8rem);
+
+    @include max_devices($md) {
+      @include box(11.2rem, 2.8rem);
+    }
+
+    &:hover,
+    &.active {
+      background: url(./assets/images/etc/btn-type3-hv.png);
+      @include background-img(center, 100% 100%);
+    }
+  }
+
+  &4 {
+    background: url(./assets/images/etc/btn-type4.png);
+    @include background-img(center, 100% 100%);
+    @include box(35.3rem, 8.1rem);
+  }
+}
+
+.w-max2 {
+  max-width: 1920px;
+}
+
+.hover\:brightness {
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &.active {
+    filter: brightness(1.2);
+  }
+}
+
+.received {
+  filter: grayscale(1);
+}
+
+.text-2-color {
+  background: -webkit-linear-gradient(#fffdea, #faebc3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.frame {
+  &__title {
+    @include box(97.7rem, 14.1rem);
+
+    @include max_devices($md) {
+      @include box(72.9rem, 11.5rem);
+    }
+  }
+}
+
+.bg {
+  &-frame1 {
+    background-color: #0b0d12;
+    @include box(100%, 107.7rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe1.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 81.2rem);
+    }
+  }
+
+  &-frame2 {
+    background: url(./assets/images/background/bgframe2.png);
+    @include background-img(bottom center, cover);
+    @include box(100%, 121.5rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe2.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 80rem);
+    }
+
+    .obj-eff1 {
+      @include box(100%, 126.6rem);
+      top: -98rem;
+    }
+  }
+
+  &-frame3 {
+    background: url(./assets/images/background/bgframe3.jpg);
+    @include background-img(top center, cover);
+    @include box(100%, 144.4rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe3.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 139.8rem);
+    }
+  }
+
+  &-frame4 {
+    background: url(./assets/images/background/bgframe4.jpg);
+    @include background-img(top center, cover);
+    @include box(100%, 101.8rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe4.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 76.4rem);
+    }
+  }
+
+  &-frame5 {
+    background: url(./assets/images/background/bgframe5.jpg);
+    @include background-img(top center, cover);
+    @include box(100%, 170.9rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe5.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 127.4rem);
+    }
+  }
+
+  &-frame6 {
+    background: url(./assets/images/background/bgframe6.jpg);
+    @include background-img(top center, cover);
+    @include box(100%, 94.5rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe6.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 81.1rem);
+    }
+  }
+
+  &-frame7 {
+    background: url(./assets/images/background/bgframe7.jpg);
+    @include background-img(top center, cover);
+    @include box(100%, 83rem);
+
+    @include max_devices(768) {
+      background: url(./assets/images/background/md-bgframe7.jpg);
+      @include background-img(top center, cover);
+      @include box(100%, 72.7rem);
+    }
+  }
+}
+
+.header {
+  &__logo {
+    @include box(16.5rem, 9.6rem);
+    left: 50%;
+    transform: translateX(-50%);
+    @include max_devices($md) {
+      @include box(15.3rem);
+      left: unset;
+      transform: unset;
+    }
+  }
+
+  &__bg {
+    @include max_devices($md) {
+      background: url(./assets/images/header/bg-header-md.jpg);
+      @include background-img(center, 100% 100%);
+      @include box(76.8rem, 9.1rem);
+    }
+  }
+
+  #hambuger {
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+      width: 100%;
+      background-color: white;
+      top: 0.5rem;
+      transition: transform 0.2s ease 0s;
+    }
+
+    &:after {
+      top: unset;
+      bottom: 0.5rem;
+    }
+
+    .inner-hambuger {
+      transition: all 0.2s ease 0s;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  #toggle-hambuger:checked ~ .icon-hamburger #hambuger {
+    .inner-hambuger {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:before {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &:after {
+      top: 50%;
+      bottom: unset;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    @include max_devices($md) {
+      display: none;
+    }
+  }
+
+  #toggle-hambuger:checked ~ &__menu {
+    display: flex;
+  }
+}
+
+.footer {
+  &__bg {
+    background: url(./assets/images/footer/bg-footer.jpg);
+    @include background-img(center, cover);
+    @include box(100%, 20.4rem);
+  }
+
+  &__btn {
+    background: url(./assets/images/footer/btn-footer.png);
+    @include background-img(center, 100% 100%);
+    @include box(23.9rem, 5.5rem);
+  }
+}
+
+.frame1 {
+  &__obj {
+    @include box(20.6rem, 34rem);
+
+    @include max_devices($md) {
+      @include box(17.2rem, 25.4rem);
+    }
+  }
+
+  &__slogan {
+    @include box(72.2rem, 35.6rem);
+
+    @include max_devices($md) {
+      @include box(58.7rem, 27.1rem);
+    }
+  }
+
+  &__grpBtn {
+    @include box(86.8rem, 7.5rem);
+
+    @include max_devices($md) {
+      @include box(64.8rem, 5.8rem);
+    }
+  }
+
+  &__thapnen {
+    background: url(./assets/images/frame1/bg-frame1-type2.png);
+    @include background-img(center, contain);
+    @include box(25.8rem);
+    position: absolute;
+    top: 0;
+
+    @include max_devices($md) {
+      @include box(19.3rem);
+    }
+  }
+}
+
+.frame2 {
+  &__obj {
+    @include box(81.3rem, 61.2rem);
+
+    @include max_devices($md) {
+      width: 60.6rem;
+      height: 45.7rem;
+      object-fit: contain;
+    }
+  }
+}
+
+.frame3 {
+  &__title-img {
+    width: 79.7rem;
+    height: 4.8rem;
+    z-index: -1;
+
+    @include max_devices(768) {
+      width: 100%;
+    }
+  }
+
+  &__grpSlick {
+    width: 71.5rem;
+
+    @include max_devices(768) {
+      width: 54.4rem;
+    }
+
+    @include max_devices($sm) {
+      width: 51.4rem;
+    }
+  }
+
+  .received {
+    &:after {
+      content: "";
+      background: url(./assets/images/frame3/hover1.png);
+      @include background-img(center, 100% 100%);
+      @include box(8.8rem, 5.8rem);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__grpSlick2 {
+    width: 100rem;
+  }
+
+  &__item {
+    background: url(./assets/images/frame3/bg-item.jpg);
+    @include background-img(center, 100% 100%);
+    @include box(8.8rem, 11.8rem);
+    background-color: #1e1e1e;
+
+    &:hover,
+    &.active {
+      background: url(./assets/images/frame3/bg-item-hv.jpg);
+      @include background-img(center, 100% 100%);
+    }
+  }
+
+  &__item2 {
+    background: url(./assets/images/frame3/bg-item2.png);
+    @include background-img(center, 100% 100%);
+    @include box(39.9rem, 61rem);
+  }
+
+  &__item3 {
+    background: url(./assets/images/frame3/bg-item3.png);
+    @include background-img(center, 100% 100%);
+    @include box(39.9rem, 61rem);
+  }
+
+  &__arrow {
+    background: url(./assets/images/frame3/arrow.png);
+    @include background-img(center, 100% 100%);
+    @include box(4.7rem, 2.7rem);
+
+    &:hover {
+      background: url(./assets/images/frame3/arrow.png);
+      @include background-img(center, 100% 100%);
+    }
+  }
+
+  &__day {
+    background: url(./assets/images/frame3/bg-day.png);
+    @include background-img(center, 100% 100%);
+    @include box(10.2rem, 2.1rem);
+
+    @include max_devices($md) {
+      width: 9rem;
+      height: 2rem;
+    }
+
+    @include max_devices($sm) {
+      width: 10rem;
+      height: 3rem;
+    }
+
+    &:hover,
+    &.active {
+      background: url(./assets/images/frame3/bg-day-hv.png);
+      @include background-img(center, 100% 100%);
+    }
+  }
+
+  &-next {
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+  }
+}
+
+.frame4 {
+  &__infoUser {
+    width: 71.6rem;
+
+    @include max_devices($md) {
+      width: 54.4rem;
+    }
+  }
+
+  &__obj {
+    @include box(45.8rem, 57.9rem);
+
+    @include max_devices($md) {
+      width: 35.8rem;
+      height: 42.9rem;
+    }
+  }
+}
+
+.frame5 {
+  .item_ex:hover > .detail__box {
+    display: flex;
+  }
+
+  .detail__box {
+    display: none;
+  }
+
+  &__listCount {
+    width: 91.5rem;
+  }
+
+  &__exGift {
+    width: 99.8rem;
+  }
+
+  &__bgType1 {
+    background: url(./assets/images/frame5/bg-exgift-left.png);
+    @include background-img(center, 100% 100%);
+    @include box(49.6rem, 102rem);
+
+    @include max_devices($md) {
+      height: 81rem;
+    }
+
+    @include max_devices($sm) {
+      height: auto;
+    }
+  }
+
+  &__bgType2 {
+    background: url(./assets/images/frame5/bg-exgift-right.png);
+    @include background-img(center, 100% 100%);
+    @include box(49.6rem, 102rem);
+
+    @include max_devices($md) {
+      height: 81rem;
+    }
+
+    @include max_devices($sm) {
+      height: auto;
+    }
+  }
+}
+
+.frame6 {
+  .out-hv {
+    transition: all 0.5s;
+    // img {
+    //   transition: all .5s;
+    // }
+    &:hover {
+      transform: translateY(-8px);
+      img {
+        // transform: translateY(10px);
+      }
+    }
+  }
+
+  .item_ex:hover > .detail__box {
+    display: flex;
+  }
+
+  .detail__box {
+    display: none;
+  }
+
+  &__number {
+  }
+
+  &__number-title {
+    background: url(./assets/images/frame6/numberTitle.png);
+    @include background-img(center, 100% 100%);
+    @include box(29.9rem, 4.4rem);
+  }
+
+  &__grpBtn {
+    background: url(./assets/images/frame6/bgSlick.png);
+    @include background-img(center, 100% 100%);
+    @include box(98.1rem, 37rem);
+
+    @include max_devices($md) {
+      background: url(./assets/images/frame6/md-bgSlick.png);
+      @include background-img(center, 100% 100%);
+      @include box(68.7rem, 37.8rem);
+    }
+  }
+
+  &__arrow {
+    background: url(./assets/images/frame6/arrow2.png);
+    @include background-img(center, 100% 100%);
+    @include box(7.4rem, 7.8rem);
+
+    &:hover {
+      background: url(./assets/images/frame6/arrow2.png);
+      @include background-img(center, 100% 100%);
+    }
+  }
+}
+
+.frame7 {
+  &__title {
+    font-size: 5rem;
+  }
+
+  &__table {
+    width: 78.8rem;
+
+    @include max_devices($md) {
+      width: 72.9rem;
+    }
+  }
+
+  &__thead {
+    background: url(./assets/images/frame7/thead.png);
+    @include background-img(center, 100% 100%);
+    @include box(77.8rem, 5.8rem);
+  }
+
+  &__footer {
+    background: url(./assets/images/frame7/tbody.png);
+    @include background-img(center, 100% 100%);
+    @include box(77.9rem, 8.5rem);
+  }
+}
+
+.popup {
+  &-type1 {
+    background: url(./assets/images/popup/bg-popup1.png);
+    @include background-img(center, 100% 100%);
+    @include box(62.9rem, 41.1rem);
+  }
+
+  &-type2 {
+    background: url(./assets/images/popup/bg-popup2.png);
+    @include background-img(center, 100% 100%);
+    @include box(71.1rem, 66.9rem);
+  }
+
+  &-type3 {
+    background: url(./assets/images/popup/bg-popup2.png);
+    @include background-img(center, 100% 100%);
+    @include box(78.5rem, 72rem);
+  }
+
+  &__close {
+    background: url(./assets/images/popup/close.png);
+    @include background-img(center, contain);
+    @include box(4.8rem);
+  }
+
+  .tilt-in-top-1 {
+    -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: translate(-50%, -50%) rotateY(30deg) translateY(-300px)
+        skewY(-30deg);
+      transform: translate(-50%, -50%) rotateY(30deg) translateY(-300px)
+        skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) rotateY(0deg) translateY(0)
+        skewY(0deg);
+      transform: translate(-50%, -50%) rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: translate(-50%, -50%) rotateY(30deg) translateY(-300px)
+        skewY(-30deg);
+      transform: translate(-50%, -50%) rotateY(30deg) translateY(-300px)
+        skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) rotateY(0deg) translateY(0)
+        skewY(0deg);
+      transform: translate(-50%, -50%) rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+}
+
+.open {
+  right: 0 !important;
+}
+
+.nav {
+  &-right {
+    right: -19.5rem;
+    transition: all 0.5s ease;
+  }
+
+  &__btn-type1 {
+    background: url(./assets/images/etc/btn-type5.png);
+    @include background-img(center, contain);
+    @include box(17.6rem, 5.1rem);
+  }
+
+  &__btn-type2 {
+    background: url(./assets/images/navright/bg-btn-card.png);
+    @include background-img(center, contain);
+    @include box(23.1rem, 6.4rem);
+  }
+
+  &__i-control {
+    cursor: pointer;
+    position: absolute;
+    top: 4rem;
+    left: -3.3rem;
+    height: 8.5rem;
+    width: 3rem;
+    background: #000;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+
+    .i-txt {
+      height: 5.5rem;
+      width: 2.5rem;
+      margin-top: 1.4rem;
+      margin-left: 0.2rem;
+      background: url(./assets/images/navright/icon-close-nav-right.png)
+        no-repeat;
+      background-size: contain;
+      display: block;
+      transform: rotateZ(0deg);
+    }
+
+    &.i-control-open {
+      .i-txt {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+
+  &__go-top {
+    background: url(./assets/images/navright/obj-top.png);
+    @include background-img(center, contain);
+    @include box(16.9rem, 12.9rem);
+  }
+
+  &-left {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url(./assets/images/navright/obj-bg.png);
+      @include background-img(center, 100% 100%);
+      @include box(18.2rem, 54rem);
+    }
+  }
+
+  &-left__row1 {
+    background: url(./assets/images/navright/bg-navleft.png);
+    @include background-img(center, 100% 100%);
+    @include box(16.8rem, 10.7rem);
+    color: #838383;
+
+    &.active {
+      background: url(./assets/images/navright/bg-navleft-hv.png);
+      @include background-img(center, 100% 100%);
+      @include box(20.8rem, 10.7rem);
+      color: white;
+    }
+  }
+
+  &-left__row2 {
+    background: url(./assets/images/navright/bg-navleft2.png);
+    @include background-img(center, 100% 100%);
+    @include box(16.8rem, 10.7rem);
+    color: #838383;
+
+    &.active {
+      background: url(./assets/images/navright/bg-navleft2-hv.png);
+      @include background-img(center, contain);
+      @include box(20.8rem, 10.7rem);
+      color: white;
+    }
+  }
+}

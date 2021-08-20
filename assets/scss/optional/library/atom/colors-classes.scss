@@ -1,6 +1,5 @@
 @if $use-color-classes == true {
   $color-list: join(color(brand), color(base));
-
   @each $name, $color in $color-list {
     .color-#{$name} {
       color: $color;
@@ -21,9 +20,7 @@
     }
 
     .text-shadow-#{$name} {
-      text-shadow: 0.1rem 0 0 $color, -0.1rem 0 0 $color, 0 0.1rem 0 $color,
-        0 -0.1rem 0 $color, 0.1rem 0.1rem $color, -0.1rem -0.1rem 0 $color,
-        0.1rem -0.1rem 0 $color, -0.1rem 0.1rem 0 $color;
+      text-shadow: 0.1rem 0 0 $color, -0.1rem 0 0 $color, 0 0.1rem 0 $color, 0 -0.1rem 0 $color, 0.1rem 0.1rem $color, -0.1rem -0.1rem 0 $color, 0.1rem -0.1rem 0 $color, -0.1rem 0.1rem 0 $color;
     }
 
     .hover\:bg-#{$name}:hover {
@@ -34,28 +31,40 @@
       color: $color;
     }
 
-    @include max_devices($lg){
+    @include max_devices($lg) {
       .lg\:bg-#{$name} {
         background-color: $color;
       }
       .lg\:color-#{$name} {
         color: $color;
       }
+      .lg\:border-#{$name} {
+        border-color: $color;
+        border-style: solid;
+      }
     }
-    @include max_devices($md){
+    @include max_devices($md) {
       .md\:bg-#{$name} {
         background-color: $color;
       }
       .md\:color-#{$name} {
         color: $color;
       }
+      .md\:border-#{$name} {
+        border-color: $color;
+        border-style: solid;
+      }
     }
-    @include max_devices($sm){
+    @include max_devices($sm) {
       .sm\:bg-#{$name} {
         background-color: $color;
       }
       .sm\:color-#{$name} {
         color: $color;
+      }
+      .sm\:border-#{$name} {
+        border-color: $color;
+        border-style: solid;
       }
     }
   }

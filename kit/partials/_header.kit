@@ -1,46 +1,47 @@
-<div class="header p-r z-1 md:z-3 md:p-f md:w100">
-    <div class="container d-flex j-start md:j-space-between md:a-center h100">
+<div class="header md:p-f p-r w-full pt-0.5 md:pt-0 z-3">
+    <div class="container mx-auto flex j-space-between h-6 md:a-center md:h-11 md:bg-gray-800 md:px-1.5 sm:px-0.5">
         <input id="toggle-hambuger" type="checkbox" style="display: none">
-        <div class="header--logo md:mt-6 z-10">
-            <img src="./assets/images/logo.png" alt="">
+        <div class="header__logo md:mt-8 md:bg-white md:p-px md:rounded-4xl z-3 animate__bounceIn animate__animated">
+            <img src="./assets/images/header/icon.png" alt="" class="w-full h-full md:hidden">
+            <img src="./assets/images/header/icon-mobi.png" alt=""
+                class="w-full h-full hidden md:block  md:rounded-4xl">
         </div>
-        <div class="header-grpbtn d-flex j-space-between hidden">
-            <a href="" class="btn d-block p-r button-type4 md:mr-2">
-                <p class="centered w100 t-center t-upper font-laclongquanbold color-white">
+        <div class="header__name hidden md:block text-xl font-robotomedium">
+            <p class="color-white text-bold text-3xl sm:text-4xl">Huyền Thoại Hải Tặc</p>
+            <p class="color-yellow-header sm:text-2xl">Game Mobile chuẩn One Piece</p>
+        </div>
+        <div class="header__grpbtn hidden md:block flex a-center j-space-between">
+            <a href="" class="block btn btn-type3 p-r color-white transition-colors duration-1000" target="_blank">
+                <p class="centered w-full text-center text-upper text-2xl sm:text-3xl">
                     tải game
                 </p>
             </a>
-            <a href="" class="btn d-block p-r button-type4">
-                <p class="centered w100 t-center t-upper font-laclongquanbold color-white">
-                    tải game
-                </p>
-            </a>
         </div>
-        <div class="icon-hamburger hidden-pc">
-            <label for="toggle-hambuger" id="hambuger">
-                <div class="inner-hambuger"></div>
+        <div class="icon-hamburger hidden md:block">
+            <label for="toggle-hambuger" id="hambuger" class="w-5 h-5 block p-r btn ">
+                <div class="inner-hambuger h-0.5 w-full t-1.5 p-a bg-white t-50% btn"></div>
             </label>
         </div>
-        <div class="header--menu d-flex md:flex-column md:j-start j-space-between  h100 pl-10 pr-10 t-bold md:hidden">
-            <a href="" class="btn link d-flex j-center a-center t-upper color-black font-godsword h100  active md:p-3">
-                <img src="./assets/images/icon1.png" alt="" class="icon mr-1">
-                Trang chủ
+        <div
+            class="header__menu  j-center a-center md:flex-col md:h-screen md:t-10 md:l-0 md:p-a md:bg-black md:w-full md:j-start md:pt-9">
+            <a href=""
+                class="animate__animated animate__fadeInUp delay-100 font-utm_facebook text-xl text-upper color-white hover:color-yellow-300 transition-colors duration-300 tracking-wide md:text-5xl md:py-2 md:border-b select-none md:border-gray-400 md:block md:w-full md:text-center">
+                <p>trang chủ</p>
             </a>
-            <a href="" class="btn link d-flex j-center a-center t-upper color-black font-godsword h100 md:p-3">
-                <img src="./assets/images/icon2.png" alt="" class="icon mr-1">
-                nạp thẻ
+            <img src="./assets/images/header/icon-menu.png" class="w-2.5 h-2.5 mx-4 md:hidden" alt="">
+            <a href=""
+                class="animate__animated animate__fadeInUp delay-200 font-utm_facebook text-xl text-upper color-white hover:color-yellow-300 transition-colors duration-300 tracking-wide md:text-5xl md:py-2 md:border-b select-none md:border-gray-400 md:block md:w-full md:text-center">
+                <p>FANPAGE</p>
             </a>
-            <a href="" class="btn link d-flex j-center a-center t-upper color-black font-godsword h100 md:p-3">
-                <img src="./assets/images/icon3.png" alt="" class="icon mr-1">
-                fanpage
+            <img src="./assets/images/header/icon-menu.png" class="w-2.5 h-2.5 mx-4 md:hidden" alt="">
+            <a href=""
+                class="animate__animated animate__fadeInUp delay-300 font-utm_facebook text-xl text-upper color-white hover:color-yellow-300 transition-colors duration-300 tracking-wide md:text-5xl md:py-2 md:border-b select-none md:border-gray-400 md:block md:w-full md:text-center">
+                <p>GROUP</p>
             </a>
-            <a href="" class="btn link d-flex j-center a-center t-upper color-black font-godsword h100 md:p-3">
-                <img src="./assets/images/icon4.png" alt="" class="icon mr-1">
-                group
-            </a>
-            <a href="" class="btn link d-flex j-center a-center t-upper color-black font-godsword h100 md:p-3">
-                <img src="./assets/images/icon5.png" alt="" class="icon mr-1">
-                hotline
+            <img src="./assets/images/header/icon-menu.png" class="w-2.5 h-2.5 mx-4 md:hidden" alt="">
+            <a href=""
+                class="animate__animated animate__fadeInUp delay-500 font-utm_facebook text-xl text-upper color-white hover:color-yellow-300 transition-colors duration-300 tracking-wide md:text-5xl md:py-2 md:border-b select-none md:border-gray-400 md:block md:w-full md:text-center">
+                <p>YOUTUBE</p>
             </a>
         </div>
     </div>

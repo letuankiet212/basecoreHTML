@@ -1,0 +1,65 @@
+<div id="popup-note" class="popup z-2 p-f w-full h-full t-0 l-0 z-5" style="display: none">
+    <div class="bgPopup p-a w-full h-full bg-modal"></div>
+    <div class="popup__main centered popup-type1 pt-2 pb-5 pr-5 pl-7 flex flex-col a-center">
+        <div class="popup__close p-a r-4 t-2 btn"></div>
+        <div class="popup__title text-3xl text-center text-upper color-red-700 py-1.5 mt-4 ">
+            thông báo
+        </div>
+        <div class="popup__content flex-1 text-center text-2xl pt-3 color-gray-700 font-robotomedium">
+            <p>Bạn nhận được 1 lượt tìm ngọc rồng <br>
+                từ cập nhật thông tin <br>
+                Có lỗi! Vui lòng thử lại sau</p>
+        </div>
+    </div>
+</div>
+
+<div id="popup-login" class="popup z-2 p-f w-full h-full t-0 l-0" style="display: block;">
+    <div class="bgPopup p-a w-full h-full bg-modal"></div>
+    <div class="popup__main centered popup-type2 pt-6 sm:pt-4 pl-2 flex flex-col a-center">
+        <div class="popup__close p-a r-1  t-3 btn">
+
+        </div>
+        <div class="popup__title text-4xl text-center text-upper color-yellow-800 sm:text-5xl">
+            đăng nhập
+        </div>
+        <div class="popup__content flex-1 text-center text-2xl pt-3.5 color-blue-200 font-robotomedium">
+            <form action="" class="w-36 mx-auto">
+                <input type="text"
+                    class="w-full h-5 text-center bg-gray-900 rounded-lg color-white text-2xl sm:text-1.5xl"
+                    placeholder="Nhập tài khoản ..." required>
+                <input type="password"
+                    class="w-full h-5 text-center bg-gray-900 rounded-lg color-white text-2xl mt-2 sm:text-1.5xl"
+                    name="" id="" placeholder="Nhập mật khẩu ..." required>
+                <button type="submit" class="popup__submit btn-type7 p-r mx-auto btn mt-1">
+                    <p
+                        class="centered w-full text-center pb-0.5 text-upper text-3xl color-white pt-0.5 font-gss_pokemon_ui">
+                        Đăng nhập
+                    </p>
+                </button>
+                <a href="" target="_blank"
+                    class=" block mt-2 text-center text-xl color-red-500 text-underline btn sm:text-1.5xl">
+                    Quên mật khẩu ?
+                </a>
+                <div class="text-center text-xl pt-1.5 color-black sm:text-1.5xl">
+                    <p>Chưa có tài khoản ? <a href="" class="color-red-500 text-underline">Đăng ký </a></p>
+                    <p>Hoặc đăng nhập bằng</p>
+                </div>
+
+                <div class="grp-social flex j-center mt-1.5">
+                    <a href="" class="popup__icon mr-2.5 w-7 md:w-9">
+                        <img src="./assets/images/popup/google.png" class="w-full h-auto" alt="">
+                    </a>
+                    <a href="" class="popup__icon w-7 md:w-9">
+                        <img src="./assets/images/popup/facebook.png" class="w-full h-auto" alt="">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.bgPopup, .popup__close').click(function () {
+        $(this).parents('.popup').fadeOut()
+    })
+</script>

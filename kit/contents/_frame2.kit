@@ -1,0 +1,126 @@
+<div class="frame2 p-r z-1 mt-4 pt-6 text-center md:pb-12 pb-16">
+    <span class="frame__title text-2-color text-3.5xl text-upper text-center select-none ">
+        big update mừng sinh nhật
+    </span>
+    <p class="text-lg color-white text-upper tracking-wider mt-2 sm:text-1.5xl">
+        Nhiều tính năng mới hấp dẫn đang chờ các thuyền trưởng khám phá!
+    </p>
+    <div class="frame2__content">
+        <div class="container tab mx-auto md:px-2">
+            <div class="frame2__tab-category flex j-center mt-6 md:mt-5">
+                <div class="btn btn-type2 p-r mx-1.5 active md:w-36 md:h-9" data-type="noi-that">
+                    <p class="centered w-full text-center text-3xl text-upper">
+                        Nội thất
+                    </p>
+                </div>
+                <div class="btn btn-type2 p-r mx-1.5 md:w-36 md:h-9" data-type="dao-nguoi-ca">
+                    <p class="centered w-full text-center text-3xl text-upper">
+                        đảo người cá
+                    </p>
+                </div>
+            </div>
+            <div class="frame2__tab-content mx-auto rounded-3xl bg-white-frame1 mt-5 p-1 md:w-full md:h-36 md:p-0.5">
+                <div id="noi-that" class="content w-full h-full bg-black rounded-3xl overflow-hidden">
+                    <div class="h-full">
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/noi-that/1.png" class="w-full h-full object-fill" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/noi-that/2.png" class="w-full h-full object-fill" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/noi-that/3.png" class="w-full h-full object-fill" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/noi-that/4.png" class="w-full h-full object-fill" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="dao-nguoi-ca" class="content w-full h-full bg-black rounded-3xl overflow-hidden"
+                    style="display:none">
+                    <div class="h-full">
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/1.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/2.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/3.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/4.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/5.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full h-full">
+                            <img src="./assets/images/frame2/dao-nguoi-ca/6.png" class="w-full h-full object-fill"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.frame2__tab-category .btn').click(function (e) {
+        console.log();
+        $('.frame2__tab-content .content').css('display', 'none')
+        $('.frame2__tab-category .btn').removeClass('active')
+        $(this).addClass('active')
+        $(`#${$(this).attr('data-type')}`).slick('refresh');
+        $(`#${$(this).attr('data-type')}`).fadeIn()
+
+    })
+
+    $('#noi-that').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        pauseOnFocus: false,
+        pauseOnDotsHover: false,
+        pauseOnHover: false,
+        speed: 300,
+        dots: false,
+        prevArrow: '<button class="frame2__arrow frame2-prev l-0 lg:l-0"></button>',
+        nextArrow: '<button class="frame2__arrow frame2-next r-0 lg:r-0"></button>',
+    })
+    $('#dao-nguoi-ca').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        pauseOnFocus: false,
+        pauseOnDotsHover: false,
+        pauseOnHover: false,
+        speed: 300,
+        dots: false,
+        prevArrow: '<button class="frame2__arrow frame2-prev l-0 lg:l-0"></button>',
+        nextArrow: '<button class="frame2__arrow frame2-next r-0 lg:r-0"></button>',
+    })
+</script>

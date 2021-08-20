@@ -1,4 +1,35 @@
 @if $use-helper-wh-styles == true {
+  .max-w {
+    &-0 {
+      max-width: 0rem;
+    }
+    &-none {
+      max-width: none;
+    }
+  }
+
+  .min-w {
+    &-0 {
+      min-width: 0rem;
+    }
+    &-none {
+      min-width: none;
+    }
+  }
+
+  $unit-list: join(unit(custom), unit(brand));
+  @each $name, $unit in $unit-list {
+    .w-#{$name} {
+      width: $unit;
+    }
+    .max-w-#{$name} {
+      max-width: $unit;
+    }
+    .min-w-#{$name} {
+      min-width: $unit;
+    }
+  }
+
   .w {
     &-0 {
       width: 0px;
@@ -197,6 +228,21 @@
     }
     &-max {
       width: max-content;
+    }
+  }
+
+  @each $name, $unit in $unit-list {
+    @include max_devices($lg) {
+      .lg\:w-#{$name} {
+        width: $unit;
+      }
+
+      .lg\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .lg\:min-w-#{$name} {
+        min-width: $unit;
+      }
     }
   }
   @include max_devices($lg) {
@@ -398,6 +444,20 @@
       }
       &-max {
         width: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include max_devices($md) {
+      .md\:w-#{$name} {
+        width: $unit;
+      }
+
+      .md\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .md\:min-w-#{$name} {
+        min-width: $unit;
       }
     }
   }
@@ -603,6 +663,19 @@
       }
     }
   }
+  @each $name, $unit in $unit-list {
+    @include max_devices($sm) {
+      .sm\:w-#{$name} {
+        width: $unit;
+      }
+      .sm\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .sm\:min-w-#{$name} {
+        min-width: $unit;
+      }
+    }
+  }
   @include max_devices($sm) {
     .sm\:w {
       &-0 {
@@ -803,6 +876,19 @@
       &-max {
         width: max-content;
       }
+    }
+  }
+
+  @each $name, $unit in $unit-list {
+    .h-#{$name} {
+      height: $unit;
+    }
+
+    .max-h-#{$name} {
+      max-height: $unit;
+    }
+    .min-h-#{$name} {
+      min-height: $unit;
     }
   }
   .h {
@@ -1006,6 +1092,19 @@
     }
   }
   // lg  max-devices 1024
+  @each $name, $unit in $unit-list {
+    @include max_devices($lg) {
+      .lg\:h-#{$name} {
+        height: $unit;
+      }
+      .lg\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .lg\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
   @include max_devices($lg) {
     .lg\:h {
       &-0 {
@@ -1209,6 +1308,19 @@
     }
   }
   // md  max-devices 768
+  @each $name, $unit in $unit-list {
+    @include max_devices($md) {
+      .md\:h-#{$name} {
+        height: $unit;
+      }
+      .md\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .md\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
   @include max_devices($md) {
     .md\:h {
       &-0 {
@@ -1412,6 +1524,19 @@
     }
   }
   // sm  max-devices 568
+  @each $name, $unit in $unit-list {
+    @include max_devices($sm) {
+      .sm\:h-#{$name} {
+        height: $unit;
+      }
+      .sm\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .sm\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
   @include max_devices($sm) {
     .sm\:h {
       &-0 {

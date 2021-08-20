@@ -9,5 +9,9 @@
 //
 
 @function color($color-variant...) {
-  @return map-deep-get($colors-map, $color-variant...);
+	@return map-deep-get($colors-map, $color-variant...);
+}
+
+@function unit($units-variant...) {
+	@return map-deep-get($units-map, $units-variant...);
 }

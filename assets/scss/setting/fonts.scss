@@ -1,0 +1,35 @@
+$fonts: "gss_pokemon_ui", "robotomedium", "utm_facebook";
+
+@each $font in $fonts {
+	@if ($font != "") {
+		@font-face {
+			font-family: $font;
+			src: url("../fonts/#{$font}.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		.font-#{$font} {
+			font-family: "#{$font}";
+		}
+
+		@include max_devices($lg) {
+			.lg\:font-#{$font} {
+				font-family: "#{$font}";
+			}
+		}
+
+		@include max_devices($md) {
+			.md\:font-#{$font} {
+				font-family: "#{$font}";
+			}
+		}
+
+		@include max_devices($sm) {
+			.sm\:font-#{$font} {
+				font-family: "#{$font}";
+			}
+		}
+	}
+}

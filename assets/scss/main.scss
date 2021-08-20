@@ -1,12 +1,14 @@
 @import "app.scss";
-@import "./optional/library/main";
-@import "base/fonts";
-
+@import "setting/fonts.scss";
+@import "optional/animate/animate.scss";
+@import "optional/slick/slick-theme.scss", "optional/slick/slick.scss";
+@import "base/typo.scss";
 html {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
   font-size: 10px;
+  margin: 0 auto;
   @include breakpoints(
     "font-size",
     "vw",
@@ -24,6 +26,7 @@ body {
   background-color: $color-base-background;
   color: $color-base-text;
   max-width: 1920px;
+  margin: 0 auto;
 
   &::-webkit-scrollbar {
     width: 0.8rem;
@@ -55,3 +58,4 @@ body {
 }
 
 @import "components/etc.scss";
+@import "./optional/library/main";

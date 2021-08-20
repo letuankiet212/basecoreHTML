@@ -1,3 +1,3 @@
-@import  "setting/variables";
-@import  "mixins/placeholder", "mixins/responsive";
-@import "generic/sanitize","generic/reset";
+@import "setting/base-options.scss", "setting/colors.scss", "setting/variables";
+@import "mixins/placeholder", "mixins/responsive";
+@import "generic/sanitize", "generic/reset";
