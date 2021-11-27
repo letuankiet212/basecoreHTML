@@ -1,30 +1,57 @@
 @if $use-helper-visibility-styles == true {
-  @media screen and (max-width: 768px) {
-    .md\:hidden {
-      display: none !important;
-    }
+  .visible {
+    visibility: visible;
+  }
+  .invisible {
+    visibility: hidden;
+  }
 
+  @include devices($custom) {
+    .custom\:visible {
+      visibility: visible;
+    }
+    .custom\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($sm) {
+    .sm\:visible {
+      visibility: visible;
+    }
+    .sm\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($md) {
     .md\:visible {
-      display: block;
+      visibility: visible;
+    }
+    .md\:invisible {
+      visibility: hidden;
     }
   }
-  @media screen and (min-width: 769px) {
-    .hidden {
-      display: none !important;
+  @include devices($lg) {
+    .lg\:visible {
+      visibility: visible;
     }
-
-    .visible {
-      display: block;
+    .lg\:invisible {
+      visibility: hidden;
     }
   }
-}
-
-@include max_devices($sm) {
-  .sm\:hidden {
-    display: none !important;
+  @include devices($xl) {
+    .xl\:visible {
+      visibility: visible;
+    }
+    .xl\:invisible {
+      visibility: hidden;
+    }
   }
-
-  .sm\:visible {
-    display: block;
+  @include devices($custom2) {
+    .custom2\:visible {
+      visibility: visible;
+    }
+    .custom2\:invisible {
+      visibility: hidden;
+    }
   }
 }

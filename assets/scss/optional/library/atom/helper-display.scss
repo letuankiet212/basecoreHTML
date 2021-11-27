@@ -6,12 +6,57 @@
   .grid {
     display: grid;
   }
-  @include  max_devices($md){
+  @include devices($custom) {
+    .custom\:block {
+      display: block;
+    }
+
+    .custom\:grid {
+      display: grid;
+    }
+  }
+  @include devices($sm) {
+    .sm\:block {
+      display: block;
+    }
+
+    .sm\:grid {
+      display: grid;
+    }
+  }
+  @include devices($md) {
     .md\:block {
       display: block;
     }
 
     .md\:grid {
+      display: grid;
+    }
+  }
+  @include devices($lg) {
+    .lg\:block {
+      display: block;
+    }
+
+    .lg\:grid {
+      display: grid;
+    }
+  }
+  @include devices($xl) {
+    .xl\:block {
+      display: block;
+    }
+
+    .xl\:grid {
+      display: grid;
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:block {
+      display: block;
+    }
+
+    .custom2\:grid {
       display: grid;
     }
   }

@@ -3,16 +3,16 @@ $md-base-font-size: 2.112rem;
 $sm-base-font-size: 11px;
 
 $color-base-text: black;
-$color-scroll: #b73232;
-$color-bg-scroll: #f6f6f2;
-$color-base-background: #191919;
+$color-scroll: #a8a8a8;
+$color-bg-scroll: #f1f1f1;
+$color-base-background: #f8f8f8;
 
-$base-font-family: "utm_cafeta";
-$base-font-typo: "utm_cafeta";
+$base-font-family: "Montserrat";
+$base-font-typo: "Montserrat";
 $base-color-typo: black;
 $secondary-color-typo: white;
 
-$width-container: 130.8rem;
+$width-container: 71.3rem;
 
 $text-9xl: 12.8rem;
 $text-8xl: 9.6rem;
@@ -21,32 +21,35 @@ $text-6xl: 6rem;
 $text-5xl: 4.175rem;
 $text-4xl: 3.6rem;
 $text-3xl: 3rem;
-$text-2xl: 2.4rem;
+$text-2xl: 2.5rem;
 $text-xl: 2rem;
 $text-lg: 1.8rem;
 $text-base: 1.6rem;
 $text-sm: 1.4rem;
-$text-xs: 1.2rem;
+$text-xs: 1.3rem;
 
+//Responsive
+$xl: 1280;
 $lg: 1024;
 $md: 768;
-$sm: 568;
+$sm: 414;
+$custom: 375;
+$custom2: 1600;
 
-$limit-unit: 36;
+$limit-unit: 45;
 
 $units-map: (
   default: (),
   brand: (),
   custom: (
-    30: 30rem,
-    14\.8: 14.8rem,
-    1\.8: 1.8rem,
-    6\.5: 6.5rem,
-    7\.5: 7.5rem,
-    13: 13rem,
-    18: 18rem,
-    22\.3: 22.3rem,
-    40\.8: 40.8rem,
-    63\.7: 63.7rem,
+    8\.6: 8.6rem,
+  ),
+);
+
+$pm-map: (
+  default: (),
+  brand: (),
+  custom: (
+    1\.7: 1.7rem,
   ),
 );

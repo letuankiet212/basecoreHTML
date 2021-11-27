@@ -232,21 +232,21 @@
   }
 
   @each $name, $unit in $unit-list {
-    @include max_devices($lg) {
-      .lg\:w-#{$name} {
+    @include devices($custom) {
+      .custom\:w-#{$name} {
         width: $unit;
       }
 
-      .lg\:max-w-#{$name} {
+      .custom\:max-w-#{$name} {
         max-width: $unit;
       }
-      .lg\:min-w-#{$name} {
+      .custom\:min-w-#{$name} {
         min-width: $unit;
       }
     }
   }
-  @include max_devices($lg) {
-    .lg\:w {
+  @include devices($custom) {
+    .custom\:w {
       &-0 {
         width: 0px;
       }
@@ -448,7 +448,223 @@
     }
   }
   @each $name, $unit in $unit-list {
-    @include max_devices($md) {
+    @include devices($sm) {
+      .sm\:w-#{$name} {
+        width: $unit;
+      }
+
+      .sm\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .sm\:min-w-#{$name} {
+        min-width: $unit;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:w {
+      &-0 {
+        width: 0px;
+      }
+      &-px {
+        width: 1px;
+      }
+      &-0\.5 {
+        width: 0.5rem;
+      }
+      &-1 {
+        width: 1rem;
+      }
+      &-1\.5 {
+        width: 1.5rem;
+      }
+      &-2 {
+        width: 2rem;
+      }
+      &-2\.5 {
+        width: 2.5rem;
+      }
+      &-3 {
+        width: 3rem;
+      }
+      &-3\.5 {
+        width: 3.5rem;
+      }
+      &-4 {
+        width: 4rem;
+      }
+      &-5 {
+        width: 5rem;
+      }
+      &-6 {
+        width: 6rem;
+      }
+      &-7 {
+        width: 7rem;
+      }
+      &-8 {
+        width: 8rem;
+      }
+      &-9 {
+        width: 9rem;
+      }
+      &-10 {
+        width: 10rem;
+      }
+      &-11 {
+        width: 11rem;
+      }
+      &-12 {
+        width: 12rem;
+      }
+      &-14 {
+        width: 14rem;
+      }
+      &-16 {
+        width: 16rem;
+      }
+      &-20 {
+        width: 20rem;
+      }
+      &-24 {
+        width: 24rem;
+      }
+      &-28 {
+        width: 28rem;
+      }
+      &-32 {
+        width: 32rem;
+      }
+      &-36 {
+        width: 36rem;
+      }
+      &-40 {
+        width: 40rem;
+      }
+      &-44 {
+        width: 44rem;
+      }
+      &-48 {
+        width: 48rem;
+      }
+      &-52 {
+        width: 52rem;
+      }
+      &-56 {
+        width: 56rem;
+      }
+      &-60 {
+        width: 60rem;
+      }
+      &-64 {
+        width: 64rem;
+      }
+      &-72 {
+        width: 72rem;
+      }
+      &-80 {
+        width: 80rem;
+      }
+      &-96 {
+        width: 96rem;
+      }
+      &-auto {
+        width: auto;
+      }
+      &-1\/2 {
+        width: 50%;
+      }
+      &-1\/3 {
+        width: 33.333333%;
+      }
+      &-2\/3 {
+        width: 66.666667%;
+      }
+      &-1\/4 {
+        width: 25%;
+      }
+      &-2\/4 {
+        width: 50%;
+      }
+      &-3\/4 {
+        width: 75%;
+      }
+      &-1\/5 {
+        width: 20%;
+      }
+      &-2\/5 {
+        width: 40%;
+      }
+      &-3\/5 {
+        width: 60%;
+      }
+      &-4\/5 {
+        width: 80%;
+      }
+      &-1\/6 {
+        width: 16.666667%;
+      }
+      &-2\/6 {
+        width: 33.333333%;
+      }
+      &-3\/6 {
+        width: 50%;
+      }
+      &-4\/6 {
+        width: 66.666667%;
+      }
+      &-5\/6 {
+        width: 83.333333%;
+      }
+      &-1\/12 {
+        width: 8.333333%;
+      }
+      &-2\/12 {
+        width: 16.666667%;
+      }
+      &-3\/12 {
+        width: 25%;
+      }
+      &-4\/12 {
+        width: 33.333333%;
+      }
+      &-5\/12 {
+        width: 41.666667%;
+      }
+      &-6\/12 {
+        width: 50%;
+      }
+      &-7\/12 {
+        width: 58.333333%;
+      }
+      &-8\/12 {
+        width: 66.666667%;
+      }
+      &-9\/12 {
+        width: 75%;
+      }
+      &-10\/12 {
+        width: 83.333333%;
+      }
+      &-11\/12 {
+        width: 91.666667%;
+      }
+      &-full {
+        width: 100%;
+      }
+      &-screen {
+        width: 100vw;
+      }
+      &-min {
+        width: min-content;
+      }
+      &-max {
+        width: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include devices($md) {
       .md\:w-#{$name} {
         width: $unit;
       }
@@ -461,7 +677,7 @@
       }
     }
   }
-  @include max_devices($md) {
+  @include devices($md) {
     .md\:w {
       &-0 {
         width: 0px;
@@ -664,20 +880,453 @@
     }
   }
   @each $name, $unit in $unit-list {
-    @include max_devices($sm) {
-      .sm\:w-#{$name} {
+    @include devices($lg) {
+      .lg\:w-#{$name} {
         width: $unit;
       }
-      .sm\:max-w-#{$name} {
+
+      .lg\:max-w-#{$name} {
         max-width: $unit;
       }
-      .sm\:min-w-#{$name} {
+      .lg\:min-w-#{$name} {
         min-width: $unit;
       }
     }
   }
-  @include max_devices($sm) {
-    .sm\:w {
+  @include devices($lg) {
+    .lg\:w {
+      &-0 {
+        width: 0px;
+      }
+      &-px {
+        width: 1px;
+      }
+      &-0\.5 {
+        width: 0.5rem;
+      }
+      &-1 {
+        width: 1rem;
+      }
+      &-1\.5 {
+        width: 1.5rem;
+      }
+      &-2 {
+        width: 2rem;
+      }
+      &-2\.5 {
+        width: 2.5rem;
+      }
+      &-3 {
+        width: 3rem;
+      }
+      &-3\.5 {
+        width: 3.5rem;
+      }
+      &-4 {
+        width: 4rem;
+      }
+      &-5 {
+        width: 5rem;
+      }
+      &-6 {
+        width: 6rem;
+      }
+      &-7 {
+        width: 7rem;
+      }
+      &-8 {
+        width: 8rem;
+      }
+      &-9 {
+        width: 9rem;
+      }
+      &-10 {
+        width: 10rem;
+      }
+      &-11 {
+        width: 11rem;
+      }
+      &-12 {
+        width: 12rem;
+      }
+      &-14 {
+        width: 14rem;
+      }
+      &-16 {
+        width: 16rem;
+      }
+      &-20 {
+        width: 20rem;
+      }
+      &-24 {
+        width: 24rem;
+      }
+      &-28 {
+        width: 28rem;
+      }
+      &-32 {
+        width: 32rem;
+      }
+      &-36 {
+        width: 36rem;
+      }
+      &-40 {
+        width: 40rem;
+      }
+      &-44 {
+        width: 44rem;
+      }
+      &-48 {
+        width: 48rem;
+      }
+      &-52 {
+        width: 52rem;
+      }
+      &-56 {
+        width: 56rem;
+      }
+      &-60 {
+        width: 60rem;
+      }
+      &-64 {
+        width: 64rem;
+      }
+      &-72 {
+        width: 72rem;
+      }
+      &-80 {
+        width: 80rem;
+      }
+      &-96 {
+        width: 96rem;
+      }
+      &-auto {
+        width: auto;
+      }
+      &-1\/2 {
+        width: 50%;
+      }
+      &-1\/3 {
+        width: 33.333333%;
+      }
+      &-2\/3 {
+        width: 66.666667%;
+      }
+      &-1\/4 {
+        width: 25%;
+      }
+      &-2\/4 {
+        width: 50%;
+      }
+      &-3\/4 {
+        width: 75%;
+      }
+      &-1\/5 {
+        width: 20%;
+      }
+      &-2\/5 {
+        width: 40%;
+      }
+      &-3\/5 {
+        width: 60%;
+      }
+      &-4\/5 {
+        width: 80%;
+      }
+      &-1\/6 {
+        width: 16.666667%;
+      }
+      &-2\/6 {
+        width: 33.333333%;
+      }
+      &-3\/6 {
+        width: 50%;
+      }
+      &-4\/6 {
+        width: 66.666667%;
+      }
+      &-5\/6 {
+        width: 83.333333%;
+      }
+      &-1\/12 {
+        width: 8.333333%;
+      }
+      &-2\/12 {
+        width: 16.666667%;
+      }
+      &-3\/12 {
+        width: 25%;
+      }
+      &-4\/12 {
+        width: 33.333333%;
+      }
+      &-5\/12 {
+        width: 41.666667%;
+      }
+      &-6\/12 {
+        width: 50%;
+      }
+      &-7\/12 {
+        width: 58.333333%;
+      }
+      &-8\/12 {
+        width: 66.666667%;
+      }
+      &-9\/12 {
+        width: 75%;
+      }
+      &-10\/12 {
+        width: 83.333333%;
+      }
+      &-11\/12 {
+        width: 91.666667%;
+      }
+      &-full {
+        width: 100%;
+      }
+      &-screen {
+        width: 100vw;
+      }
+      &-min {
+        width: min-content;
+      }
+      &-max {
+        width: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include devices($xl) {
+      .xl\:w-#{$name} {
+        width: $unit;
+      }
+
+      .xl\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .xl\:min-w-#{$name} {
+        min-width: $unit;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:w {
+      &-0 {
+        width: 0px;
+      }
+      &-px {
+        width: 1px;
+      }
+      &-0\.5 {
+        width: 0.5rem;
+      }
+      &-1 {
+        width: 1rem;
+      }
+      &-1\.5 {
+        width: 1.5rem;
+      }
+      &-2 {
+        width: 2rem;
+      }
+      &-2\.5 {
+        width: 2.5rem;
+      }
+      &-3 {
+        width: 3rem;
+      }
+      &-3\.5 {
+        width: 3.5rem;
+      }
+      &-4 {
+        width: 4rem;
+      }
+      &-5 {
+        width: 5rem;
+      }
+      &-6 {
+        width: 6rem;
+      }
+      &-7 {
+        width: 7rem;
+      }
+      &-8 {
+        width: 8rem;
+      }
+      &-9 {
+        width: 9rem;
+      }
+      &-10 {
+        width: 10rem;
+      }
+      &-11 {
+        width: 11rem;
+      }
+      &-12 {
+        width: 12rem;
+      }
+      &-14 {
+        width: 14rem;
+      }
+      &-16 {
+        width: 16rem;
+      }
+      &-20 {
+        width: 20rem;
+      }
+      &-24 {
+        width: 24rem;
+      }
+      &-28 {
+        width: 28rem;
+      }
+      &-32 {
+        width: 32rem;
+      }
+      &-36 {
+        width: 36rem;
+      }
+      &-40 {
+        width: 40rem;
+      }
+      &-44 {
+        width: 44rem;
+      }
+      &-48 {
+        width: 48rem;
+      }
+      &-52 {
+        width: 52rem;
+      }
+      &-56 {
+        width: 56rem;
+      }
+      &-60 {
+        width: 60rem;
+      }
+      &-64 {
+        width: 64rem;
+      }
+      &-72 {
+        width: 72rem;
+      }
+      &-80 {
+        width: 80rem;
+      }
+      &-96 {
+        width: 96rem;
+      }
+      &-auto {
+        width: auto;
+      }
+      &-1\/2 {
+        width: 50%;
+      }
+      &-1\/3 {
+        width: 33.333333%;
+      }
+      &-2\/3 {
+        width: 66.666667%;
+      }
+      &-1\/4 {
+        width: 25%;
+      }
+      &-2\/4 {
+        width: 50%;
+      }
+      &-3\/4 {
+        width: 75%;
+      }
+      &-1\/5 {
+        width: 20%;
+      }
+      &-2\/5 {
+        width: 40%;
+      }
+      &-3\/5 {
+        width: 60%;
+      }
+      &-4\/5 {
+        width: 80%;
+      }
+      &-1\/6 {
+        width: 16.666667%;
+      }
+      &-2\/6 {
+        width: 33.333333%;
+      }
+      &-3\/6 {
+        width: 50%;
+      }
+      &-4\/6 {
+        width: 66.666667%;
+      }
+      &-5\/6 {
+        width: 83.333333%;
+      }
+      &-1\/12 {
+        width: 8.333333%;
+      }
+      &-2\/12 {
+        width: 16.666667%;
+      }
+      &-3\/12 {
+        width: 25%;
+      }
+      &-4\/12 {
+        width: 33.333333%;
+      }
+      &-5\/12 {
+        width: 41.666667%;
+      }
+      &-6\/12 {
+        width: 50%;
+      }
+      &-7\/12 {
+        width: 58.333333%;
+      }
+      &-8\/12 {
+        width: 66.666667%;
+      }
+      &-9\/12 {
+        width: 75%;
+      }
+      &-10\/12 {
+        width: 83.333333%;
+      }
+      &-11\/12 {
+        width: 91.666667%;
+      }
+      &-full {
+        width: 100%;
+      }
+      &-screen {
+        width: 100vw;
+      }
+      &-min {
+        width: min-content;
+      }
+      &-max {
+        width: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include devices($custom2) {
+      .custom2\:w-#{$name} {
+        width: $unit;
+      }
+
+      .custom2\:max-w-#{$name} {
+        max-width: $unit;
+      }
+      .custom2\:min-w-#{$name} {
+        min-width: $unit;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:w {
       &-0 {
         width: 0px;
       }
@@ -1091,22 +1740,22 @@
       height: max-content;
     }
   }
-  // lg  max-devices 1024
+
   @each $name, $unit in $unit-list {
-    @include max_devices($lg) {
-      .lg\:h-#{$name} {
+    @include devices($custom) {
+      .custom\:h-#{$name} {
         height: $unit;
       }
-      .lg\:.max-h-#{$name} {
+      .custom\:.max-h-#{$name} {
         max-height: $unit;
       }
-      .lg\:min-h-#{$name} {
+      .custom\:min-h-#{$name} {
         min-height: $unit;
       }
     }
   }
-  @include max_devices($lg) {
-    .lg\:h {
+  @include devices($custom) {
+    .custom\:h {
       &-0 {
         height: 0px;
       }
@@ -1307,9 +1956,225 @@
       }
     }
   }
-  // md  max-devices 768
+
   @each $name, $unit in $unit-list {
-    @include max_devices($md) {
+    @include devices($sm) {
+      .sm\:h-#{$name} {
+        height: $unit;
+      }
+      .sm\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .sm\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:h {
+      &-0 {
+        height: 0px;
+      }
+      &-px {
+        height: 1px;
+      }
+      &-0\.5 {
+        height: 0.5rem;
+      }
+      &-1 {
+        height: 1rem;
+      }
+      &-1\.5 {
+        height: 1.5rem;
+      }
+      &-2 {
+        height: 2rem;
+      }
+      &-2\.5 {
+        height: 2.5rem;
+      }
+      &-3 {
+        height: 3rem;
+      }
+      &-3\.5 {
+        height: 3.5rem;
+      }
+      &-4 {
+        height: 4rem;
+      }
+      &-5 {
+        height: 5rem;
+      }
+      &-6 {
+        height: 6rem;
+      }
+      &-7 {
+        height: 7rem;
+      }
+      &-8 {
+        height: 8rem;
+      }
+      &-9 {
+        height: 9rem;
+      }
+      &-10 {
+        height: 10rem;
+      }
+      &-11 {
+        height: 11rem;
+      }
+      &-12 {
+        height: 12rem;
+      }
+      &-14 {
+        height: 14rem;
+      }
+      &-16 {
+        height: 16rem;
+      }
+      &-20 {
+        height: 20rem;
+      }
+      &-24 {
+        height: 24rem;
+      }
+      &-28 {
+        height: 28rem;
+      }
+      &-32 {
+        height: 32rem;
+      }
+      &-36 {
+        height: 36rem;
+      }
+      &-40 {
+        height: 40rem;
+      }
+      &-44 {
+        height: 44rem;
+      }
+      &-48 {
+        height: 48rem;
+      }
+      &-52 {
+        height: 52rem;
+      }
+      &-56 {
+        height: 56rem;
+      }
+      &-60 {
+        height: 60rem;
+      }
+      &-64 {
+        height: 64rem;
+      }
+      &-72 {
+        height: 72rem;
+      }
+      &-80 {
+        height: 80rem;
+      }
+      &-96 {
+        height: 96rem;
+      }
+      &-auto {
+        height: auto;
+      }
+      &-1\/2 {
+        height: 50%;
+      }
+      &-1\/3 {
+        height: 33.333333%;
+      }
+      &-2\/3 {
+        height: 66.666667%;
+      }
+      &-1\/4 {
+        height: 25%;
+      }
+      &-2\/4 {
+        height: 50%;
+      }
+      &-3\/4 {
+        height: 75%;
+      }
+      &-1\/5 {
+        height: 20%;
+      }
+      &-2\/5 {
+        height: 40%;
+      }
+      &-3\/5 {
+        height: 60%;
+      }
+      &-4\/5 {
+        height: 80%;
+      }
+      &-1\/6 {
+        height: 16.666667%;
+      }
+      &-2\/6 {
+        height: 33.333333%;
+      }
+      &-3\/6 {
+        height: 50%;
+      }
+      &-4\/6 {
+        height: 66.666667%;
+      }
+      &-5\/6 {
+        height: 83.333333%;
+      }
+      &-1\/12 {
+        height: 8.333333%;
+      }
+      &-2\/12 {
+        height: 16.666667%;
+      }
+      &-3\/12 {
+        height: 25%;
+      }
+      &-4\/12 {
+        height: 33.333333%;
+      }
+      &-5\/12 {
+        height: 41.666667%;
+      }
+      &-6\/12 {
+        height: 50%;
+      }
+      &-7\/12 {
+        height: 58.333333%;
+      }
+      &-8\/12 {
+        height: 66.666667%;
+      }
+      &-9\/12 {
+        height: 75%;
+      }
+      &-10\/12 {
+        height: 83.333333%;
+      }
+      &-11\/12 {
+        height: 91.666667%;
+      }
+      &-full {
+        height: 100%;
+      }
+      &-screen {
+        height: 100vh;
+      }
+      &-min {
+        height: min-content;
+      }
+      &-max {
+        height: max-content;
+      }
+    }
+  }
+
+  @each $name, $unit in $unit-list {
+    @include devices($md) {
       .md\:h-#{$name} {
         height: $unit;
       }
@@ -1321,7 +2186,7 @@
       }
     }
   }
-  @include max_devices($md) {
+  @include devices($md) {
     .md\:h {
       &-0 {
         height: 0px;
@@ -1523,22 +2388,451 @@
       }
     }
   }
-  // sm  max-devices 568
   @each $name, $unit in $unit-list {
-    @include max_devices($sm) {
-      .sm\:h-#{$name} {
+    @include devices($lg) {
+      .lg\:h-#{$name} {
         height: $unit;
       }
-      .sm\:.max-h-#{$name} {
+      .lg\:.max-h-#{$name} {
         max-height: $unit;
       }
-      .sm\:min-h-#{$name} {
+      .lg\:min-h-#{$name} {
         min-height: $unit;
       }
     }
   }
-  @include max_devices($sm) {
-    .sm\:h {
+  @include devices($lg) {
+    .lg\:h {
+      &-0 {
+        height: 0px;
+      }
+      &-px {
+        height: 1px;
+      }
+      &-0\.5 {
+        height: 0.5rem;
+      }
+      &-1 {
+        height: 1rem;
+      }
+      &-1\.5 {
+        height: 1.5rem;
+      }
+      &-2 {
+        height: 2rem;
+      }
+      &-2\.5 {
+        height: 2.5rem;
+      }
+      &-3 {
+        height: 3rem;
+      }
+      &-3\.5 {
+        height: 3.5rem;
+      }
+      &-4 {
+        height: 4rem;
+      }
+      &-5 {
+        height: 5rem;
+      }
+      &-6 {
+        height: 6rem;
+      }
+      &-7 {
+        height: 7rem;
+      }
+      &-8 {
+        height: 8rem;
+      }
+      &-9 {
+        height: 9rem;
+      }
+      &-10 {
+        height: 10rem;
+      }
+      &-11 {
+        height: 11rem;
+      }
+      &-12 {
+        height: 12rem;
+      }
+      &-14 {
+        height: 14rem;
+      }
+      &-16 {
+        height: 16rem;
+      }
+      &-20 {
+        height: 20rem;
+      }
+      &-24 {
+        height: 24rem;
+      }
+      &-28 {
+        height: 28rem;
+      }
+      &-32 {
+        height: 32rem;
+      }
+      &-36 {
+        height: 36rem;
+      }
+      &-40 {
+        height: 40rem;
+      }
+      &-44 {
+        height: 44rem;
+      }
+      &-48 {
+        height: 48rem;
+      }
+      &-52 {
+        height: 52rem;
+      }
+      &-56 {
+        height: 56rem;
+      }
+      &-60 {
+        height: 60rem;
+      }
+      &-64 {
+        height: 64rem;
+      }
+      &-72 {
+        height: 72rem;
+      }
+      &-80 {
+        height: 80rem;
+      }
+      &-96 {
+        height: 96rem;
+      }
+      &-auto {
+        height: auto;
+      }
+      &-1\/2 {
+        height: 50%;
+      }
+      &-1\/3 {
+        height: 33.333333%;
+      }
+      &-2\/3 {
+        height: 66.666667%;
+      }
+      &-1\/4 {
+        height: 25%;
+      }
+      &-2\/4 {
+        height: 50%;
+      }
+      &-3\/4 {
+        height: 75%;
+      }
+      &-1\/5 {
+        height: 20%;
+      }
+      &-2\/5 {
+        height: 40%;
+      }
+      &-3\/5 {
+        height: 60%;
+      }
+      &-4\/5 {
+        height: 80%;
+      }
+      &-1\/6 {
+        height: 16.666667%;
+      }
+      &-2\/6 {
+        height: 33.333333%;
+      }
+      &-3\/6 {
+        height: 50%;
+      }
+      &-4\/6 {
+        height: 66.666667%;
+      }
+      &-5\/6 {
+        height: 83.333333%;
+      }
+      &-1\/12 {
+        height: 8.333333%;
+      }
+      &-2\/12 {
+        height: 16.666667%;
+      }
+      &-3\/12 {
+        height: 25%;
+      }
+      &-4\/12 {
+        height: 33.333333%;
+      }
+      &-5\/12 {
+        height: 41.666667%;
+      }
+      &-6\/12 {
+        height: 50%;
+      }
+      &-7\/12 {
+        height: 58.333333%;
+      }
+      &-8\/12 {
+        height: 66.666667%;
+      }
+      &-9\/12 {
+        height: 75%;
+      }
+      &-10\/12 {
+        height: 83.333333%;
+      }
+      &-11\/12 {
+        height: 91.666667%;
+      }
+      &-full {
+        height: 100%;
+      }
+      &-screen {
+        height: 100vh;
+      }
+      &-min {
+        height: min-content;
+      }
+      &-max {
+        height: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include devices($xl) {
+      .xl\:h-#{$name} {
+        height: $unit;
+      }
+      .xl\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .xl\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:h {
+      &-0 {
+        height: 0px;
+      }
+      &-px {
+        height: 1px;
+      }
+      &-0\.5 {
+        height: 0.5rem;
+      }
+      &-1 {
+        height: 1rem;
+      }
+      &-1\.5 {
+        height: 1.5rem;
+      }
+      &-2 {
+        height: 2rem;
+      }
+      &-2\.5 {
+        height: 2.5rem;
+      }
+      &-3 {
+        height: 3rem;
+      }
+      &-3\.5 {
+        height: 3.5rem;
+      }
+      &-4 {
+        height: 4rem;
+      }
+      &-5 {
+        height: 5rem;
+      }
+      &-6 {
+        height: 6rem;
+      }
+      &-7 {
+        height: 7rem;
+      }
+      &-8 {
+        height: 8rem;
+      }
+      &-9 {
+        height: 9rem;
+      }
+      &-10 {
+        height: 10rem;
+      }
+      &-11 {
+        height: 11rem;
+      }
+      &-12 {
+        height: 12rem;
+      }
+      &-14 {
+        height: 14rem;
+      }
+      &-16 {
+        height: 16rem;
+      }
+      &-20 {
+        height: 20rem;
+      }
+      &-24 {
+        height: 24rem;
+      }
+      &-28 {
+        height: 28rem;
+      }
+      &-32 {
+        height: 32rem;
+      }
+      &-36 {
+        height: 36rem;
+      }
+      &-40 {
+        height: 40rem;
+      }
+      &-44 {
+        height: 44rem;
+      }
+      &-48 {
+        height: 48rem;
+      }
+      &-52 {
+        height: 52rem;
+      }
+      &-56 {
+        height: 56rem;
+      }
+      &-60 {
+        height: 60rem;
+      }
+      &-64 {
+        height: 64rem;
+      }
+      &-72 {
+        height: 72rem;
+      }
+      &-80 {
+        height: 80rem;
+      }
+      &-96 {
+        height: 96rem;
+      }
+      &-auto {
+        height: auto;
+      }
+      &-1\/2 {
+        height: 50%;
+      }
+      &-1\/3 {
+        height: 33.333333%;
+      }
+      &-2\/3 {
+        height: 66.666667%;
+      }
+      &-1\/4 {
+        height: 25%;
+      }
+      &-2\/4 {
+        height: 50%;
+      }
+      &-3\/4 {
+        height: 75%;
+      }
+      &-1\/5 {
+        height: 20%;
+      }
+      &-2\/5 {
+        height: 40%;
+      }
+      &-3\/5 {
+        height: 60%;
+      }
+      &-4\/5 {
+        height: 80%;
+      }
+      &-1\/6 {
+        height: 16.666667%;
+      }
+      &-2\/6 {
+        height: 33.333333%;
+      }
+      &-3\/6 {
+        height: 50%;
+      }
+      &-4\/6 {
+        height: 66.666667%;
+      }
+      &-5\/6 {
+        height: 83.333333%;
+      }
+      &-1\/12 {
+        height: 8.333333%;
+      }
+      &-2\/12 {
+        height: 16.666667%;
+      }
+      &-3\/12 {
+        height: 25%;
+      }
+      &-4\/12 {
+        height: 33.333333%;
+      }
+      &-5\/12 {
+        height: 41.666667%;
+      }
+      &-6\/12 {
+        height: 50%;
+      }
+      &-7\/12 {
+        height: 58.333333%;
+      }
+      &-8\/12 {
+        height: 66.666667%;
+      }
+      &-9\/12 {
+        height: 75%;
+      }
+      &-10\/12 {
+        height: 83.333333%;
+      }
+      &-11\/12 {
+        height: 91.666667%;
+      }
+      &-full {
+        height: 100%;
+      }
+      &-screen {
+        height: 100vh;
+      }
+      &-min {
+        height: min-content;
+      }
+      &-max {
+        height: max-content;
+      }
+    }
+  }
+  @each $name, $unit in $unit-list {
+    @include devices($custom2) {
+      .custom2\:h-#{$name} {
+        height: $unit;
+      }
+      .custom2\:.max-h-#{$name} {
+        max-height: $unit;
+      }
+      .custom2\:min-h-#{$name} {
+        min-height: $unit;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:h {
       &-0 {
         height: 0px;
       }

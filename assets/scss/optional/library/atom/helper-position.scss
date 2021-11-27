@@ -1,20 +1,15 @@
 @if $use-helper-position-styles == true {
-  .p {
-    &-r {
-      position: relative;
-    }
-
-    &-a {
-      position: absolute;
-    }
-
-    &-s {
-      position: static;
-    }
-
-    &-f {
-      position: fixed;
-    }
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .static {
+    position: static;
+  }
+  .fixed {
+    position: fixed;
   }
   .centered {
     position: absolute;
@@ -27,80 +22,83 @@
     -o-transform: translate(-50%, -50%);
   }
 
-  .b-0\.5 {
+  .inset {
+    &-0 {
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
+    &-x-0 {
+      left: 0px;
+      right: 0px;
+    }
+    &-y-0 {
+      top: 0px;
+      bottom: 0px;
+    }
+  }
+  .bottom-0\.5 {
     bottom: 0.5rem;
   }
+  .top-0\.5 {
+    top: 0.5rem;
+  }
+  .right-0\.5 {
+    right: 0.5rem;
+  }
+  .left-0\.5 {
+    left: 0.5rem;
+  }
   @for $i from 0 through $limit-unit {
-    .t-#{$i} {
+    .top-#{$i} {
       top: #{$i}rem;
     }
-    .-t-#{$i} {
+    .-top-#{$i} {
       top: -#{$i}rem;
     }
-    .l-#{$i} {
+    .left-#{$i} {
       left: #{$i}rem;
     }
-    .-l-#{$i} {
+    .-left-#{$i} {
       left: -#{$i}rem;
     }
-    .r-#{$i} {
+    .right-#{$i} {
       right: #{$i}rem;
     }
-    .-r-#{$i} {
+    .-right-#{$i} {
       right: -#{$i}rem;
     }
-    .b-#{$i} {
+    .bottom-#{$i} {
       bottom: #{$i}rem;
     }
-    .-b-#{$i} {
+    .-bottom-#{$i} {
       bottom: -#{$i}rem;
     }
     .z-#{$i} {
       z-index: #{$i};
     }
   }
-  .l-50\% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
-  .t-50\% {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  t-none {
-    top: unset;
-    transform: unset;
-  }
-  b-none {
-    bottom: unset;
-  }
-  l-none {
-    left: unset;
-    transform: unset;
-  }
-  r-none {
-    right: unset;
-  }
-  @include max_devices($lg) {
-    .lg\:p {
-      &-r {
+  @include devices($custom) {
+    .custom\: {
+      &relative {
         position: relative;
       }
 
-      &-a {
+      &absolute {
         position: absolute;
       }
 
-      &-s {
+      &static {
         position: static;
       }
 
-      &-f {
+      &fixed {
         position: fixed;
       }
     }
-    .lg\:centered {
+    .custom\:centered {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -110,139 +108,81 @@
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
     }
-    .lg\:t-none {
-      top: unset;
-      transform: unset;
+    .custom\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
     }
-    .lg\:b-none {
-      bottom: unset;
+    .custom\:bottom-0\.5 {
+      bottom: 0.5rem;
     }
-    .lg\:l-none {
-      left: unset;
-      transform: unset;
+    .custom\:top-0\.5 {
+      top: 0.5rem;
     }
-    .lg\:r-none {
-      right: unset;
+    .custom\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .custom\:left-0\.5 {
+      left: 0.5rem;
     }
 
     @for $i from 0 through $limit-unit {
-      .lg\:t-#{$i} {
+      .custom\:top-#{$i} {
         top: #{$i}rem;
       }
-      .lg\:-t-#{$i} {
+      .custom\:-top-#{$i} {
         top: -#{$i}rem;
       }
-      .lg\:l-#{$i} {
+      .custom\:left-#{$i} {
         left: #{$i}rem;
       }
-      .lg\:-l-#{$i} {
+      .custom\:-left-#{$i} {
         left: -#{$i}rem;
       }
-      .lg\:r-#{$i} {
-        right: #{$i}rem;
-      }
-      .lg\:-r-#{$i} {
+      .custom\:-right-#{$i} {
         right: -#{$i}rem;
       }
-      .lg\:b-#{$i} {
+      .custom\:right-#{$i} {
+        right: #{$i}rem;
+      }
+      .custom\:bottom-#{$i} {
         bottom: #{$i}rem;
       }
-      .lg\:-b-#{$i} {
+      .custom\:-bottom-#{$i} {
         bottom: -#{$i}rem;
       }
-      .lg\:z-#{$i} {
+      .custom\:z-#{$i} {
         z-index: #{$i};
       }
     }
   }
-  @include max_devices($md) {
-    .md\:p {
-      &-r {
+
+  @include devices($sm) {
+    .sm\: {
+      &relative {
         position: relative;
       }
 
-      &-a {
+      &absolute {
         position: absolute;
       }
 
-      &-s {
+      &static {
         position: static;
       }
 
-      &-f {
-        position: fixed;
-      }
-    }
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-    }
-    .md\:t-none {
-      top: unset;
-      transform: unset;
-    }
-    .md\:b-none {
-      bottom: unset;
-    }
-    .md\:l-none {
-      left: unset;
-      transform: unset;
-    }
-    .md\:r-none {
-      right: unset;
-    }
-
-    @for $i from 0 through $limit-unit {
-      .md\:t-#{$i} {
-        top: #{$i}rem;
-      }
-      .md\:-t-#{$i} {
-        top: -#{$i}rem;
-      }
-      .md\:l-#{$i} {
-        left: #{$i}rem;
-      }
-      .md\:-l-#{$i} {
-        left: -#{$i}rem;
-      }
-      .md\:r-#{$i} {
-        right: #{$i}rem;
-      }
-      .md\:-r-#{$i} {
-        right: -#{$i}rem;
-      }
-      .md\:b-#{$i} {
-        bottom: #{$i}rem;
-      }
-      .md\:-b-#{$i} {
-        bottom: -#{$i}rem;
-      }
-      .md\:z-#{$i} {
-        z-index: #{$i};
-      }
-    }
-  }
-  @include max_devices($sm) {
-    .sm\:p {
-      &-r {
-        position: relative;
-      }
-
-      &-a {
-        position: absolute;
-      }
-
-      &-s {
-        position: static;
-      }
-
-      &-f {
+      &fixed {
         position: fixed;
       }
     }
@@ -256,47 +196,409 @@
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
     }
-    .sm\:t-none {
-      top: unset;
-      transform: unset;
+    .sm\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
     }
-    .sm\:b-none {
-      bottom: unset;
+    .sm\:bottom-0\.5 {
+      bottom: 0.5rem;
     }
-    .sm\:l-none {
-      left: unset;
-      transform: unset;
+    .sm\:top-0\.5 {
+      top: 0.5rem;
     }
-    .sm\:r-none {
-      right: unset;
+    .sm\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .sm\:left-0\.5 {
+      left: 0.5rem;
     }
 
     @for $i from 0 through $limit-unit {
-      .sm\:t-#{$i} {
+      .sm\:top-#{$i} {
         top: #{$i}rem;
       }
-      .sm\:-t-#{$i} {
+      .sm\:-top-#{$i} {
         top: -#{$i}rem;
       }
-      .sm\:l-#{$i} {
+      .sm\:left-#{$i} {
         left: #{$i}rem;
       }
-      .sm\:-l-#{$i} {
+      .sm\:-left-#{$i} {
         left: -#{$i}rem;
       }
-      .sm\:-r-#{$i} {
+      .sm\:-right-#{$i} {
         right: -#{$i}rem;
       }
-      .sm\:r-#{$i} {
+      .sm\:right-#{$i} {
         right: #{$i}rem;
       }
-      .sm\:b-#{$i} {
+      .sm\:bottom-#{$i} {
         bottom: #{$i}rem;
       }
-      .sm\:-b-#{$i} {
+      .sm\:-bottom-#{$i} {
         bottom: -#{$i}rem;
       }
       .sm\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
+  @include devices($md) {
+    .md\: {
+      &relative {
+        position: relative;
+      }
+
+      &absolute {
+        position: absolute;
+      }
+
+      &static {
+        position: static;
+      }
+
+      &fixed {
+        position: fixed;
+      }
+    }
+    .md\:centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    .md\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+    .md\:bottom-0\.5 {
+      bottom: 0.5rem;
+    }
+    .md\:top-0\.5 {
+      top: 0.5rem;
+    }
+    .md\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .md\:left-0\.5 {
+      left: 0.5rem;
+    }
+
+    @for $i from 0 through $limit-unit {
+      .md\:top-#{$i} {
+        top: #{$i}rem;
+      }
+      .md\:-top-#{$i} {
+        top: -#{$i}rem;
+      }
+      .md\:left-#{$i} {
+        left: #{$i}rem;
+      }
+      .md\:-left-#{$i} {
+        left: -#{$i}rem;
+      }
+      .md\:-right-#{$i} {
+        right: -#{$i}rem;
+      }
+      .md\:right-#{$i} {
+        right: #{$i}rem;
+      }
+      .md\:bottom-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .md\:-bottom-#{$i} {
+        bottom: -#{$i}rem;
+      }
+      .md\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\: {
+      &relative {
+        position: relative;
+      }
+
+      &absolute {
+        position: absolute;
+      }
+
+      &static {
+        position: static;
+      }
+
+      &fixed {
+        position: fixed;
+      }
+    }
+    .lg\:centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    .lg\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+    .lg\:bottom-0\.5 {
+      bottom: 0.5rem;
+    }
+    .lg\:top-0\.5 {
+      top: 0.5rem;
+    }
+    .lg\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .lg\:left-0\.5 {
+      left: 0.5rem;
+    }
+
+    @for $i from 0 through $limit-unit {
+      .lg\:top-#{$i} {
+        top: #{$i}rem;
+      }
+      .lg\:-top-#{$i} {
+        top: -#{$i}rem;
+      }
+      .lg\:left-#{$i} {
+        left: #{$i}rem;
+      }
+      .lg\:-left-#{$i} {
+        left: -#{$i}rem;
+      }
+      .lg\:-right-#{$i} {
+        right: -#{$i}rem;
+      }
+      .lg\:right-#{$i} {
+        right: #{$i}rem;
+      }
+      .lg\:bottom-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .lg\:-bottom-#{$i} {
+        bottom: -#{$i}rem;
+      }
+      .lg\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\: {
+      &relative {
+        position: relative;
+      }
+
+      &absolute {
+        position: absolute;
+      }
+
+      &static {
+        position: static;
+      }
+
+      &fixed {
+        position: fixed;
+      }
+    }
+    .xl\:centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    .xl\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+    .xl\:bottom-0\.5 {
+      bottom: 0.5rem;
+    }
+    .xl\:top-0\.5 {
+      top: 0.5rem;
+    }
+    .xl\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .xl\:left-0\.5 {
+      left: 0.5rem;
+    }
+
+    @for $i from 0 through $limit-unit {
+      .xl\:top-#{$i} {
+        top: #{$i}rem;
+      }
+      .xl\:-top-#{$i} {
+        top: -#{$i}rem;
+      }
+      .xl\:left-#{$i} {
+        left: #{$i}rem;
+      }
+      .xl\:-left-#{$i} {
+        left: -#{$i}rem;
+      }
+      .xl\:-right-#{$i} {
+        right: -#{$i}rem;
+      }
+      .xl\:right-#{$i} {
+        right: #{$i}rem;
+      }
+      .xl\:bottom-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .xl\:-bottom-#{$i} {
+        bottom: -#{$i}rem;
+      }
+      .xl\:z-#{$i} {
+        z-index: #{$i};
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\: {
+      &relative {
+        position: relative;
+      }
+
+      &absolute {
+        position: absolute;
+      }
+
+      &static {
+        position: static;
+      }
+
+      &fixed {
+        position: fixed;
+      }
+    }
+    .custom2\:centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    .custom2\:inset {
+      &-0 {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      &-x-0 {
+        left: 0px;
+        right: 0px;
+      }
+      &-y-0 {
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+    .custom2\:bottom-0\.5 {
+      bottom: 0.5rem;
+    }
+    .custom2\:top-0\.5 {
+      top: 0.5rem;
+    }
+    .custom2\:right-0\.5 {
+      right: 0.5rem;
+    }
+    .custom2\:left-0\.5 {
+      left: 0.5rem;
+    }
+
+    @for $i from 0 through $limit-unit {
+      .custom2\:top-#{$i} {
+        top: #{$i}rem;
+      }
+      .custom2\:-top-#{$i} {
+        top: -#{$i}rem;
+      }
+      .custom2\:left-#{$i} {
+        left: #{$i}rem;
+      }
+      .custom2\:-left-#{$i} {
+        left: -#{$i}rem;
+      }
+      .custom2\:-right-#{$i} {
+        right: -#{$i}rem;
+      }
+      .custom2\:right-#{$i} {
+        right: #{$i}rem;
+      }
+      .custom2\:bottom-#{$i} {
+        bottom: #{$i}rem;
+      }
+      .custom2\:-bottom-#{$i} {
+        bottom: -#{$i}rem;
+      }
+      .custom2\:z-#{$i} {
         z-index: #{$i};
       }
     }

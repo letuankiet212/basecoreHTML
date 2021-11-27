@@ -13,9 +13,8 @@
       user-select: auto;
     }
   }
-
-  @include max_devices($lg) {
-    .lg\:select {
+  @include devices($custom) {
+    .custom\:select {
       &-none {
         user-select: none;
       }
@@ -30,7 +29,23 @@
       }
     }
   }
-  @include max_devices($md) {
+  @include devices($sm) {
+    .sm\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($md) {
     .md\:select {
       &-none {
         user-select: none;
@@ -46,8 +61,40 @@
       }
     }
   }
-  @include max_devices($sm) {
-    .sm\:select {
+  @include devices($lg) {
+    .lg\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:select {
       &-none {
         user-select: none;
       }

@@ -1,70 +1,150 @@
 @if $use-color-classes == true {
   $color-list: join(color(brand), color(base));
   @each $name, $color in $color-list {
-    .color-#{$name} {
+    .text-#{'' + $name} {
       color: $color;
     }
 
-    .bg-#{$name} {
+    .bg-#{'' + $name} {
       background-color: $color;
     }
 
-    .placeholder-#{$name} {
-      opacity: 1;
-      color: $color;
-    }
-
-    .border-#{$name} {
+    .border-#{'' + $name} {
       border-color: $color;
       border-style: solid;
     }
 
-    .text-shadow-#{$name} {
-      text-shadow: 0.1rem 0 0 $color, -0.1rem 0 0 $color, 0 0.1rem 0 $color, 0 -0.1rem 0 $color, 0.1rem 0.1rem $color, -0.1rem -0.1rem 0 $color, 0.1rem -0.1rem 0 $color, -0.1rem 0.1rem 0 $color;
-    }
-
-    .hover\:bg-#{$name}:hover {
-      background-color: $color;
-    }
-
-    .hover\:color-#{$name}:hover {
+    .hover\:text-#{'' + $name}:hover {
       color: $color;
     }
 
-    @include max_devices($lg) {
-      .lg\:bg-#{$name} {
+    .hover\:bg-#{'' + $name}:hover {
+      background-color: $color;
+    }
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($custom) {
+      .custom\:bg-#{'' + $name} {
         background-color: $color;
       }
-      .lg\:color-#{$name} {
+      .custom\:text-#{'' + $name} {
         color: $color;
       }
-      .lg\:border-#{$name} {
+      .custom\:border-#{'' + $name} {
         border-color: $color;
         border-style: solid;
+      }
+      .custom\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .custom\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
       }
     }
-    @include max_devices($md) {
-      .md\:bg-#{$name} {
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($sm) {
+      .sm\:bg-#{'' + $name} {
         background-color: $color;
       }
-      .md\:color-#{$name} {
+      .sm\:text-#{'' + $name} {
         color: $color;
       }
-      .md\:border-#{$name} {
+      .sm\:border-#{'' + $name} {
         border-color: $color;
         border-style: solid;
+      }
+      .sm\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .sm\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
       }
     }
-    @include max_devices($sm) {
-      .sm\:bg-#{$name} {
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($md) {
+      .md\:bg-#{'' + $name} {
         background-color: $color;
       }
-      .sm\:color-#{$name} {
+      .md\:text-#{'' + $name} {
         color: $color;
       }
-      .sm\:border-#{$name} {
+      .md\:border-#{'' + $name} {
         border-color: $color;
         border-style: solid;
+      }
+      .md\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .md\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
+      }
+    }
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($lg) {
+      .lg\:bg-#{'' + $name} {
+        background-color: $color;
+      }
+      .lg\:text-#{'' + $name} {
+        color: $color;
+      }
+      .lg\:border-#{'' + $name} {
+        border-color: $color;
+        border-style: solid;
+      }
+      .lg\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .lg\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
+      }
+    }
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($xl) {
+      .xl\:bg-#{'' + $name} {
+        background-color: $color;
+      }
+      .xl\:text-#{'' + $name} {
+        color: $color;
+      }
+      .xl\:border-#{'' + $name} {
+        border-color: $color;
+        border-style: solid;
+      }
+      .xl\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .xl\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
+      }
+    }
+  }
+
+  @each $name, $color in $color-list {
+    @include devices($custom2) {
+      .custom2\:bg-#{'' + $name} {
+        background-color: $color;
+      }
+      .custom2\:text-#{'' + $name} {
+        color: $color;
+      }
+      .custom2\:border-#{'' + $name} {
+        border-color: $color;
+        border-style: solid;
+      }
+      .custom2\:hover\:text-#{'' + $name}:hover {
+        color: $color;
+      }
+      .custom2\:hover\:bg-#{'' + $name}:hover {
+        background-color: $color;
       }
     }
   }

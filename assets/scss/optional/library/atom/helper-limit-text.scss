@@ -9,9 +9,9 @@
     }
   }
 
-  @include max_devices($lg) {
+  @include devices($custom) {
     @for $i from 0 through 6 {
-      .lg\:text-limit-#{$i} {
+      .custom\:text-limit-#{$i} {
         text-overflow: ellipsis;
         overflow: hidden;
         display: -webkit-box;
@@ -20,8 +20,18 @@
       }
     }
   }
-
-  @include max_devices($md) {
+  @include devices($sm) {
+    @for $i from 0 through 6 {
+      .sm\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  @include devices($md) {
     @for $i from 0 through 6 {
       .md\:text-limit-#{$i} {
         text-overflow: ellipsis;
@@ -32,10 +42,31 @@
       }
     }
   }
-
-  @include max_devices($sm) {
+  @include devices($lg) {
     @for $i from 0 through 6 {
-      .sm\:text-limit-#{$i} {
+      .lg\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  @include devices($xl) {
+    @for $i from 0 through 6 {
+      .xl\:text-limit-#{$i} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  @include devices($custom2) {
+    @for $i from 0 through 6 {
+      .custom2\:text-limit-#{$i} {
         text-overflow: ellipsis;
         overflow: hidden;
         display: -webkit-box;

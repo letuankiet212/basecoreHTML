@@ -9,9 +9,13 @@
 //
 
 @function color($color-variant...) {
-	@return map-deep-get($colors-map, $color-variant...);
+  @return map-deep-get($colors-map, $color-variant...);
 }
 
 @function unit($units-variant...) {
-	@return map-deep-get($units-map, $units-variant...);
+  @return map-deep-get($units-map, $units-variant...);
+}
+
+@function pm($pm-variant...) {
+  @return map-deep-get($pm-map, $pm-variant...);
 }

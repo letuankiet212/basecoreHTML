@@ -47,8 +47,8 @@
     }
   }
 
-  @include max_devices($lg) {
-    .lg\:text {
+  @include devices($custom) {
+    .custom\:text {
       &-9xl {
         font-size: $text-9xl;
       }
@@ -96,8 +96,56 @@
       }
     }
   }
+  @include devices($sm) {
+    .sm\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
 
-  @include max_devices($md) {
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+  @include devices($md) {
     .md\:text {
       &-9xl {
         font-size: $text-9xl;
@@ -146,9 +194,106 @@
       }
     }
   }
+  @include devices($lg) {
+    .lg\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
 
-  @include max_devices($sm) {
-    .sm\:text {
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:text {
+      &-9xl {
+        font-size: $text-9xl;
+      }
+      &-8xl {
+        font-size: $text-8xl;
+      }
+      &-7xl {
+        font-size: $text-7xl;
+      }
+
+      &-6xl {
+        font-size: $text-6xl;
+      }
+
+      &-5xl {
+        font-size: $text-5xl;
+      }
+
+      &-4xl {
+        font-size: $text-4xl;
+      }
+
+      &-3xl {
+        font-size: $text-3xl;
+      }
+
+      &-2xl {
+        font-size: $text-2xl;
+      }
+
+      &-xs {
+        font-size: $text-xs;
+      }
+      &-sm {
+        font-size: $text-sm;
+      }
+      &-base {
+        font-size: $text-base;
+      }
+      &-lg {
+        font-size: $text-lg;
+      }
+      &-xl {
+        font-size: $text-xl;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:text {
       &-9xl {
         font-size: $text-9xl;
       }

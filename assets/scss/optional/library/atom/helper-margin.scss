@@ -1,4 +1,35 @@
 @if $use-helper-margin-styles == true {
+  $unit-list: join(pm(custom), pm(brand));
+  @each $name, $pm in $unit-list {
+    .m {
+      &t-#{$name} {
+        margin-top: $pm;
+      }
+      &l-#{$name} {
+        margin-left: $pm;
+      }
+      &r-#{$name} {
+        margin-right: $pm;
+      }
+      &b-#{$name} {
+        margin-bottom: $pm;
+      }
+    }
+    .-m {
+      &t-#{$name} {
+        margin-top: -$pm;
+      }
+      &l-#{$name} {
+        margin-left: -$pm;
+      }
+      &r-#{$name} {
+        margin-right: -$pm;
+      }
+      &b-#{$name} {
+        margin-bottom: -$pm;
+      }
+    }
+  }
   .mr-auto {
     margin-right: auto;
   }
@@ -11,8 +42,7 @@
   }
   .m {
     &-auto {
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
 
     &-px {
@@ -166,11 +196,6 @@
     }
   }
   .-m {
-    &-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     &-px {
       margin: -1px;
     }
@@ -372,18 +397,447 @@
     }
   }
 
-  @include max_devices($lg) {
-    .lg\:mr-auto {
+  @include devices($custom) {
+    @each $name, $pm in $unit-list {
+      .custom\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .custom\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
+    .custom\:mr-auto {
       margin-right: auto;
     }
-    .lg\:ml-auto {
+    .custom\:ml-auto {
       margin-left: auto;
     }
-    .lg\:mx-auto {
+    .custom\:mx-auto {
       margin-left: auto;
       margin-right: auto;
     }
-    .lg\:m {
+    .custom\:m {
+      &-auto {
+        margin: auto;
+      }
+
+      &-px {
+        margin: 1px;
+      }
+
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+
+      &t-px {
+        margin-top: 1px;
+      }
+
+      &t-0\.5 {
+        margin-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: 3.5rem;
+      }
+
+      &l-px {
+        margin-left: 1px;
+      }
+
+      &l-0\.5 {
+        margin-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: 3.5rem;
+      }
+
+      &r-px {
+        margin-right: 1px;
+      }
+
+      &r-0\.5 {
+        margin-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: 3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+    .custom\:-m {
+      &-px {
+        margin: -1px;
+      }
+
+      &-0\.5 {
+        margin: -0.5rem;
+      }
+
+      &-1\.5 {
+        margin: -1.5rem;
+      }
+
+      &-2\.5 {
+        margin: -2.5rem;
+      }
+
+      &-3\.5 {
+        margin: -3.5rem;
+      }
+
+      &t-px {
+        margin-top: -1px;
+      }
+
+      &t-0\.5 {
+        margin-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: -3.5rem;
+      }
+
+      &l-px {
+        margin-left: -1px;
+      }
+
+      &l-0\.5 {
+        margin-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: -3.5rem;
+      }
+
+      &r-px {
+        margin-right: -1px;
+      }
+
+      &r-0\.5 {
+        margin-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: -3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .custom\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .custom\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .custom\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .custom\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .custom\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+      .custom\:my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+      }
+      .custom\:mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+      }
+
+      .custom\:-m-#{$i} {
+        margin: -#{$i}rem;
+      }
+      .custom\:-mt-#{$i} {
+        margin-top: -#{$i}rem;
+      }
+      .custom\:-ml-#{$i} {
+        margin-left: -#{$i}rem;
+      }
+      .custom\:-mr-#{$i} {
+        margin-right: -#{$i}rem;
+      }
+      .custom\:-mb-#{$i} {
+        margin-bottom: -#{$i}rem;
+      }
+      .custom\:-my-#{$i} {
+        margin-top: -#{$i}rem;
+        margin-bottom: -#{$i}rem;
+      }
+      .custom\:-mx-#{$i} {
+        margin-left: -#{$i}rem;
+        margin-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($sm) {
+    @each $name, $pm in $unit-list {
+      .sm\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .sm\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
+    .sm\:mr-auto {
+      margin-right: auto;
+    }
+    .sm\:ml-auto {
+      margin-left: auto;
+    }
+    .sm\:mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sm\:m {
       &-auto {
         margin-left: auto;
         margin-right: auto;
@@ -539,7 +993,7 @@
         margin-right: 3.5rem;
       }
     }
-    .lg\:-m {
+    .sm\:-m {
       &-auto {
         margin-left: auto;
         margin-right: auto;
@@ -697,57 +1151,86 @@
     }
 
     @for $i from 0 through $limit-unit {
-      .lg\:m-#{$i} {
+      .sm\:m-#{$i} {
         margin: #{$i}rem;
       }
-      .lg\:mt-#{$i} {
+      .sm\:mt-#{$i} {
         margin-top: #{$i}rem;
       }
-      .lg\:ml-#{$i} {
+      .sm\:ml-#{$i} {
         margin-left: #{$i}rem;
       }
-      .lg\:mr-#{$i} {
+      .sm\:mr-#{$i} {
         margin-right: #{$i}rem;
       }
-      .lg\:mb-#{$i} {
+      .sm\:mb-#{$i} {
         margin-bottom: #{$i}rem;
       }
-      .lg\:my-#{$i} {
+      .sm\:my-#{$i} {
         margin-top: #{$i}rem;
         margin-bottom: #{$i}rem;
       }
-      .lg\:mx-#{$i} {
+      .sm\:mx-#{$i} {
         margin-left: #{$i}rem;
         margin-right: #{$i}rem;
       }
-
-      .lg\:-m-#{$i} {
+      .sm\:-m-#{$i} {
         margin: -#{$i}rem;
       }
-      .lg\:-mt-#{$i} {
+      .sm\:-mt-#{$i} {
         margin-top: -#{$i}rem;
       }
-      .lg\:-ml-#{$i} {
+      .sm\:-ml-#{$i} {
         margin-left: -#{$i}rem;
       }
-      .lg\:-mr-#{$i} {
+      .sm\:-mr-#{$i} {
         margin-right: -#{$i}rem;
       }
-      .lg\:-mb-#{$i} {
+      .sm\:-mb-#{$i} {
         margin-bottom: -#{$i}rem;
       }
-      .lg\:-my-#{$i} {
+      .sm\:-my-#{$i} {
         margin-top: -#{$i}rem;
         margin-bottom: -#{$i}rem;
       }
-      .lg\:-mx-#{$i} {
+      .sm\:-mx-#{$i} {
         margin-left: -#{$i}rem;
         margin-right: -#{$i}rem;
       }
     }
   }
 
-  @include max_devices($md) {
+  @include devices($md) {
+    @each $name, $pm in $unit-list {
+      .md\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .md\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
     .md\:mr-auto {
       margin-right: auto;
     }
@@ -1120,21 +1603,50 @@
     }
   }
 
-  @include max_devices($sm) {
-    .sm\:mr-auto {
+  @include devices($lg) {
+    @each $name, $pm in $unit-list {
+      .lg\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .lg\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
+    .lg\:mr-auto {
       margin-right: auto;
     }
-    .sm\:ml-auto {
+    .lg\:ml-auto {
       margin-left: auto;
     }
-    .sm\:mx-auto {
+    .lg\:mx-auto {
       margin-left: auto;
       margin-right: auto;
     }
-    .sm\:m {
+    .lg\:m {
       &-auto {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
       }
 
       &-px {
@@ -1287,12 +1799,7 @@
         margin-right: 3.5rem;
       }
     }
-    .sm\:-m {
-      &-auto {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
+    .lg\:-m {
       &-px {
         margin: -1px;
       }
@@ -1445,49 +1952,848 @@
     }
 
     @for $i from 0 through $limit-unit {
-      .sm\:m-#{$i} {
+      .lg\:m-#{$i} {
         margin: #{$i}rem;
       }
-      .sm\:mt-#{$i} {
+      .lg\:mt-#{$i} {
         margin-top: #{$i}rem;
       }
-      .sm\:ml-#{$i} {
+      .lg\:ml-#{$i} {
         margin-left: #{$i}rem;
       }
-      .sm\:mr-#{$i} {
+      .lg\:mr-#{$i} {
         margin-right: #{$i}rem;
       }
-      .sm\:mb-#{$i} {
+      .lg\:mb-#{$i} {
         margin-bottom: #{$i}rem;
       }
-      .sm\:my-#{$i} {
+      .lg\:my-#{$i} {
         margin-top: #{$i}rem;
         margin-bottom: #{$i}rem;
       }
-      .sm\:mx-#{$i} {
+      .lg\:mx-#{$i} {
         margin-left: #{$i}rem;
         margin-right: #{$i}rem;
       }
-      .sm\:-m-#{$i} {
+
+      .lg\:-m-#{$i} {
         margin: -#{$i}rem;
       }
-      .sm\:-mt-#{$i} {
+      .lg\:-mt-#{$i} {
         margin-top: -#{$i}rem;
       }
-      .sm\:-ml-#{$i} {
+      .lg\:-ml-#{$i} {
         margin-left: -#{$i}rem;
       }
-      .sm\:-mr-#{$i} {
+      .lg\:-mr-#{$i} {
         margin-right: -#{$i}rem;
       }
-      .sm\:-mb-#{$i} {
+      .lg\:-mb-#{$i} {
         margin-bottom: -#{$i}rem;
       }
-      .sm\:-my-#{$i} {
+      .lg\:-my-#{$i} {
         margin-top: -#{$i}rem;
         margin-bottom: -#{$i}rem;
       }
-      .sm\:-mx-#{$i} {
+      .lg\:-mx-#{$i} {
+        margin-left: -#{$i}rem;
+        margin-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($xl) {
+    @each $name, $pm in $unit-list {
+      .xl\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .xl\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
+    .xl\:mr-auto {
+      margin-right: auto;
+    }
+    .xl\:ml-auto {
+      margin-left: auto;
+    }
+    .xl\:mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .xl\:m {
+      &-auto {
+        margin: auto;
+      }
+
+      &-px {
+        margin: 1px;
+      }
+
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+
+      &t-px {
+        margin-top: 1px;
+      }
+
+      &t-0\.5 {
+        margin-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: 3.5rem;
+      }
+
+      &l-px {
+        margin-left: 1px;
+      }
+
+      &l-0\.5 {
+        margin-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: 3.5rem;
+      }
+
+      &r-px {
+        margin-right: 1px;
+      }
+
+      &r-0\.5 {
+        margin-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: 3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+    .xl\:-m {
+      &-px {
+        margin: -1px;
+      }
+
+      &-0\.5 {
+        margin: -0.5rem;
+      }
+
+      &-1\.5 {
+        margin: -1.5rem;
+      }
+
+      &-2\.5 {
+        margin: -2.5rem;
+      }
+
+      &-3\.5 {
+        margin: -3.5rem;
+      }
+
+      &t-px {
+        margin-top: -1px;
+      }
+
+      &t-0\.5 {
+        margin-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: -3.5rem;
+      }
+
+      &l-px {
+        margin-left: -1px;
+      }
+
+      &l-0\.5 {
+        margin-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: -3.5rem;
+      }
+
+      &r-px {
+        margin-right: -1px;
+      }
+
+      &r-0\.5 {
+        margin-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: -3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .xl\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .xl\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .xl\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .xl\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .xl\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+      .xl\:my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+      }
+      .xl\:mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+      }
+
+      .xl\:-m-#{$i} {
+        margin: -#{$i}rem;
+      }
+      .xl\:-mt-#{$i} {
+        margin-top: -#{$i}rem;
+      }
+      .xl\:-ml-#{$i} {
+        margin-left: -#{$i}rem;
+      }
+      .xl\:-mr-#{$i} {
+        margin-right: -#{$i}rem;
+      }
+      .xl\:-mb-#{$i} {
+        margin-bottom: -#{$i}rem;
+      }
+      .xl\:-my-#{$i} {
+        margin-top: -#{$i}rem;
+        margin-bottom: -#{$i}rem;
+      }
+      .xl\:-mx-#{$i} {
+        margin-left: -#{$i}rem;
+        margin-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($custom2) {
+    @each $name, $pm in $unit-list {
+      .custom2\:m {
+        &t-#{$name} {
+          margin-top: $pm;
+        }
+        &l-#{$name} {
+          margin-left: $pm;
+        }
+        &r-#{$name} {
+          margin-right: $pm;
+        }
+        &b-#{$name} {
+          margin-bottom: $pm;
+        }
+      }
+      .custom2\:-m {
+        &t-#{$name} {
+          margin-top: -$pm;
+        }
+        &l-#{$name} {
+          margin-left: -$pm;
+        }
+        &r-#{$name} {
+          margin-right: -$pm;
+        }
+        &b-#{$name} {
+          margin-bottom: -$pm;
+        }
+      }
+    }
+    .custom2\:mr-auto {
+      margin-right: auto;
+    }
+    .custom2\:ml-auto {
+      margin-left: auto;
+    }
+    .custom2\:mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .custom2\:m {
+      &-auto {
+        margin: auto;
+      }
+
+      &-px {
+        margin: 1px;
+      }
+
+      &-0\.5 {
+        margin: 0.5rem;
+      }
+
+      &-1\.5 {
+        margin: 1.5rem;
+      }
+
+      &-2\.5 {
+        margin: 2.5rem;
+      }
+
+      &-3\.5 {
+        margin: 3.5rem;
+      }
+
+      &t-px {
+        margin-top: 1px;
+      }
+
+      &t-0\.5 {
+        margin-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: 3.5rem;
+      }
+
+      &l-px {
+        margin-left: 1px;
+      }
+
+      &l-0\.5 {
+        margin-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: 3.5rem;
+      }
+
+      &r-px {
+        margin-right: 1px;
+      }
+
+      &r-0\.5 {
+        margin-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: 3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+    .custom2\:-m {
+      &-px {
+        margin: -1px;
+      }
+
+      &-0\.5 {
+        margin: -0.5rem;
+      }
+
+      &-1\.5 {
+        margin: -1.5rem;
+      }
+
+      &-2\.5 {
+        margin: -2.5rem;
+      }
+
+      &-3\.5 {
+        margin: -3.5rem;
+      }
+
+      &t-px {
+        margin-top: -1px;
+      }
+
+      &t-0\.5 {
+        margin-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        margin-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        margin-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        margin-top: -3.5rem;
+      }
+
+      &l-px {
+        margin-left: -1px;
+      }
+
+      &l-0\.5 {
+        margin-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        margin-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        margin-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        margin-left: -3.5rem;
+      }
+
+      &r-px {
+        margin-right: -1px;
+      }
+
+      &r-0\.5 {
+        margin-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        margin-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        margin-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        margin-right: -3.5rem;
+      }
+
+      &b-px {
+        margin-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        margin-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        margin-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        margin-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        margin-bottom: 3.5rem;
+      }
+
+      &y-px {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      &x-px {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      &x-0\.5 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .custom2\:m-#{$i} {
+        margin: #{$i}rem;
+      }
+      .custom2\:mt-#{$i} {
+        margin-top: #{$i}rem;
+      }
+      .custom2\:ml-#{$i} {
+        margin-left: #{$i}rem;
+      }
+      .custom2\:mr-#{$i} {
+        margin-right: #{$i}rem;
+      }
+      .custom2\:mb-#{$i} {
+        margin-bottom: #{$i}rem;
+      }
+      .custom2\:my-#{$i} {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+      }
+      .custom2\:mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+      }
+
+      .custom2\:-m-#{$i} {
+        margin: -#{$i}rem;
+      }
+      .custom2\:-mt-#{$i} {
+        margin-top: -#{$i}rem;
+      }
+      .custom2\:-ml-#{$i} {
+        margin-left: -#{$i}rem;
+      }
+      .custom2\:-mr-#{$i} {
+        margin-right: -#{$i}rem;
+      }
+      .custom2\:-mb-#{$i} {
+        margin-bottom: -#{$i}rem;
+      }
+      .custom2\:-my-#{$i} {
+        margin-top: -#{$i}rem;
+        margin-bottom: -#{$i}rem;
+      }
+      .custom2\:-mx-#{$i} {
         margin-left: -#{$i}rem;
         margin-right: -#{$i}rem;
       }

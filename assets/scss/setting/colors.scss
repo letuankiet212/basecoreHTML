@@ -3,7 +3,7 @@ $colors-map: (
   brand: (),
   base: (
     transparent: transparent,
-    modal: #0000005c,
+    modal: #e4f2fd73,
     white: #ffffff,
     black: black,
     gray-50: #f9fafb,
@@ -56,5 +56,8 @@ $colors-map: (
     blue-700: rgb(29, 78, 216),
     blue-800: rgb(30, 64, 175),
     blue-900: rgb(30, 58, 138),
+    blue-frame1: #1f232f,
+    blue-frame2: #6889d0,
+    blue-frame3: #4b5487,
   ),
 );

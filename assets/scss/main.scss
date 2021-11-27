@@ -1,61 +1,62 @@
 @import "app.scss";
 @import "setting/fonts.scss";
 @import "optional/animate/animate.scss";
-@import "optional/slick/slick-theme.scss", "optional/slick/slick.scss";
 @import "base/typo.scss";
+
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  min-height: 100%;
-  font-size: 10px;
-  margin: 0 auto;
-  @include breakpoints(
-    "font-size",
-    "vw",
-    (
-      1920: 0.521,
-      768: 1.302,
-    )
-  );
+	overflow-y: scroll;
+	overflow-x: hidden;
+	min-height: 100%;
+	font-size: 10px;
+	margin: 0 auto;
+	@include breakpoints(
+		"font-size",
+		"vw",
+		(
+			1920: 0.521,
+			768: 1.302,
+		)
+	);
 }
 
 body {
-  font-size: $base-font-size;
-  font-family: $base-font-family;
-  text-rendering: optimizeLegibility;
-  background-color: $color-base-background;
-  color: $color-base-text;
-  max-width: 1920px;
-  margin: 0 auto;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	text-rendering: optimizeLegibility;
+	background-color: $color-base-background;
+	color: $color-base-text;
+	max-width: 1920px;
+	margin: 0 auto;
 
-  &::-webkit-scrollbar {
-    width: 0.8rem;
-  }
+	&::-webkit-scrollbar {
+		width: 0.8rem;
+	}
 
-  &::-webkit-scrollbar-track {
-    background: $color-bg-scroll;
-  }
+	&::-webkit-scrollbar-track {
+		background: $color-bg-scroll;
+	}
 
-  &::-webkit-scrollbar-thumb {
-    background: $color-scroll;
-    border-radius: 45rem;
-  }
+	&::-webkit-scrollbar-thumb {
+		background: $color-scroll;
+		border-radius: 45rem;
+	}
 }
 
 .container {
-  width: $width-container;
-  @include max_devices(768) {
-    width: 100%;
-  }
+	width: $width-container;
+	@include max_devices(768) {
+		width: 100%;
+	}
 }
 
 #wrapper {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
 }
 
-@import "components/etc.scss";
+@import "./../../kit/common/etc/etc.scss", "./../../kit/common/footer/footer.scss", "./../../kit/common/header/header.scss", "./../../kit/common/navright/navright.scss", "./../../kit/common/popup/popup.scss";
+@import "./../../kit/layout/frame1/frame1.scss", "./../../kit/layout/frame2/frame2.scss";
 @import "./optional/library/main";

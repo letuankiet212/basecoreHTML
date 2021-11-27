@@ -1,8 +1,40 @@
 @if $use-helper-padding-styles == true {
+  $unit-list: join(pm(custom), pm(brand));
+  @each $name, $pm in $unit-list {
+    .p {
+      &t-#{$name} {
+        padding-top: $pm;
+      }
+      &l-#{$name} {
+        padding-left: $pm;
+      }
+      &r-#{$name} {
+        padding-right: $pm;
+      }
+      &b-#{$name} {
+        padding-bottom: $pm;
+      }
+    }
+    .-p {
+      &t-#{$name} {
+        padding-top: -$pm;
+      }
+      &l-#{$name} {
+        padding-left: -$pm;
+      }
+      &r-#{$name} {
+        padding-right: -$pm;
+      }
+      &b-#{$name} {
+        padding-bottom: -$pm;
+      }
+    }
+  }
   .p {
     &-px {
       padding: 1px;
     }
+
     &-0\.5 {
       padding: 0.5rem;
     }
@@ -14,12 +46,15 @@
     &-2\.5 {
       padding: 2.5rem;
     }
+
     &-3\.5 {
       padding: 3.5rem;
     }
+
     &t-px {
       padding-top: 1px;
     }
+
     &t-0\.5 {
       padding-top: 0.5rem;
     }
@@ -31,12 +66,15 @@
     &t-2\.5 {
       padding-top: 2.5rem;
     }
+
     &t-3\.5 {
       padding-top: 3.5rem;
     }
+
     &l-px {
       padding-left: 1px;
     }
+
     &l-0\.5 {
       padding-left: 0.5rem;
     }
@@ -48,12 +86,15 @@
     &l-2\.5 {
       padding-left: 2.5rem;
     }
+
     &l-3\.5 {
       padding-left: 3.5rem;
     }
+
     &r-px {
       padding-right: 1px;
     }
+
     &r-0\.5 {
       padding-right: 0.5rem;
     }
@@ -65,12 +106,15 @@
     &r-2\.5 {
       padding-right: 2.5rem;
     }
+
     &r-3\.5 {
       padding-right: 3.5rem;
     }
+
     &b-px {
       padding-bottom: 1px;
     }
+
     &b-0\.5 {
       padding-bottom: 0.5rem;
     }
@@ -82,13 +126,16 @@
     &b-2\.5 {
       padding-bottom: 2.5rem;
     }
+
     &b-3\.5 {
       padding-bottom: 3.5rem;
     }
+
     &y-px {
       padding-top: 1px;
       padding-bottom: 1px;
     }
+
     &y-0\.5 {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
@@ -103,14 +150,17 @@
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
     }
+
     &y-3\.5 {
       padding-top: 3.5rem;
       padding-bottom: 3.5rem;
     }
+
     &x-px {
       padding-left: 1px;
       padding-right: 1px;
     }
+
     &x-0\.5 {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
@@ -125,6 +175,158 @@
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }
+
+    &x-3\.5 {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  }
+  .-p {
+    &-px {
+      padding: -1px;
+    }
+
+    &-0\.5 {
+      padding: -0.5rem;
+    }
+
+    &-1\.5 {
+      padding: -1.5rem;
+    }
+
+    &-2\.5 {
+      padding: -2.5rem;
+    }
+
+    &-3\.5 {
+      padding: -3.5rem;
+    }
+
+    &t-px {
+      padding-top: -1px;
+    }
+
+    &t-0\.5 {
+      padding-top: -0.5rem;
+    }
+
+    &t-1\.5 {
+      padding-top: -1.5rem;
+    }
+
+    &t-2\.5 {
+      padding-top: -2.5rem;
+    }
+
+    &t-3\.5 {
+      padding-top: -3.5rem;
+    }
+
+    &l-px {
+      padding-left: -1px;
+    }
+
+    &l-0\.5 {
+      padding-left: -0.5rem;
+    }
+
+    &l-1\.5 {
+      padding-left: -1.5rem;
+    }
+
+    &l-2\.5 {
+      padding-left: -2.5rem;
+    }
+
+    &l-3\.5 {
+      padding-left: -3.5rem;
+    }
+
+    &r-px {
+      padding-right: -1px;
+    }
+
+    &r-0\.5 {
+      padding-right: -0.5rem;
+    }
+
+    &r-1\.5 {
+      padding-right: -1.5rem;
+    }
+
+    &r-2\.5 {
+      padding-right: -2.5rem;
+    }
+
+    &r-3\.5 {
+      padding-right: -3.5rem;
+    }
+
+    &b-px {
+      padding-bottom: -1px;
+    }
+
+    &b-0\.5 {
+      padding-bottom: -0.5rem;
+    }
+
+    &b-1\.5 {
+      padding-bottom: 1.5rem;
+    }
+
+    &b-2\.5 {
+      padding-bottom: 2.5rem;
+    }
+
+    &b-3\.5 {
+      padding-bottom: 3.5rem;
+    }
+
+    &y-px {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+
+    &y-0\.5 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &y-1\.5 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &y-2\.5 {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    &y-3\.5 {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    &x-px {
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+
+    &x-0\.5 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    &x-1\.5 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    &x-2\.5 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
     &x-3\.5 {
       padding-left: 3.5rem;
       padding-right: 3.5rem;
@@ -155,13 +357,82 @@
       padding-left: #{$i}rem;
       padding-right: #{$i}rem;
     }
+
+    .-p-#{$i} {
+      padding: -#{$i}rem;
+    }
+    .-pt-#{$i} {
+      padding-top: -#{$i}rem;
+    }
+    .-pl-#{$i} {
+      padding-left: -#{$i}rem;
+    }
+    .-pr-#{$i} {
+      padding-right: -#{$i}rem;
+    }
+    .-pb-#{$i} {
+      padding-bottom: -#{$i}rem;
+    }
+    .-py-#{$i} {
+      padding-top: -#{$i}rem;
+      padding-bottom: -#{$i}rem;
+    }
+    .-px-#{$i} {
+      padding-left: -#{$i}rem;
+      padding-right: -#{$i}rem;
+    }
   }
 
-  @include max_devices($lg) {
-    .lg\:p {
+  @include devices($custom) {
+    @each $name, $pm in $unit-list {
+      .custom\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .custom\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .custom\:pr-auto {
+      padding-right: auto;
+    }
+    .custom\:pl-auto {
+      padding-left: auto;
+    }
+    .custom\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .custom\:p {
+      &-auto {
+        padding: auto;
+      }
+
       &-px {
         padding: 1px;
       }
+
       &-0\.5 {
         padding: 0.5rem;
       }
@@ -173,12 +444,15 @@
       &-2\.5 {
         padding: 2.5rem;
       }
+
       &-3\.5 {
         padding: 3.5rem;
       }
+
       &t-px {
         padding-top: 1px;
       }
+
       &t-0\.5 {
         padding-top: 0.5rem;
       }
@@ -190,12 +464,15 @@
       &t-2\.5 {
         padding-top: 2.5rem;
       }
+
       &t-3\.5 {
         padding-top: 3.5rem;
       }
+
       &l-px {
         padding-left: 1px;
       }
+
       &l-0\.5 {
         padding-left: 0.5rem;
       }
@@ -207,12 +484,15 @@
       &l-2\.5 {
         padding-left: 2.5rem;
       }
+
       &l-3\.5 {
         padding-left: 3.5rem;
       }
+
       &r-px {
         padding-right: 1px;
       }
+
       &r-0\.5 {
         padding-right: 0.5rem;
       }
@@ -224,12 +504,15 @@
       &r-2\.5 {
         padding-right: 2.5rem;
       }
+
       &r-3\.5 {
         padding-right: 3.5rem;
       }
+
       &b-px {
         padding-bottom: 1px;
       }
+
       &b-0\.5 {
         padding-bottom: 0.5rem;
       }
@@ -241,13 +524,16 @@
       &b-2\.5 {
         padding-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         padding-bottom: 3.5rem;
       }
+
       &y-px {
         padding-top: 1px;
         padding-bottom: 1px;
       }
+
       &y-0\.5 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -262,14 +548,17 @@
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
       }
+
       &x-px {
         padding-left: 1px;
         padding-right: 1px;
       }
+
       &x-0\.5 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -284,6 +573,1364 @@
         padding-left: 2.5rem;
         padding-right: 2.5rem;
       }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    .custom\:-m {
+      &-px {
+        padding: -1px;
+      }
+
+      &-0\.5 {
+        padding: -0.5rem;
+      }
+
+      &-1\.5 {
+        padding: -1.5rem;
+      }
+
+      &-2\.5 {
+        padding: -2.5rem;
+      }
+
+      &-3\.5 {
+        padding: -3.5rem;
+      }
+
+      &t-px {
+        padding-top: -1px;
+      }
+
+      &t-0\.5 {
+        padding-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: -3.5rem;
+      }
+
+      &l-px {
+        padding-left: -1px;
+      }
+
+      &l-0\.5 {
+        padding-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: -3.5rem;
+      }
+
+      &r-px {
+        padding-right: -1px;
+      }
+
+      &r-0\.5 {
+        padding-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: -3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .custom\:p-#{$i} {
+        padding: #{$i}rem;
+      }
+      .custom\:pt-#{$i} {
+        padding-top: #{$i}rem;
+      }
+      .custom\:pl-#{$i} {
+        padding-left: #{$i}rem;
+      }
+      .custom\:pr-#{$i} {
+        padding-right: #{$i}rem;
+      }
+      .custom\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+      .custom\:py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+      }
+      .custom\:px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+      }
+
+      .custom\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .custom\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .custom\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .custom\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .custom\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .custom\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .custom\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($sm) {
+    @each $name, $pm in $unit-list {
+      .sm\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .sm\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .sm\:pr-auto {
+      padding-right: auto;
+    }
+    .sm\:pl-auto {
+      padding-left: auto;
+    }
+    .sm\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .sm\:p {
+      &-auto {
+        padding-left: auto;
+        padding-right: auto;
+      }
+
+      &-px {
+        padding: 1px;
+      }
+
+      &-0\.5 {
+        padding: 0.5rem;
+      }
+
+      &-1\.5 {
+        padding: 1.5rem;
+      }
+
+      &-2\.5 {
+        padding: 2.5rem;
+      }
+
+      &-3\.5 {
+        padding: 3.5rem;
+      }
+
+      &t-px {
+        padding-top: 1px;
+      }
+
+      &t-0\.5 {
+        padding-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: 3.5rem;
+      }
+
+      &l-px {
+        padding-left: 1px;
+      }
+
+      &l-0\.5 {
+        padding-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: 3.5rem;
+      }
+
+      &r-px {
+        padding-right: 1px;
+      }
+
+      &r-0\.5 {
+        padding-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: 3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    .sm\:-m {
+      &-auto {
+        padding-left: auto;
+        padding-right: auto;
+      }
+
+      &-px {
+        padding: -1px;
+      }
+
+      &-0\.5 {
+        padding: -0.5rem;
+      }
+
+      &-1\.5 {
+        padding: -1.5rem;
+      }
+
+      &-2\.5 {
+        padding: -2.5rem;
+      }
+
+      &-3\.5 {
+        padding: -3.5rem;
+      }
+
+      &t-px {
+        padding-top: -1px;
+      }
+
+      &t-0\.5 {
+        padding-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: -3.5rem;
+      }
+
+      &l-px {
+        padding-left: -1px;
+      }
+
+      &l-0\.5 {
+        padding-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: -3.5rem;
+      }
+
+      &r-px {
+        padding-right: -1px;
+      }
+
+      &r-0\.5 {
+        padding-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: -3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .sm\:p-#{$i} {
+        padding: #{$i}rem;
+      }
+      .sm\:pt-#{$i} {
+        padding-top: #{$i}rem;
+      }
+      .sm\:pl-#{$i} {
+        padding-left: #{$i}rem;
+      }
+      .sm\:pr-#{$i} {
+        padding-right: #{$i}rem;
+      }
+      .sm\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+      .sm\:py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+      }
+      .sm\:px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+      }
+      .sm\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .sm\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .sm\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .sm\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .sm\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .sm\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .sm\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($md) {
+    @each $name, $pm in $unit-list {
+      .md\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .md\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .md\:pr-auto {
+      padding-right: auto;
+    }
+    .md\:pl-auto {
+      padding-left: auto;
+    }
+    .md\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .md\:p {
+      &-auto {
+        padding-left: auto;
+        padding-right: auto;
+      }
+
+      &-px {
+        padding: 1px;
+      }
+
+      &-0\.5 {
+        padding: 0.5rem;
+      }
+
+      &-1\.5 {
+        padding: 1.5rem;
+      }
+
+      &-2\.5 {
+        padding: 2.5rem;
+      }
+
+      &-3\.5 {
+        padding: 3.5rem;
+      }
+
+      &t-px {
+        padding-top: 1px;
+      }
+
+      &t-0\.5 {
+        padding-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: 3.5rem;
+      }
+
+      &l-px {
+        padding-left: 1px;
+      }
+
+      &l-0\.5 {
+        padding-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: 3.5rem;
+      }
+
+      &r-px {
+        padding-right: 1px;
+      }
+
+      &r-0\.5 {
+        padding-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: 3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    .md\:-m {
+      &-auto {
+        padding-left: auto;
+        padding-right: auto;
+      }
+
+      &-px {
+        padding: -1px;
+      }
+
+      &-0\.5 {
+        padding: -0.5rem;
+      }
+
+      &-1\.5 {
+        padding: -1.5rem;
+      }
+
+      &-2\.5 {
+        padding: -2.5rem;
+      }
+
+      &-3\.5 {
+        padding: -3.5rem;
+      }
+
+      &t-px {
+        padding-top: -1px;
+      }
+
+      &t-0\.5 {
+        padding-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: -3.5rem;
+      }
+
+      &l-px {
+        padding-left: -1px;
+      }
+
+      &l-0\.5 {
+        padding-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: -3.5rem;
+      }
+
+      &r-px {
+        padding-right: -1px;
+      }
+
+      &r-0\.5 {
+        padding-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: -3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .md\:p-#{$i} {
+        padding: #{$i}rem;
+      }
+      .md\:pt-#{$i} {
+        padding-top: #{$i}rem;
+      }
+      .md\:pl-#{$i} {
+        padding-left: #{$i}rem;
+      }
+      .md\:pr-#{$i} {
+        padding-right: #{$i}rem;
+      }
+      .md\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+      .md\:py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+      }
+      .md\:px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+      }
+      .md\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .md\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .md\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .md\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .md\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .md\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .md\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($lg) {
+    @each $name, $pm in $unit-list {
+      .lg\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .lg\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .lg\:pr-auto {
+      padding-right: auto;
+    }
+    .lg\:pl-auto {
+      padding-left: auto;
+    }
+    .lg\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .lg\:p {
+      &-auto {
+        padding: auto;
+      }
+
+      &-px {
+        padding: 1px;
+      }
+
+      &-0\.5 {
+        padding: 0.5rem;
+      }
+
+      &-1\.5 {
+        padding: 1.5rem;
+      }
+
+      &-2\.5 {
+        padding: 2.5rem;
+      }
+
+      &-3\.5 {
+        padding: 3.5rem;
+      }
+
+      &t-px {
+        padding-top: 1px;
+      }
+
+      &t-0\.5 {
+        padding-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: 3.5rem;
+      }
+
+      &l-px {
+        padding-left: 1px;
+      }
+
+      &l-0\.5 {
+        padding-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: 3.5rem;
+      }
+
+      &r-px {
+        padding-right: 1px;
+      }
+
+      &r-0\.5 {
+        padding-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: 3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    .lg\:-m {
+      &-px {
+        padding: -1px;
+      }
+
+      &-0\.5 {
+        padding: -0.5rem;
+      }
+
+      &-1\.5 {
+        padding: -1.5rem;
+      }
+
+      &-2\.5 {
+        padding: -2.5rem;
+      }
+
+      &-3\.5 {
+        padding: -3.5rem;
+      }
+
+      &t-px {
+        padding-top: -1px;
+      }
+
+      &t-0\.5 {
+        padding-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: -3.5rem;
+      }
+
+      &l-px {
+        padding-left: -1px;
+      }
+
+      &l-0\.5 {
+        padding-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: -3.5rem;
+      }
+
+      &r-px {
+        padding-right: -1px;
+      }
+
+      &r-0\.5 {
+        padding-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: -3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
       &x-3\.5 {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
@@ -314,14 +1961,83 @@
         padding-left: #{$i}rem;
         padding-right: #{$i}rem;
       }
+
+      .lg\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .lg\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .lg\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .lg\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .lg\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .lg\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .lg\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
+      }
     }
   }
 
-  @include max_devices($md) {
-    .md\:p {
+  @include devices($xl) {
+    @each $name, $pm in $unit-list {
+      .xl\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .xl\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .xl\:pr-auto {
+      padding-right: auto;
+    }
+    .xl\:pl-auto {
+      padding-left: auto;
+    }
+    .xl\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .xl\:p {
+      &-auto {
+        padding: auto;
+      }
+
       &-px {
         padding: 1px;
       }
+
       &-0\.5 {
         padding: 0.5rem;
       }
@@ -333,12 +2049,15 @@
       &-2\.5 {
         padding: 2.5rem;
       }
+
       &-3\.5 {
         padding: 3.5rem;
       }
+
       &t-px {
         padding-top: 1px;
       }
+
       &t-0\.5 {
         padding-top: 0.5rem;
       }
@@ -350,12 +2069,15 @@
       &t-2\.5 {
         padding-top: 2.5rem;
       }
+
       &t-3\.5 {
         padding-top: 3.5rem;
       }
+
       &l-px {
         padding-left: 1px;
       }
+
       &l-0\.5 {
         padding-left: 0.5rem;
       }
@@ -367,12 +2089,15 @@
       &l-2\.5 {
         padding-left: 2.5rem;
       }
+
       &l-3\.5 {
         padding-left: 3.5rem;
       }
+
       &r-px {
         padding-right: 1px;
       }
+
       &r-0\.5 {
         padding-right: 0.5rem;
       }
@@ -384,12 +2109,15 @@
       &r-2\.5 {
         padding-right: 2.5rem;
       }
+
       &r-3\.5 {
         padding-right: 3.5rem;
       }
+
       &b-px {
         padding-bottom: 1px;
       }
+
       &b-0\.5 {
         padding-bottom: 0.5rem;
       }
@@ -401,13 +2129,16 @@
       &b-2\.5 {
         padding-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         padding-bottom: 3.5rem;
       }
+
       &y-px {
         padding-top: 1px;
         padding-bottom: 1px;
       }
+
       &y-0\.5 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -422,14 +2153,17 @@
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
       }
+
       &x-px {
         padding-left: 1px;
         padding-right: 1px;
       }
+
       &x-0\.5 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -444,113 +2178,99 @@
         padding-left: 2.5rem;
         padding-right: 2.5rem;
       }
+
       &x-3\.5 {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
       }
     }
-    @for $i from 0 through $limit-unit {
-      .md\:p-#{$i} {
-        padding: #{$i}rem;
-      }
-      .md\:pt-#{$i} {
-        padding-top: #{$i}rem;
-      }
-      .md\:pl-#{$i} {
-        padding-left: #{$i}rem;
-      }
-      .md\:pr-#{$i} {
-        padding-right: #{$i}rem;
-      }
-      .md\:pb-#{$i} {
-        padding-bottom: #{$i}rem;
-      }
-      .md\:px-#{$i} {
-        padding-left: #{$i}rem;
-        padding-right: #{$i}rem;
-      }
-      .md\:py-#{$i} {
-        padding-top: #{$i}rem;
-        padding-bottom: #{$i}rem;
-      }
-    }
-  }
-
-  @include max_devices($sm) {
-    .sm\:p {
+    .xl\:-m {
       &-px {
-        padding: 1px;
+        padding: -1px;
       }
+
       &-0\.5 {
-        padding: 0.5rem;
+        padding: -0.5rem;
       }
 
       &-1\.5 {
-        padding: 1.5rem;
+        padding: -1.5rem;
       }
 
       &-2\.5 {
-        padding: 2.5rem;
+        padding: -2.5rem;
       }
+
       &-3\.5 {
-        padding: 3.5rem;
+        padding: -3.5rem;
       }
+
       &t-px {
-        padding-top: 1px;
+        padding-top: -1px;
       }
+
       &t-0\.5 {
-        padding-top: 0.5rem;
+        padding-top: -0.5rem;
       }
 
       &t-1\.5 {
-        padding-top: 1.5rem;
+        padding-top: -1.5rem;
       }
 
       &t-2\.5 {
-        padding-top: 2.5rem;
+        padding-top: -2.5rem;
       }
+
       &t-3\.5 {
-        padding-top: 3.5rem;
+        padding-top: -3.5rem;
       }
+
       &l-px {
-        padding-left: 1px;
+        padding-left: -1px;
       }
+
       &l-0\.5 {
-        padding-left: 0.5rem;
+        padding-left: -0.5rem;
       }
 
       &l-1\.5 {
-        padding-left: 1.5rem;
+        padding-left: -1.5rem;
       }
 
       &l-2\.5 {
-        padding-left: 2.5rem;
+        padding-left: -2.5rem;
       }
+
       &l-3\.5 {
-        padding-left: 3.5rem;
+        padding-left: -3.5rem;
       }
+
       &r-px {
-        padding-right: 1px;
+        padding-right: -1px;
       }
+
       &r-0\.5 {
-        padding-right: 0.5rem;
+        padding-right: -0.5rem;
       }
 
       &r-1\.5 {
-        padding-right: 1.5rem;
+        padding-right: -1.5rem;
       }
 
       &r-2\.5 {
-        padding-right: 2.5rem;
+        padding-right: -2.5rem;
       }
+
       &r-3\.5 {
-        padding-right: 3.5rem;
+        padding-right: -3.5rem;
       }
+
       &b-px {
-        padding-bottom: 1px;
+        padding-bottom: -1px;
       }
+
       &b-0\.5 {
-        padding-bottom: 0.5rem;
+        padding-bottom: -0.5rem;
       }
 
       &b-1\.5 {
@@ -560,13 +2280,16 @@
       &b-2\.5 {
         padding-bottom: 2.5rem;
       }
+
       &b-3\.5 {
         padding-bottom: 3.5rem;
       }
+
       &y-px {
         padding-top: 1px;
         padding-bottom: 1px;
       }
+
       &y-0\.5 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -581,14 +2304,17 @@
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
       }
+
       &y-3\.5 {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
       }
+
       &x-px {
         padding-left: 1px;
         padding-right: 1px;
       }
+
       &x-0\.5 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -603,6 +2329,7 @@
         padding-left: 2.5rem;
         padding-right: 2.5rem;
       }
+
       &x-3\.5 {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
@@ -610,28 +2337,451 @@
     }
 
     @for $i from 0 through $limit-unit {
-      .sm\:p-#{$i} {
+      .xl\:p-#{$i} {
         padding: #{$i}rem;
       }
-      .sm\:pt-#{$i} {
+      .xl\:pt-#{$i} {
         padding-top: #{$i}rem;
       }
-      .sm\:pl-#{$i} {
+      .xl\:pl-#{$i} {
         padding-left: #{$i}rem;
       }
-      .sm\:pr-#{$i} {
+      .xl\:pr-#{$i} {
         padding-right: #{$i}rem;
       }
-      .sm\:pb-#{$i} {
+      .xl\:pb-#{$i} {
         padding-bottom: #{$i}rem;
       }
-      .sm\:py-#{$i} {
+      .xl\:py-#{$i} {
         padding-top: #{$i}rem;
         padding-bottom: #{$i}rem;
       }
-      .sm\:px-#{$i} {
+      .xl\:px-#{$i} {
         padding-left: #{$i}rem;
         padding-right: #{$i}rem;
+      }
+
+      .xl\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .xl\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .xl\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .xl\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .xl\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .xl\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .xl\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
+      }
+    }
+  }
+
+  @include devices($custom2) {
+    @each $name, $pm in $unit-list {
+      .custom2\:p {
+        &t-#{$name} {
+          padding-top: $pm;
+        }
+        &l-#{$name} {
+          padding-left: $pm;
+        }
+        &r-#{$name} {
+          padding-right: $pm;
+        }
+        &b-#{$name} {
+          padding-bottom: $pm;
+        }
+      }
+      .custom2\:-m {
+        &t-#{$name} {
+          padding-top: -$pm;
+        }
+        &l-#{$name} {
+          padding-left: -$pm;
+        }
+        &r-#{$name} {
+          padding-right: -$pm;
+        }
+        &b-#{$name} {
+          padding-bottom: -$pm;
+        }
+      }
+    }
+    .custom2\:pr-auto {
+      padding-right: auto;
+    }
+    .custom2\:pl-auto {
+      padding-left: auto;
+    }
+    .custom2\:px-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .custom2\:p {
+      &-auto {
+        padding: auto;
+      }
+
+      &-px {
+        padding: 1px;
+      }
+
+      &-0\.5 {
+        padding: 0.5rem;
+      }
+
+      &-1\.5 {
+        padding: 1.5rem;
+      }
+
+      &-2\.5 {
+        padding: 2.5rem;
+      }
+
+      &-3\.5 {
+        padding: 3.5rem;
+      }
+
+      &t-px {
+        padding-top: 1px;
+      }
+
+      &t-0\.5 {
+        padding-top: 0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: 1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: 2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: 3.5rem;
+      }
+
+      &l-px {
+        padding-left: 1px;
+      }
+
+      &l-0\.5 {
+        padding-left: 0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: 1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: 2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: 3.5rem;
+      }
+
+      &r-px {
+        padding-right: 1px;
+      }
+
+      &r-0\.5 {
+        padding-right: 0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: 1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: 2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: 3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: 1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: 0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+    .custom2\:-m {
+      &-px {
+        padding: -1px;
+      }
+
+      &-0\.5 {
+        padding: -0.5rem;
+      }
+
+      &-1\.5 {
+        padding: -1.5rem;
+      }
+
+      &-2\.5 {
+        padding: -2.5rem;
+      }
+
+      &-3\.5 {
+        padding: -3.5rem;
+      }
+
+      &t-px {
+        padding-top: -1px;
+      }
+
+      &t-0\.5 {
+        padding-top: -0.5rem;
+      }
+
+      &t-1\.5 {
+        padding-top: -1.5rem;
+      }
+
+      &t-2\.5 {
+        padding-top: -2.5rem;
+      }
+
+      &t-3\.5 {
+        padding-top: -3.5rem;
+      }
+
+      &l-px {
+        padding-left: -1px;
+      }
+
+      &l-0\.5 {
+        padding-left: -0.5rem;
+      }
+
+      &l-1\.5 {
+        padding-left: -1.5rem;
+      }
+
+      &l-2\.5 {
+        padding-left: -2.5rem;
+      }
+
+      &l-3\.5 {
+        padding-left: -3.5rem;
+      }
+
+      &r-px {
+        padding-right: -1px;
+      }
+
+      &r-0\.5 {
+        padding-right: -0.5rem;
+      }
+
+      &r-1\.5 {
+        padding-right: -1.5rem;
+      }
+
+      &r-2\.5 {
+        padding-right: -2.5rem;
+      }
+
+      &r-3\.5 {
+        padding-right: -3.5rem;
+      }
+
+      &b-px {
+        padding-bottom: -1px;
+      }
+
+      &b-0\.5 {
+        padding-bottom: -0.5rem;
+      }
+
+      &b-1\.5 {
+        padding-bottom: 1.5rem;
+      }
+
+      &b-2\.5 {
+        padding-bottom: 2.5rem;
+      }
+
+      &b-3\.5 {
+        padding-bottom: 3.5rem;
+      }
+
+      &y-px {
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      &y-0\.5 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      &y-1\.5 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &y-2\.5 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      &y-3\.5 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      &x-px {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      &x-0\.5 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &x-1\.5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      &x-2\.5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      &x-3\.5 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    @for $i from 0 through $limit-unit {
+      .custom2\:p-#{$i} {
+        padding: #{$i}rem;
+      }
+      .custom2\:pt-#{$i} {
+        padding-top: #{$i}rem;
+      }
+      .custom2\:pl-#{$i} {
+        padding-left: #{$i}rem;
+      }
+      .custom2\:pr-#{$i} {
+        padding-right: #{$i}rem;
+      }
+      .custom2\:pb-#{$i} {
+        padding-bottom: #{$i}rem;
+      }
+      .custom2\:py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+      }
+      .custom2\:px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+      }
+
+      .custom2\:-m-#{$i} {
+        padding: -#{$i}rem;
+      }
+      .custom2\:-mt-#{$i} {
+        padding-top: -#{$i}rem;
+      }
+      .custom2\:-ml-#{$i} {
+        padding-left: -#{$i}rem;
+      }
+      .custom2\:-mr-#{$i} {
+        padding-right: -#{$i}rem;
+      }
+      .custom2\:-mb-#{$i} {
+        padding-bottom: -#{$i}rem;
+      }
+      .custom2\:-my-#{$i} {
+        padding-top: -#{$i}rem;
+        padding-bottom: -#{$i}rem;
+      }
+      .custom2\:-mx-#{$i} {
+        padding-left: -#{$i}rem;
+        padding-right: -#{$i}rem;
       }
     }
   }

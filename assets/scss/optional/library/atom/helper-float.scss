@@ -8,8 +8,63 @@
       float: right;
     }
   }
-  @media screen and (max-width: $md) {
+  @include devices($custom) {
+    .custom\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+  @include devices($md) {
     .md\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:float {
+      &-left {
+        float: left;
+      }
+
+      &-right {
+        float: right;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:float {
       &-left {
         float: left;
       }
