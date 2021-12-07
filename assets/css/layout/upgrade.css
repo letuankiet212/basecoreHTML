@@ -1,0 +1,3 @@
+.page__upgrade .list__item {
+  grid-template-rows: minmax(0, 7rem);
+}

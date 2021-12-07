@@ -2,17 +2,17 @@ $base-font-size: calc(13px + (16 - 13) * ((100vw - 769px) / (1920 - 769)));
 $md-base-font-size: 2.112rem;
 $sm-base-font-size: 11px;
 
-$color-base-text: black;
-$color-scroll: #a8a8a8;
+$color-base-text: white;
+$color-scroll: #245552;
 $color-bg-scroll: #f1f1f1;
-$color-base-background: #f8f8f8;
+$color-base-background: #245552;
 
-$base-font-family: "Montserrat";
+$base-font-family: "Saira", sans-serif;
 $base-font-typo: "Montserrat";
 $base-color-typo: black;
 $secondary-color-typo: white;
 
-$width-container: 71.3rem;
+$width-container: 130rem;
 
 $text-9xl: 12.8rem;
 $text-8xl: 9.6rem;
@@ -42,14 +42,14 @@ $units-map: (
   default: (),
   brand: (),
   custom: (
-    8\.6: 8.6rem,
-  ),
+    8\.6: 8.6rem
+  )
 );
 
 $pm-map: (
   default: (),
   brand: (),
   custom: (
-    1\.7: 1.7rem,
-  ),
+    1\.7: 1.7rem
+  )
 );

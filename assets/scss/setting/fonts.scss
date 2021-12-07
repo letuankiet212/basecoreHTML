@@ -1,35 +1,36 @@
-$fonts: "umtgodswordr", "tahoma", "uvnlaclongquanr", "uvnlaclongquanb",
-  "umtgodswordb";
+$fonts:/* FONT_FACE */
+'tahoma', 'umtgodswordr', 'tahoma', 'uvnlaclongquanr', 'uvnlaclongquanb',
+  'umtgodswordb';
 
 @each $font in $fonts {
-  @if ($font != "") {
+  @if ($font != '') {
     @font-face {
       font-family: $font;
-      src: url("../fonts/#{$font}.ttf") format("truetype");
+      src: url('../fonts/#{$font}.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
 
     .font-#{$font} {
-      font-family: "#{$font}";
+      font-family: '#{$font}';
     }
 
     @include max_devices($lg) {
       .lg\:font-#{$font} {
-        font-family: "#{$font}";
+        font-family: '#{$font}';
       }
     }
 
     @include max_devices($md) {
       .md\:font-#{$font} {
-        font-family: "#{$font}";
+        font-family: '#{$font}';
       }
     }
 
     @include max_devices($sm) {
       .sm\:font-#{$font} {
-        font-family: "#{$font}";
+        font-family: '#{$font}';
       }
     }
   }
